@@ -9,7 +9,7 @@ const webpack = require('webpack');
 const config = {
   title: 'Uneak Products',        // Your website title
   url: 'https://uneakproducts.com',          // Your website URL
-  project: 'uneak-products',      // Firebase project. See README.md -> How to Deploy
+  project: 'uneak-products-2d42f',      // Firebase project. See README.md -> How to Deploy
   trackingID: 'UA-XXXXX-Y',                 // Google Analytics Site's ID
 };
 
