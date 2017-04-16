@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import history from '../../core/history';
 import Link from '../../components/Link';
 import s from './styles.css';
@@ -6,7 +7,7 @@ import s from './styles.css';
 class ErrorPage extends React.Component {
 
   static propTypes = {
-    error: React.PropTypes.object,
+    error: PropTypes.object,
   };
 
   componentDidMount() {
