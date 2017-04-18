@@ -1,13 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Grid, Segment, Image, Header, Icon } from 'semantic-ui-react';
 import Layout from '../../components/Layout';
+import DimmedImage from '../../components/Image/DimmedImage';
 import { title, header } from './index.md';
 
 class HomePage extends React.Component {
-
-  static propTypes = {
-    articles: PropTypes.array.isRequired,
-  };
 
   componentDidMount() {
     document.title = title;
@@ -16,23 +13,23 @@ class HomePage extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="ui vertical segment">
-          <div className="ui stackable two column grid container">
-            <div className="row">
-              <div className="column">
-                <div className="ui stackable grid">
-                  <div className="row">
-                    <div className="column">
-                      <img className="ui fluid rounded image" src="http://placehold.it/600x200" alt="Uneak Products Placeholder" />
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="column">
-                      <h2 className="ui header">{header}</h2>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="column">
+        <Segment padded="very">
+          <Grid stackable columns={2} container>
+            <Grid.Row>
+              <Grid.Column>
+                <Grid stackable>
+                  <Grid.Row>
+                    <Grid.Column>
+                      <Image fluid shape="rounded" src="http://placehold.it/600x200" alt="Uneak Products Placeholder" />
+                    </Grid.Column>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Grid.Column>
+                      <Header as="h2">{header}</Header>
+                    </Grid.Column>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Grid.Column>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Integer lacus ipsum, euismod suscipit mauris ut, faucibus
@@ -44,10 +41,10 @@ class HomePage extends React.Component {
                         Nunc suscipit diam nec egestas placerat. In ipsum lorem,
                         porta vitae nibh a, commodo finibus risus.
                       </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="column">
+                    </Grid.Column>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Grid.Column>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Integer lacus ipsum, euismod suscipit mauris ut, faucibus
@@ -59,34 +56,78 @@ class HomePage extends React.Component {
                         Nunc suscipit diam nec egestas placerat. In ipsum lorem,
                         porta vitae nibh a, commodo finibus risus.
                       </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="column">
-                      <span>Visit our trusted brands <i className="chevron right icon"></i></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="column">
-                <div className="ui stackable doubling two column grid">
-                  <div className="column">
-                    <img className="ui medium rounded image" src="http://placehold.it/250x250" alt="Brand Placeholder" />
-                  </div>
-                  <div className="column">
-                    <img className="ui medium rounded image" src="http://placehold.it/250x250" alt="Brand Placeholder" />
-                  </div>
-                  <div className="column">
-                    <img className="ui medium rounded image" src="http://placehold.it/250x250" alt="Brand Placeholder" />
-                  </div>
-                  <div className="column">
-                    <img className="ui medium rounded image" src="http://placehold.it/250x250" alt="Brand Placeholder" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                    </Grid.Column>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Grid.Column>
+                      <span>Visit our trusted brands <Icon name="chevron right" /></span>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
+              </Grid.Column>
+              <Grid.Column>
+                <Grid stackable doubling columns={2}>
+                  <Grid.Column>
+                    <DimmedImage
+                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Integer lacus ipsum, euismod suscipit mauris ut, faucibus
+                      venenatis nisi. Sed mattis diam nisi, nec porttitor quam
+                      ultricies vel. Fusce tincidunt pellentesque magna, ut
+                      faucibus quam finibus vitae. Aenean sed ante non eros
+                      pharetra feugiat."
+                      size="medium"
+                      shape="rounded"
+                      src="http://placehold.it/300x300"
+                      alt="Brand Placeholder"
+                    />
+                  </Grid.Column>
+                  <Grid.Column>
+                    <DimmedImage
+                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Integer lacus ipsum, euismod suscipit mauris ut, faucibus
+                      venenatis nisi. Sed mattis diam nisi, nec porttitor quam
+                      ultricies vel. Fusce tincidunt pellentesque magna, ut
+                      faucibus quam finibus vitae. Aenean sed ante non eros
+                      pharetra feugiat."
+                      size="medium"
+                      shape="rounded"
+                      src="http://placehold.it/300x300"
+                      alt="Brand Placeholder"
+                    />
+                  </Grid.Column>
+                  <Grid.Column>
+                    <DimmedImage
+                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Integer lacus ipsum, euismod suscipit mauris ut, faucibus
+                      venenatis nisi. Sed mattis diam nisi, nec porttitor quam
+                      ultricies vel. Fusce tincidunt pellentesque magna, ut
+                      faucibus quam finibus vitae. Aenean sed ante non eros
+                      pharetra feugiat."
+                      size="medium"
+                      shape="rounded"
+                      src="http://placehold.it/300x300"
+                      alt="Brand Placeholder"
+                    />
+                  </Grid.Column>
+                  <Grid.Column>
+                    <DimmedImage
+                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Integer lacus ipsum, euismod suscipit mauris ut, faucibus
+                      venenatis nisi. Sed mattis diam nisi, nec porttitor quam
+                      ultricies vel. Fusce tincidunt pellentesque magna, ut
+                      faucibus quam finibus vitae. Aenean sed ante non eros
+                      pharetra feugiat."
+                      size="medium"
+                      shape="rounded"
+                      src="http://placehold.it/300x300"
+                      alt="Brand Placeholder"
+                    />
+                  </Grid.Column>
+                </Grid>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Segment>
       </Layout>
     );
   }
