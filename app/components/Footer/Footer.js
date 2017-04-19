@@ -1,60 +1,68 @@
 import React from 'react';
+import { Segment, Container, Grid, Header, List, Divider, Image } from 'semantic-ui-react';
 
 function Footer() {
   const style = {
-    padding: '5em 0em',
+    segment: { padding: '5em 0em' },
   };
 
   return (
     <footer>
-      <div className="ui inverted vertical footer segment" style={style}>
-        <div className="ui center aligned container">
-          <div className="ui stackable inverted divided grid">
-            <div className="three wide column">
-              <h4 className="ui inverted header">Group 1</h4>
-              <div className="ui inverted link list">
-                <a href="#" className="item">Link One</a>
-                <a href="#" className="item">Link Two</a>
-                <a href="#" className="item">Link Three</a>
-                <a href="#" className="item">Link Four</a>
-              </div>
-            </div>
-            <div className="three wide column">
-              <h4 className="ui inverted header">Group 2</h4>
-              <div className="ui inverted link list">
-                <a href="#" className="item">Link One</a>
-                <a href="#" className="item">Link Two</a>
-                <a href="#" className="item">Link Three</a>
-                <a href="#" className="item">Link Four</a>
-              </div>
-            </div>
-            <div className="three wide column">
-              <h4 className="ui inverted header">Group 3</h4>
-              <div className="ui inverted link list">
-                <a href="#" className="item">Link One</a>
-                <a href="#" className="item">Link Two</a>
-                <a href="#" className="item">Link Three</a>
-                <a href="#" className="item">Link Four</a>
-              </div>
-            </div>
-            <div className="seven wide column">
-              <h4 className="ui inverted header">Footer Header</h4>
-              <p>Extra space for a call to action inside the footer.</p>
-            </div>
-          </div>
-          <div className="ui inverted section divider"></div>
-          <img
+      <Segment inverted vertical style={style.segment}>
+        <Container textAlign="center">
+          <Grid stackable divided className={'inverted'}>
+            <Grid.Row>
+              <Grid.Column width={3}>
+                <Header as="h4" inverted>Contact</Header>
+                <List inverted link>
+                  <List.Item as="a" href="#">
+                    <List.Icon name="marker" />
+                    <List.Content>Address</List.Content>
+                  </List.Item>
+                  <List.Item as="a" href="#">
+                    <List.Icon name="call" />
+                    <List.Content>Phone</List.Content>
+                  </List.Item>
+                  <List.Item as="a" href="#">
+                    <List.Icon name="mail" />
+                    <List.Content>Email</List.Content>
+                  </List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column width={3}>
+                <List inverted link>
+                  <List.Item as="a" href="#">Events</List.Item>
+                  <List.Item as="a" href="#">Partners</List.Item>
+                  <List.Item as="a" href="#">Global Offices</List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column width={3}>
+                <List inverted link>
+                  <List.Item as="a" href="#">Warranty</List.Item>
+                  <List.Item as="a" href="#">Brands</List.Item>
+                  <List.Item as="a" href="#">Wholesale</List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column width={7}>
+                <Header as="h4" inverted>Footer Header</Header>
+                <p>Extra space for a call to action inside the footer.</p>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+          <Divider inverted section />
+          <Image
             src="http://placehold.it/25x25"
-            className="ui centered mini image"
+            size="mini"
             alt="Logo"
+            ui
+            centered
           />
-          <div className="ui horizontal inverted small divided link list">
-            <a className="item" href="#">Site Map</a>
-            <a className="item" href="#">Terms and Conditions</a>
-            <a className="item" href="#">Privacy Policy</a>
-          </div>
-        </div>
-      </div>
+          <List horizontal inverted size="small" divided link>
+            <List.Item as="a" href="#">Terms and Conditions</List.Item>
+            <List.Item as="a" href="#">Privacy Policy</List.Item>
+          </List>
+        </Container>
+      </Segment>
     </footer>
   );
 }
