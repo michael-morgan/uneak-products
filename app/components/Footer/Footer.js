@@ -3,7 +3,8 @@ import { Segment, Container, Grid, Header, List, Divider, Image } from 'semantic
 
 function Footer() {
   const style = {
-    segment: { padding: '5em 0em' },
+    segment: { padding: '5em 0' },
+    p: { margin: '2em 0 0 0' },
   };
 
   return (
@@ -44,19 +45,18 @@ function Footer() {
                 </List>
               </Grid.Column>
               <Grid.Column width={7}>
-                <Header as="h4" inverted>Footer Header</Header>
-                <p>Extra space for a call to action inside the footer.</p>
+                <Image
+                  src="http://placehold.it/25x25"
+                  size="mini"
+                  alt="Logo"
+                  ui
+                  centered
+                />
+                <p style={style.p}>Uneak is who we are, but Unique is what we aim for</p>
               </Grid.Column>
             </Grid.Row>
           </Grid>
           <Divider inverted section />
-          <Image
-            src="http://placehold.it/25x25"
-            size="mini"
-            alt="Logo"
-            ui
-            centered
-          />
           <List horizontal inverted size="small" divided link>
             <List.Item as="a" href="#">Terms and Conditions</List.Item>
             <List.Item as="a" href="#">Privacy Policy</List.Item>

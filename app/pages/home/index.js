@@ -20,7 +20,12 @@ class HomePage extends React.Component {
                 <Grid stackable>
                   <Grid.Row>
                     <Grid.Column>
-                      <Image fluid shape="rounded" src="http://placehold.it/600x200" alt="Uneak Products Placeholder" />
+                      <Image
+                        fluid
+                        shape="rounded"
+                        src="http://placehold.it/600x200"
+                        alt="Uneak Products Placeholder"
+                      />
                     </Grid.Column>
                   </Grid.Row>
                   <Grid.Row>
@@ -69,12 +74,12 @@ class HomePage extends React.Component {
                 <Grid stackable doubling columns={2}>
                   <Grid.Column>
                     <DimmedImage
-                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Integer lacus ipsum, euismod suscipit mauris ut, faucibus
                       venenatis nisi. Sed mattis diam nisi, nec porttitor quam
                       ultricies vel. Fusce tincidunt pellentesque magna, ut
                       faucibus quam finibus vitae. Aenean sed ante non eros
-                      pharetra feugiat."
+                      pharetra feugiat.`}
                       size="medium"
                       shape="rounded"
                       src="http://placehold.it/300x300"
@@ -83,12 +88,12 @@ class HomePage extends React.Component {
                   </Grid.Column>
                   <Grid.Column>
                     <DimmedImage
-                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Integer lacus ipsum, euismod suscipit mauris ut, faucibus
                       venenatis nisi. Sed mattis diam nisi, nec porttitor quam
                       ultricies vel. Fusce tincidunt pellentesque magna, ut
                       faucibus quam finibus vitae. Aenean sed ante non eros
-                      pharetra feugiat."
+                      pharetra feugiat.`}
                       size="medium"
                       shape="rounded"
                       src="http://placehold.it/300x300"
@@ -97,12 +102,12 @@ class HomePage extends React.Component {
                   </Grid.Column>
                   <Grid.Column>
                     <DimmedImage
-                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Integer lacus ipsum, euismod suscipit mauris ut, faucibus
                       venenatis nisi. Sed mattis diam nisi, nec porttitor quam
                       ultricies vel. Fusce tincidunt pellentesque magna, ut
                       faucibus quam finibus vitae. Aenean sed ante non eros
-                      pharetra feugiat."
+                      pharetra feugiat.`}
                       size="medium"
                       shape="rounded"
                       src="http://placehold.it/300x300"
@@ -111,12 +116,12 @@ class HomePage extends React.Component {
                   </Grid.Column>
                   <Grid.Column>
                     <DimmedImage
-                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Integer lacus ipsum, euismod suscipit mauris ut, faucibus
                       venenatis nisi. Sed mattis diam nisi, nec porttitor quam
                       ultricies vel. Fusce tincidunt pellentesque magna, ut
                       faucibus quam finibus vitae. Aenean sed ante non eros
-                      pharetra feugiat."
+                      pharetra feugiat.`}
                       size="medium"
                       shape="rounded"
                       src="http://placehold.it/300x300"
