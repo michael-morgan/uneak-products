@@ -4,6 +4,7 @@ import Layout from '../../components/Layout';
 import Summary from '../../components/Sections/Summary';
 import Brands from '../../components/Sections/Brands';
 import Events from '../../components/Sections/Events';
+import Partners from '../../components/Sections/Partners';
 import { title, header } from './index.md';
 
 class HomePage extends React.Component {
@@ -20,6 +21,8 @@ class HomePage extends React.Component {
         <Brands />
         <Divider id="events" section />
         <Events />
+        <Divider id="partners" section />
+        <Partners />
         <Divider section />
       </Layout>
     );

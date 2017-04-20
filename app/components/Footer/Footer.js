@@ -32,8 +32,8 @@ function Footer() {
               </Grid.Column>
               <Grid.Column width={3}>
                 <List inverted link>
-                  <List.Item as="a" href="#">Events</List.Item>
-                  <List.Item as="a" href="#">Partners</List.Item>
+                  <List.Item as="a" href="#events">Events</List.Item>
+                  <List.Item as="a" href="#partners">Partners</List.Item>
                   <List.Item as="a" href="#">Global Offices</List.Item>
                 </List>
               </Grid.Column>

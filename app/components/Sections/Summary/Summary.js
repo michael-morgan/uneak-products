@@ -4,8 +4,12 @@ import { Grid, Image, Header, Icon } from 'semantic-ui-react';
 import DimmedImage from '../../Image/DimmedImage';
 
 function Summary(props) {
+  const style = {
+    grid: { 'margin-top': '1em' },
+  };
+
   return (
-    <Grid columns={2} stackable container>
+    <Grid columns={2} style={style.grid} stackable container>
       <Grid.Row>
         <Grid.Column>
           <Grid stackable>
