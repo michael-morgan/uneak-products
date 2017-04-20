@@ -10,6 +10,7 @@ class DimmedImage extends React.Component {
     shape: PropTypes.string.isRequired,
     size: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired,
+    href: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
   };
 
@@ -45,6 +46,7 @@ class DimmedImage extends React.Component {
         onMouseLeave={this.toggle}
         size={this.props.size}
         src={this.props.src}
+        href={this.props.href}
         alt={this.props.alt}
       />
     );
