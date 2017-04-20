@@ -5,17 +5,17 @@ import DimmedImage from '../../Image/DimmedImage';
 
 function Summary(props) {
   return (
-    <Grid stackable columns={2} container>
+    <Grid columns={2} stackable container>
       <Grid.Row>
         <Grid.Column>
           <Grid stackable>
             <Grid.Row>
               <Grid.Column>
                 <Image
-                  fluid
                   shape="rounded"
                   src="http://placehold.it/600x200"
                   alt="Uneak Products Placeholder"
+                  fluid
                 />
               </Grid.Column>
             </Grid.Row>
@@ -56,13 +56,13 @@ function Summary(props) {
             </Grid.Row>
             <Grid.Row>
               <Grid.Column>
-                <span>Visit our trusted brands <Icon name="chevron right" /></span>
+                <p>Visit our trusted brands <Icon name="chevron right" /></p>
               </Grid.Column>
             </Grid.Row>
           </Grid>
         </Grid.Column>
         <Grid.Column>
-          <Grid stackable doubling columns={2}>
+          <Grid columns={2} stackable doubling>
             <Grid.Column>
               <DimmedImage
                 description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
