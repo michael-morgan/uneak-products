@@ -25,8 +25,9 @@ const config = {
     /* Flags */
     '!!style!css!flag-icon-css/css/flag-icon.min.css',
     /* Material Design Lite (https://getmdl.io) */
-    '!!style!css!react-mdl/extra/material.min.css',
-    'react-mdl/extra/material.min.js',
+    /* '!!style!css!react-mdl/extra/material.min.css',*/
+    /* 'react-mdl/extra/material.min.js',*/
+    'jquery/dist/jquery.min.js',
     /* The main entry point of your JavaScript application */
     './main.js',
   ],

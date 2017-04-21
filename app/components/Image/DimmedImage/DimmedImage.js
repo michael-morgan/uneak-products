@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 class DimmedImage extends React.Component {
 
   static propTypes = {
-    description: PropTypes.string.isRequired,
+    description: PropTypes.any.isRequired,
     shape: PropTypes.string.isRequired,
     size: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired,
