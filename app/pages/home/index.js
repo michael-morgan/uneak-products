@@ -6,6 +6,7 @@ import Brands from '../../components/Sections/Brands';
 import Events from '../../components/Sections/Events';
 import Partners from '../../components/Sections/Partners';
 import Offices from '../../components/Sections/Offices';
+import Warranty from '../../components/Sections/Warranty';
 import { title, header } from './index.md';
 
 class HomePage extends React.Component {
@@ -26,7 +27,8 @@ class HomePage extends React.Component {
         <Partners />
         <Divider id="offices" section />
         <Offices />
-        <Divider section />
+        <Divider id="warranty" section />
+        <Warranty />
       </Layout>
     );
   }
