@@ -22,6 +22,8 @@ const config = {
   entry: [
     /* Semantic UI */
     '!!style!css!semantic-ui/dist/semantic.min.css',
+    /* Flags */
+    '!!style!css!flag-icon-css/css/flag-icon.min.css',
     /* Material Design Lite (https://getmdl.io) */
     '!!style!css!react-mdl/extra/material.min.css',
     'react-mdl/extra/material.min.js',

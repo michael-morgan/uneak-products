@@ -5,7 +5,7 @@ import DimmedImage from '../../Image/DimmedImage';
 
 function Summary(props) {
   const style = {
-    grid: { 'margin-top': '1em' },
+    grid: { marginTop: '1em' },
   };
 
   return (
