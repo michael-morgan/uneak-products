@@ -16,17 +16,20 @@ function Footer() {
               <Grid.Column width={3}>
                 <Header as="h4" inverted>Contact</Header>
                 <List inverted link>
-                  <List.Item as="a" href="#">
+                  <List.Item>
                     <List.Icon name="marker" />
-                    <List.Content>Address</List.Content>
+                    <List.Content>
+                      20 Columbus Street
+                      Perth-Andover, NB E7H 1T3
+                    </List.Content>
                   </List.Item>
-                  <List.Item as="a" href="#">
+                  <List.Item>
                     <List.Icon name="call" />
-                    <List.Content>Phone</List.Content>
+                    <List.Content>1-800-666-4911</List.Content>
                   </List.Item>
-                  <List.Item as="a" href="#">
+                  <List.Item as="a" href="mailto:office@bolstercanada.com">
                     <List.Icon name="mail" />
-                    <List.Content>Email</List.Content>
+                    <List.Content>office@bolstercanada.com</List.Content>
                   </List.Item>
                 </List>
               </Grid.Column>
@@ -60,6 +63,7 @@ function Footer() {
           <List horizontal inverted size="small" divided link>
             <List.Item as="a" href="#">Terms and Conditions</List.Item>
             <List.Item as="a" href="#">Privacy Policy</List.Item>
+            <List.Item as="a" href="/contact">Contact Us</List.Item>
           </List>
         </Container>
       </Segment>
