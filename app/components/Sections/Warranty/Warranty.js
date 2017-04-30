@@ -13,48 +13,46 @@ function Warranty() {
       <Grid.Row>
         <Grid.Column>
           <Grid columns={4}>
-            <Grid.Row>
-              <Grid.Column textAlign="center">
-                <DimmedImage
-                  description={<Icon name="linkify" size="huge" />}
-                  size="medium"
-                  shape="rounded"
-                  src="http://placehold.it/300x300"
-                  href="#"
-                  alt="Warranty Placeholder"
-                />
-              </Grid.Column>
-              <Grid.Column textAlign="center">
-                <DimmedImage
-                  description={<Icon name="linkify" size="huge" />}
-                  size="medium"
-                  shape="rounded"
-                  src="http://placehold.it/300x300"
-                  href="#"
-                  alt="Warranty Placeholder"
-                />
-              </Grid.Column>
-              <Grid.Column textAlign="center">
-                <DimmedImage
-                  description={<Icon name="linkify" size="huge" />}
-                  size="medium"
-                  shape="rounded"
-                  src="http://placehold.it/300x300"
-                  href="#"
-                  alt="Warranty Placeholder"
-                />
-              </Grid.Column>
-              <Grid.Column textAlign="center">
-                <DimmedImage
-                  description={<Icon name="linkify" size="huge" />}
-                  size="medium"
-                  shape="rounded"
-                  src="http://placehold.it/300x300"
-                  href="#"
-                  alt="Warranty Placeholder"
-                />
-              </Grid.Column>
-            </Grid.Row>
+            <Grid.Column textAlign="center" computer={4} tablet={8}>
+              <DimmedImage
+                description={<Icon name="linkify" size="huge" />}
+                size="medium"
+                shape="rounded"
+                src="http://placehold.it/300x300"
+                href="#"
+                alt="Warranty Placeholder"
+              />
+            </Grid.Column>
+            <Grid.Column textAlign="center" computer={4} tablet={8}>
+              <DimmedImage
+                description={<Icon name="linkify" size="huge" />}
+                size="medium"
+                shape="rounded"
+                src="http://placehold.it/300x300"
+                href="#"
+                alt="Warranty Placeholder"
+              />
+            </Grid.Column>
+            <Grid.Column textAlign="center" computer={4} tablet={8}>
+              <DimmedImage
+                description={<Icon name="linkify" size="huge" />}
+                size="medium"
+                shape="rounded"
+                src="http://placehold.it/300x300"
+                href="#"
+                alt="Warranty Placeholder"
+              />
+            </Grid.Column>
+            <Grid.Column textAlign="center" computer={4} tablet={8}>
+              <DimmedImage
+                description={<Icon name="linkify" size="huge" />}
+                size="medium"
+                shape="rounded"
+                src="http://placehold.it/300x300"
+                href="#"
+                alt="Warranty Placeholder"
+              />
+            </Grid.Column>
           </Grid>
         </Grid.Column>
       </Grid.Row>

@@ -2,6 +2,9 @@ import React from 'react';
 import { Grid, Header, Icon, Image, Divider } from 'semantic-ui-react';
 
 function Offices() {
+  const style = {
+    column: { marginBottom: '3em' },
+  };
   return (
     <Grid columns={1} container>
       <Grid.Row>
@@ -14,7 +17,7 @@ function Offices() {
         <Grid.Column>
           <Grid columns={2} stackable>
             <Grid.Row>
-              <Grid.Column>
+              <Grid.Column computer={8} tablet={16} style={style.column}>
                 <Grid columns={2}>
                   <Grid.Row>
                     <Grid.Column>
@@ -38,7 +41,7 @@ function Offices() {
                   </Grid.Row>
                 </Grid>
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column computer={8} tablet={16} style={style.column}>
                 <Grid columns={2}>
                   <Grid.Row>
                     <Grid.Column>

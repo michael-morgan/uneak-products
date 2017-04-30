@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Card, Image, Button, Header } from 'semantic-ui-react';
+import { Grid, Card, Image, Button, Header, Icon } from 'semantic-ui-react';
 
 function Brands() {
   return (
@@ -12,9 +12,14 @@ function Brands() {
       </Grid.Row>
       <Grid.Row>
         <Grid.Column>
+          <p>Learn more about our brands <Icon name="chevron right" /></p>
+        </Grid.Column>
+      </Grid.Row>
+      <Grid.Row>
+        <Grid.Column>
           <Grid columns={4} stackable>
             <Grid.Row>
-              <Grid.Column>
+              <Grid.Column computer={4} tablet={8}>
                 <Card raised>
                   <Image src="http://placehold.it/300x300" />
                   <Card.Content>
@@ -33,7 +38,7 @@ function Brands() {
                   </Card.Content>
                 </Card>
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column computer={4} tablet={8}>
                 <Card raised>
                   <Image src="http://placehold.it/300x300" />
                   <Card.Content>
@@ -52,7 +57,7 @@ function Brands() {
                   </Card.Content>
                 </Card>
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column computer={4} tablet={8}>
                 <Card raised>
                   <Image src="http://placehold.it/300x300" />
                   <Card.Content>
@@ -71,7 +76,7 @@ function Brands() {
                   </Card.Content>
                 </Card>
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column computer={4} tablet={8}>
                 <Card raised>
                   <Image src="http://placehold.it/300x300" />
                   <Card.Content>

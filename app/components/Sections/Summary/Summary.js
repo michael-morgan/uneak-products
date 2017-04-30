@@ -11,7 +11,7 @@ function Summary(props) {
   return (
     <Grid columns={2} style={style.grid} stackable container>
       <Grid.Row>
-        <Grid.Column>
+        <Grid.Column computer={8} tablet={16}>
           <Grid stackable>
             <Grid.Row>
               <Grid.Column>
@@ -65,9 +65,9 @@ function Summary(props) {
             </Grid.Row>
           </Grid>
         </Grid.Column>
-        <Grid.Column>
-          <Grid columns={2} stackable doubling>
-            <Grid.Column>
+        <Grid.Column computer={8} tablet={16}>
+          <Grid columns={2} stackable>
+            <Grid.Column tablet={8}>
               <DimmedImage
                 description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer lacus ipsum, euismod suscipit mauris ut, faucibus
@@ -82,7 +82,7 @@ function Summary(props) {
                 alt="Brand Placeholder"
               />
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column tablet={8}>
               <DimmedImage
                 description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer lacus ipsum, euismod suscipit mauris ut, faucibus
@@ -97,7 +97,7 @@ function Summary(props) {
                 alt="Brand Placeholder"
               />
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column tablet={8}>
               <DimmedImage
                 description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer lacus ipsum, euismod suscipit mauris ut, faucibus
@@ -112,7 +112,7 @@ function Summary(props) {
                 alt="Brand Placeholder"
               />
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column tablet={8}>
               <DimmedImage
                 description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer lacus ipsum, euismod suscipit mauris ut, faucibus

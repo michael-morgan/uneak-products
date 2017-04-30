@@ -25,7 +25,7 @@ function Wholesale() {
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Grid.Column width={4}>
+        <Grid.Column computer={4} tablet={8}>
           <Card fluid raised>
             <Card.Content>
               <Card.Header>Aleisha Gregory</Card.Header>
