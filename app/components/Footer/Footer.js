@@ -37,16 +37,16 @@ function Footer() {
               <Grid.Column computer={3} tablet={4}>
                 <Header as="h4" inverted>Company</Header>
                 <List inverted link>
-                  <List.Item as="a" href="#events">Events</List.Item>
-                  <List.Item as="a" href="#partners">Partners</List.Item>
-                  <List.Item as="a" href="#offices">Global Offices</List.Item>
+                  <List.Item as="a" href="/#events">Events</List.Item>
+                  <List.Item as="a" href="/#partners">Partners</List.Item>
+                  <List.Item as="a" href="/#offices">Global Offices</List.Item>
                 </List>
               </Grid.Column>
               <Grid.Column computer={3} tablet={4}>
                 <List style={style.list} inverted link>
-                  <List.Item as="a" href="#warranty">Warranty</List.Item>
-                  <List.Item as="a" href="#brands">Brands</List.Item>
-                  <List.Item as="a" href="#wholesale">Wholesale</List.Item>
+                  <List.Item as="a" href="/#warranty">Warranty</List.Item>
+                  <List.Item as="a" href="/#brands">Brands</List.Item>
+                  <List.Item as="a" href="/#wholesale">Wholesale</List.Item>
                 </List>
               </Grid.Column>
               <Grid.Column computer={7} tablet={16}>
