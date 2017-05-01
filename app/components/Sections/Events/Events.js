@@ -13,7 +13,7 @@ function Events() {
       </Grid.Row>
       <Grid.Row>
         <Grid.Column>
-          <Grid columns={3} divided>
+          <Grid columns={3}>
             <Grid.Row>
               <Grid.Column textAlign="center">
                 <DimmedImage

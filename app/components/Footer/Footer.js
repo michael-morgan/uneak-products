@@ -5,15 +5,16 @@ function Footer() {
   const style = {
     segment: { padding: '5em 0' },
     p: { margin: '2em 0 0 0' },
+    list: { marginTop: '2em' },
   };
 
   return (
     <footer>
       <Segment inverted vertical style={style.segment}>
         <Container textAlign="center">
-          <Grid stackable divided className={'inverted'}>
+          <Grid stackable className={'inverted'}>
             <Grid.Row>
-              <Grid.Column width={3}>
+              <Grid.Column computer={3} tablet={8}>
                 <Header as="h4" inverted>Contact</Header>
                 <List inverted link>
                   <List.Item>
@@ -33,21 +34,22 @@ function Footer() {
                   </List.Item>
                 </List>
               </Grid.Column>
-              <Grid.Column width={3}>
+              <Grid.Column computer={3} tablet={4}>
+                <Header as="h4" inverted>Company</Header>
                 <List inverted link>
                   <List.Item as="a" href="#events">Events</List.Item>
                   <List.Item as="a" href="#partners">Partners</List.Item>
                   <List.Item as="a" href="#offices">Global Offices</List.Item>
                 </List>
               </Grid.Column>
-              <Grid.Column width={3}>
-                <List inverted link>
+              <Grid.Column computer={3} tablet={4}>
+                <List style={style.list} inverted link>
                   <List.Item as="a" href="#warranty">Warranty</List.Item>
                   <List.Item as="a" href="#brands">Brands</List.Item>
                   <List.Item as="a" href="#wholesale">Wholesale</List.Item>
                 </List>
               </Grid.Column>
-              <Grid.Column width={7}>
+              <Grid.Column computer={7} tablet={16}>
                 <Image
                   src="http://placehold.it/25x25"
                   size="mini"
