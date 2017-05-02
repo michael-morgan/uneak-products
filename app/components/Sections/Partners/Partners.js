@@ -20,9 +20,9 @@ function Partners() {
                   description={'Lorem ipsum.'}
                   size="medium"
                   shape="rounded"
-                  src="http://placehold.it/300x300"
+                  src="images/ace-logo.png"
                   href="#"
-                  alt="Event Placeholder"
+                  alt="Partner Placeholder"
                 />
               </Grid.Column>
               <Grid.Column textAlign="center">
@@ -30,9 +30,9 @@ function Partners() {
                   description={'Lorem ipsum.'}
                   size="medium"
                   shape="rounded"
-                  src="http://placehold.it/300x300"
+                  src="images/canac-logo.png"
                   href="#"
-                  alt="Event Placeholder"
+                  alt="Partner Placeholder"
                 />
               </Grid.Column>
               <Grid.Column textAlign="center">
@@ -40,9 +40,9 @@ function Partners() {
                   description={'Lorem ipsum.'}
                   size="medium"
                   shape="rounded"
-                  src="http://placehold.it/300x300"
+                  src="images/canadian-tire-logo.png"
                   href="#"
-                  alt="Event Placeholder"
+                  alt="Partner Placeholder"
                 />
               </Grid.Column>
             </Grid.Row>
@@ -52,9 +52,9 @@ function Partners() {
                   description={'Lorem ipsum.'}
                   size="medium"
                   shape="rounded"
-                  src="http://placehold.it/300x300"
+                  src="images/home-depot-logo.png"
                   href="#"
-                  alt="Event Placeholder"
+                  alt="Partner Placeholder"
                 />
               </Grid.Column>
               <Grid.Column textAlign="center">
@@ -62,9 +62,9 @@ function Partners() {
                   description={'Lorem ipsum.'}
                   size="medium"
                   shape="rounded"
-                  src="http://placehold.it/300x300"
+                  src="images/home-hardware-logo.png"
                   href="#"
-                  alt="Event Placeholder"
+                  alt="Partner Placeholder"
                 />
               </Grid.Column>
               <Grid.Column textAlign="center">
@@ -72,9 +72,9 @@ function Partners() {
                   description={'Lorem ipsum.'}
                   size="medium"
                   shape="rounded"
-                  src="http://placehold.it/300x300"
+                  src="images/kent-logo.png"
                   href="#"
-                  alt="Event Placeholder"
+                  alt="Partner Placeholder"
                 />
               </Grid.Column>
             </Grid.Row>

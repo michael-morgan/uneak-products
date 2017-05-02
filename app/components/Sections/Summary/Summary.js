@@ -17,8 +17,10 @@ function Summary(props) {
               <Grid.Column>
                 <Image
                   shape="rounded"
-                  src="http://placehold.it/600x200"
+                  src="images/uneak-products-banner.png"
                   alt="Uneak Products Placeholder"
+                  width="600"
+                  height="200"
                   fluid
                 />
               </Grid.Column>
@@ -77,7 +79,7 @@ function Summary(props) {
                 pharetra feugiat.`}
                 size="medium"
                 shape="rounded"
-                src="http://placehold.it/300x300"
+                src="images/santas-solutions-logo.png"
                 href="#"
                 alt="Brand Placeholder"
               />
@@ -92,7 +94,7 @@ function Summary(props) {
                 pharetra feugiat.`}
                 size="medium"
                 shape="rounded"
-                src="http://placehold.it/300x300"
+                src="images/uneak-gardens-logo.png"
                 href="#"
                 alt="Brand Placeholder"
               />
@@ -107,7 +109,7 @@ function Summary(props) {
                 pharetra feugiat.`}
                 size="medium"
                 shape="rounded"
-                src="http://placehold.it/300x300"
+                src="images/nooski-logo.png"
                 href="#"
                 alt="Brand Placeholder"
               />
@@ -122,7 +124,7 @@ function Summary(props) {
                 pharetra feugiat.`}
                 size="medium"
                 shape="rounded"
-                src="http://placehold.it/300x300"
+                src="images/biltek-logo.png"
                 href="#"
                 alt="Brand Placeholder"
               />

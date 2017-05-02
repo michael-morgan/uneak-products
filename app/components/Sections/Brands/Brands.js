@@ -15,7 +15,7 @@ function Brands() {
         <Grid columns={4} stackable>
           <Grid.Column computer={4} tablet={8}>
             <Card raised>
-              <Image src="http://placehold.it/300x300" />
+              <Image src="images/santas-solutions-logo.png" />
               <Card.Content>
                 <Card.Header>Santa's Solution</Card.Header>
                 <Card.Description>
@@ -34,7 +34,7 @@ function Brands() {
           </Grid.Column>
           <Grid.Column computer={4} tablet={8}>
             <Card raised>
-              <Image src="http://placehold.it/300x300" />
+              <Image src="images/uneak-gardens-logo.png" />
               <Card.Content>
                 <Card.Header>Uneak Gardens</Card.Header>
                 <Card.Description>
@@ -53,7 +53,7 @@ function Brands() {
           </Grid.Column>
           <Grid.Column computer={4} tablet={8}>
             <Card raised>
-              <Image src="http://placehold.it/300x300" />
+              <Image src="images/nooski-logo.png" />
               <Card.Content>
                 <Card.Header>Nooski</Card.Header>
                 <Card.Description>
@@ -72,7 +72,7 @@ function Brands() {
           </Grid.Column>
           <Grid.Column computer={4} tablet={8}>
             <Card raised>
-              <Image src="http://placehold.it/300x300" />
+              <Image src="images/biltek-logo.png" />
               <Card.Content>
                 <Card.Header>Biltek</Card.Header>
                 <Card.Description>

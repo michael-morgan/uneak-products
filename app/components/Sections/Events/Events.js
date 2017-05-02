@@ -20,7 +20,7 @@ function Events() {
                   description={'Lorem ipsum.'}
                   size="medium"
                   shape="rounded"
-                  src="http://placehold.it/300x300"
+                  src="images/igc-event.png"
                   href="#"
                   alt="Event Placeholder"
                 />
@@ -30,7 +30,7 @@ function Events() {
                   description={'Lorem ipsum.'}
                   size="medium"
                   shape="rounded"
-                  src="http://placehold.it/300x300"
+                  src="images/national-hardware-event.png"
                   href="#"
                   alt="Event Placeholder"
                 />
@@ -40,7 +40,7 @@ function Events() {
                   description={'Lorem ipsum.'}
                   size="medium"
                   shape="rounded"
-                  src="http://placehold.it/300x300"
+                  src="images/home-hardware-event.png"
                   href="#"
                   alt="Event Placeholder"
                 />
