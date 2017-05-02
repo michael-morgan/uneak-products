@@ -20,7 +20,7 @@ function Partners() {
                   description={'Lorem ipsum.'}
                   size="medium"
                   shape="rounded"
-                  src="images/ace-logo.png"
+                  src="images/ace-logo.svg"
                   href="#"
                   alt="Partner Placeholder"
                 />
@@ -40,7 +40,7 @@ function Partners() {
                   description={'Lorem ipsum.'}
                   size="medium"
                   shape="rounded"
-                  src="images/canadian-tire-logo.png"
+                  src="images/canadian-tire-logo.svg"
                   href="#"
                   alt="Partner Placeholder"
                 />
@@ -52,7 +52,7 @@ function Partners() {
                   description={'Lorem ipsum.'}
                   size="medium"
                   shape="rounded"
-                  src="images/home-depot-logo.png"
+                  src="images/home-depot-logo.svg"
                   href="#"
                   alt="Partner Placeholder"
                 />

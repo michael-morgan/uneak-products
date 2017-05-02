@@ -48,6 +48,7 @@ class DimmedImage extends React.Component {
         src={this.props.src}
         href={this.props.href}
         alt={this.props.alt}
+        bordered
       />
     );
   }

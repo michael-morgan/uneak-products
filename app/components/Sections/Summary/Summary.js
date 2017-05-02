@@ -22,6 +22,7 @@ function Summary(props) {
                   width="600"
                   height="200"
                   fluid
+                  bordered
                 />
               </Grid.Column>
             </Grid.Row>
