@@ -4,16 +4,14 @@ import { Grid, Card, Image, Button, Header, Icon } from 'semantic-ui-react';
 
 function Brands() {
   return (
-    <Grid columns={1} container>
-      <Grid.Column>
+    <Grid container>
+      <Grid.Column computer={16} tablet={16} mobile={16}>
         <Header as="h2">Brands</Header>
-      </Grid.Column>
-      <Grid.Column>
         <p>Learn more about our brands <Icon name="chevron right" /></p>
       </Grid.Column>
-      <Grid.Column>
+      <Grid.Column computer={16} tablet={16} mobile={16}>
         <Grid columns={4} stackable>
-          <Grid.Column computer={4} tablet={8}>
+          <Grid.Column computer={4} tablet={8} mobile={16}>
             <Card raised>
               <Image src="images/santas-solutions-logo.png" />
               <Card.Content>
@@ -32,7 +30,7 @@ function Brands() {
               </Card.Content>
             </Card>
           </Grid.Column>
-          <Grid.Column computer={4} tablet={8}>
+          <Grid.Column computer={4} tablet={8} mobile={16}>
             <Card raised>
               <Image src="images/uneak-gardens-logo.png" />
               <Card.Content>
@@ -51,7 +49,7 @@ function Brands() {
               </Card.Content>
             </Card>
           </Grid.Column>
-          <Grid.Column computer={4} tablet={8}>
+          <Grid.Column computer={4} tablet={8} mobile={16}>
             <Card raised>
               <Image src="images/nooski-logo.png" />
               <Card.Content>
@@ -70,7 +68,7 @@ function Brands() {
               </Card.Content>
             </Card>
           </Grid.Column>
-          <Grid.Column computer={4} tablet={8}>
+          <Grid.Column computer={4} tablet={8} mobile={16}>
             <Card raised>
               <Image src="images/biltek-logo.png" />
               <Card.Content>

@@ -11,66 +11,56 @@ function Summary(props) {
   return (
     <Grid columns={2} style={style.grid} stackable container>
       <Grid.Row>
-        <Grid.Column computer={8} tablet={16}>
+        <Grid.Column computer={8} tablet={16} mobile={16}>
           <Grid stackable>
-            <Grid.Row>
-              <Grid.Column>
-                <Image
-                  shape="rounded"
-                  src="images/uneak-products-banner.png"
-                  alt="Uneak Products Placeholder"
-                  width="600"
-                  height="200"
-                  fluid
-                  bordered
-                />
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-              <Grid.Column>
-                <Header as="h2">{props.header}</Header>
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-              <Grid.Column>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lacus ipsum, euismod suscipit mauris ut, faucibus
-                  venenatis nisi. Sed mattis diam nisi, nec porttitor quam
-                  ultricies vel. Fusce tincidunt pellentesque magna, ut
-                  faucibus quam finibus vitae. Aenean sed ante non eros
-                  pharetra feugiat. Morbi turpis augue, blandit quis diam
-                  id, sodales pharetra est. Nunc feugiat viverra eros.
-                  Nunc suscipit diam nec egestas placerat. In ipsum lorem,
-                  porta vitae nibh a, commodo finibus risus.
-                </p>
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-              <Grid.Column>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lacus ipsum, euismod suscipit mauris ut, faucibus
-                  venenatis nisi. Sed mattis diam nisi, nec porttitor quam
-                  ultricies vel. Fusce tincidunt pellentesque magna, ut
-                  faucibus quam finibus vitae. Aenean sed ante non eros
-                  pharetra feugiat. Morbi turpis augue, blandit quis diam
-                  id, sodales pharetra est. Nunc feugiat viverra eros.
-                  Nunc suscipit diam nec egestas placerat. In ipsum lorem,
-                  porta vitae nibh a, commodo finibus risus.
-                </p>
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-              <Grid.Column>
-                <p>Visit our trusted brands <Icon name="chevron right" /></p>
-              </Grid.Column>
-            </Grid.Row>
+            <Grid.Column computer={16} tablet={16} mobile={16}>
+              <Image
+                shape="rounded"
+                src="images/uneak-products-banner.png"
+                alt="Uneak Products Placeholder"
+                width="600"
+                height="200"
+                fluid
+                bordered
+              />
+            </Grid.Column>
+            <Grid.Column computer={16} tablet={16} mobile={16}>
+              <Header as="h2">{props.header}</Header>
+            </Grid.Column>
+            <Grid.Column computer={16} tablet={16} mobile={16}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Integer lacus ipsum, euismod suscipit mauris ut, faucibus
+                venenatis nisi. Sed mattis diam nisi, nec porttitor quam
+                ultricies vel. Fusce tincidunt pellentesque magna, ut
+                faucibus quam finibus vitae. Aenean sed ante non eros
+                pharetra feugiat. Morbi turpis augue, blandit quis diam
+                id, sodales pharetra est. Nunc feugiat viverra eros.
+                Nunc suscipit diam nec egestas placerat. In ipsum lorem,
+                porta vitae nibh a, commodo finibus risus.
+              </p>
+            </Grid.Column>
+            <Grid.Column computer={16} tablet={16} mobile={16}>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Integer lacus ipsum, euismod suscipit mauris ut, faucibus
+                venenatis nisi. Sed mattis diam nisi, nec porttitor quam
+                ultricies vel. Fusce tincidunt pellentesque magna, ut
+                faucibus quam finibus vitae. Aenean sed ante non eros
+                pharetra feugiat. Morbi turpis augue, blandit quis diam
+                id, sodales pharetra est. Nunc feugiat viverra eros.
+                Nunc suscipit diam nec egestas placerat. In ipsum lorem,
+                porta vitae nibh a, commodo finibus risus.
+              </p>
+            </Grid.Column>
+            <Grid.Column computer={16} tablet={16} mobile={16}>
+              <p>Visit our trusted brands <Icon name="chevron right" /></p>
+            </Grid.Column>
           </Grid>
         </Grid.Column>
         <Grid.Column computer={8} tablet={16}>
           <Grid columns={2} stackable>
-            <Grid.Column tablet={8}>
+            <Grid.Column computer={8} tablet={8} mobile={16}>
               <DimmedImage
                 description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer lacus ipsum, euismod suscipit mauris ut, faucibus
@@ -85,7 +75,7 @@ function Summary(props) {
                 alt="Brand Placeholder"
               />
             </Grid.Column>
-            <Grid.Column tablet={8}>
+            <Grid.Column computer={8} tablet={8} mobile={16}>
               <DimmedImage
                 description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer lacus ipsum, euismod suscipit mauris ut, faucibus
@@ -100,7 +90,7 @@ function Summary(props) {
                 alt="Brand Placeholder"
               />
             </Grid.Column>
-            <Grid.Column tablet={8}>
+            <Grid.Column computer={8} tablet={8} mobile={16}>
               <DimmedImage
                 description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer lacus ipsum, euismod suscipit mauris ut, faucibus
@@ -115,7 +105,7 @@ function Summary(props) {
                 alt="Brand Placeholder"
               />
             </Grid.Column>
-            <Grid.Column tablet={8}>
+            <Grid.Column computer={8} tablet={8} mobile={16}>
               <DimmedImage
                 description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer lacus ipsum, euismod suscipit mauris ut, faucibus
