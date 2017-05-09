@@ -6,6 +6,7 @@ function Footer() {
     segment: { padding: '5em 0' },
     p: { margin: '2em 0 0 0' },
     list: { marginTop: '2em' },
+    a: { color: 'white' },
   };
 
   return (
@@ -15,7 +16,9 @@ function Footer() {
           <Grid stackable className={'inverted'}>
             <Grid.Row>
               <Grid.Column computer={3} tablet={8}>
-                <Header as="h4" inverted>Contact</Header>
+                <Header as="h4" inverted>
+                  <a href="/contact" style={style.a}>Contact</a>
+                </Header>
                 <List inverted link>
                   <List.Item>
                     <List.Icon name="marker" />

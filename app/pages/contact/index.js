@@ -14,6 +14,11 @@ class ContactPage extends React.Component {
       grid: {
         margin: '1em 0',
       },
+      iframe: {
+        border: '0',
+        width: '100%',
+        height: '382px',
+      },
     };
 
     return (
@@ -29,6 +34,16 @@ class ContactPage extends React.Component {
             <span><Icon name="phone" /> 1-800-666-4911</span><br />
             <span><Icon name="fax" /> 1-506-273-3273</span><br />
             <span><Icon name="mail outline" /> office@bolstercanada.com</span><br />
+
+            <Divider />
+
+            <iframe
+              frameBorder="0"
+              style={style.iframe}
+              src="https://www.google.com/maps/embed/v1/place?q=20%20Columbus%20Street%20Perth-Andover%2C%20NB%20E7H%201T3&key=AIzaSyBkIZNRhfLtZtOnsfMLLWzd-4fX9X9gzuI"
+              allowFullScreen
+            >
+            </iframe>
           </Grid.Column>
           <Grid.Column computer={8} tablet={16} mobile={16}>
             <Header size="medium">Send Us A Message</Header>
