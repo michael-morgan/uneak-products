@@ -19,6 +19,9 @@ class ContactPage extends React.Component {
         width: '100%',
         height: '382px',
       },
+      gotcha: {
+        display: 'none',
+      },
     };
 
     return (
@@ -48,13 +51,36 @@ class ContactPage extends React.Component {
           <Grid.Column computer={8} tablet={16} mobile={16}>
             <Header size="medium">Send Us A Message</Header>
 
-            <Form>
-              <Form.Input label="First name" placeholder="First name" required />
-              <Form.Input label="Last name" placeholder="Last name" required />
-              <Form.Input label="Company" placeholder="Company" />
-              <Form.Input label="Email" placeholder="Email" required />
-              <Form.TextArea label="Message" placeholder="Write us your message..." required />
-              <Form.Checkbox label="Send me newsletters" />
+            <Form action="https://formspree.io/uneakprojects@gmail.com" method="POST">
+              <Form.Input
+                type="text"
+                label="First name"
+                name="first_name"
+                placeholder="First name"
+                required
+              />
+              <Form.Input
+                type="text"
+                label="Last name"
+                name="last_name"
+                placeholder="Last name"
+                required
+              />
+              <Form.Input text="text" label="Company" name="company" placeholder="Company" />
+              <Form.Input type="text" label="Email" name="_replyto" placeholder="Email" required />
+              <Form.TextArea
+                label="Message"
+                name="message"
+                placeholder="Write us your message..."
+                required
+              />
+              <Form.Checkbox label="Send me newsletters" name="newsletters" />
+              <Form.Input
+                type="hidden"
+                name="_next"
+                value="https://uneak-products-2d42f.firebaseapp.com/"
+              />
+              <Form.Input type="text" name="_gotcha" style={style.gotcha} />
               <Form.Button>Submit</Form.Button>
             </Form>
           </Grid.Column>
