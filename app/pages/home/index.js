@@ -20,17 +20,17 @@ class HomePage extends React.Component {
     return (
       <Layout>
         <Summary header={header} />
-        <Divider id="brands" section />
+        <Divider section />
         <Brands />
-        <Divider id="events" section />
+        <Divider section />
         <Events />
-        <Divider id="partners" section />
+        <Divider section />
         <Partners />
-        <Divider id="offices" section />
+        <Divider section />
         <Offices />
-        <Divider id="warranty" section />
+        <Divider section />
         <Warranty />
-        <Divider id="wholesale" section />
+        <Divider section />
         <Wholesale />
       </Layout>
     );

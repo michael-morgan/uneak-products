@@ -4,11 +4,18 @@ import { Grid, Header, Icon, Image, Divider } from 'semantic-ui-react';
 function Offices() {
   const style = {
     column: { marginBottom: '3em' },
+    anchorOffset: {
+      position: 'absolute',
+      top: '-3.8em',
+    },
   };
   return (
     <Grid container>
       <Grid.Column computer={16} tablet={16} mobile={16}>
-        <Header as="h2">Global Offices</Header>
+        <Header as="h2" style={{ position: 'relative' }}>
+          <span id="offices" style={style.anchorOffset}></span>
+          Global Offices
+        </Header>
         <p>Connect with our global teams <Icon name="chevron right" /></p>
       </Grid.Column>
       <Grid.Column computer={16} tablet={16} mobile={16}>

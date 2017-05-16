@@ -1,16 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Footer from '../Footer';
+import Header from '../Header';
 import BackToTop from '../Scroll/BackToTop';
 
 function Layout(props) {
+  const style = {
+    main: { marginTop: '5em' },
+  };
+
   return (
     <main>
       <BackToTop />
-      <div>
+      <Header />
+      <main style={style.main}>
         {props.children}
-        <Footer />
-      </div>
+      </main>
+      <Footer />
     </main>
   );
 }

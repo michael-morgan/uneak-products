@@ -6,11 +6,18 @@ function Wholesale() {
     grid: {
       marginBottom: '50px',
     },
+    anchorOffset: {
+      position: 'absolute',
+      top: '-3.8em',
+    },
   };
   return (
     <Grid style={style.grid} container>
       <Grid.Column computer={16} tablet={16} mobile={16}>
-        <Header as="h2">Wholesale</Header>
+        <Header as="h2" style={{ position: 'relative' }}>
+          <span id="wholesale" style={style.anchorOffset}></span>
+          Wholesale
+        </Header>
         <p>Connect with our wholesale team <Icon name="chevron right" /></p>
       </Grid.Column>
       <Grid.Column computer={16} tablet={16} mobile={16}>

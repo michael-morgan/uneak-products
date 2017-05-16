@@ -54,7 +54,7 @@ function Footer() {
               </Grid.Column>
               <Grid.Column computer={7} tablet={16}>
                 <Image
-                  src="http://placehold.it/25x25"
+                  src="images/uneak-products-logo.png"
                   size="mini"
                   alt="Logo"
                   ui
