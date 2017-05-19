@@ -10,7 +10,6 @@ class DimmedImage extends React.Component {
     shape: PropTypes.string.isRequired,
     size: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired,
-    href: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
   };
 
@@ -30,6 +29,11 @@ class DimmedImage extends React.Component {
       p: {
         padding: '10px',
       },
+      shadow: {
+        WebkitBoxShadow: '16px 16px 16px -10px #777',
+        MozBoxShadow: '16px 16px 16px -10px #777',
+        boxShadow: '16px 16px 16px -10px #777',
+      },
     };
     const content = (
       <div>
@@ -46,8 +50,8 @@ class DimmedImage extends React.Component {
         onMouseLeave={this.toggle}
         size={this.props.size}
         src={this.props.src}
-        href={this.props.href}
         alt={this.props.alt}
+        style={style.shadow}
         bordered
       />
     );

@@ -2,29 +2,32 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Card, Image, Button, Header, Icon } from 'semantic-ui-react';
 
-function Brands() {
+function Brands(props) {
   const style = {
     anchorOffset: {
       position: 'absolute',
       top: '-3.8em',
     },
+    card: { margin: '0 auto' },
   };
 
   return (
     <Grid container>
       <Grid.Column computer={16} tablet={16} mobile={16}>
-        <Header as="h2" style={{ position: 'relative' }}>
+        <Header as="h1" style={{ position: 'relative' }}>
           <span id="brands" style={style.anchorOffset}></span>
           Brands
         </Header>
-        <p>Learn more about our brands <Icon name="chevron right" /></p>
+        <Header as="h3" style={props.style.colors.action}>
+          Learn more about our brands <Icon name="chevron right" />
+        </Header>
       </Grid.Column>
       <Grid.Column computer={16} tablet={16} mobile={16}>
         <Grid columns={4} stackable>
           <Grid.Column computer={4} tablet={8} mobile={16}>
-            <Card raised>
+            <Card style={style.card} raised>
               <Image src="images/santas-solutions-logo.png" />
-              <Card.Content>
+              <Card.Content style={style.cardContent}>
                 <Card.Header>Santa's Solution</Card.Header>
                 <Card.Description>
                   {`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -36,12 +39,19 @@ function Brands() {
                 </Card.Description>
               </Card.Content>
               <Card.Content extra>
-                <Button primary>Visit</Button>
+                <a
+                  href="https://www.santassolution.com/"
+                  target="_blank"
+                  title="Santas Solutions"
+                  className="ui primary button"
+                >
+                  Visit
+                </a>
               </Card.Content>
             </Card>
           </Grid.Column>
           <Grid.Column computer={4} tablet={8} mobile={16}>
-            <Card raised>
+            <Card style={style.card} raised>
               <Image src="images/uneak-gardens-logo.png" />
               <Card.Content>
                 <Card.Header>Uneak Gardens</Card.Header>
@@ -55,12 +65,19 @@ function Brands() {
                 </Card.Description>
               </Card.Content>
               <Card.Content extra>
-                <Button primary>Visit</Button>
+                <a
+                  href="https://www.uneakgardens.com/"
+                  target="_blank"
+                  title="Uneak Gardens"
+                  className="ui primary button"
+                >
+                  Visit
+                </a>
               </Card.Content>
             </Card>
           </Grid.Column>
           <Grid.Column computer={4} tablet={8} mobile={16}>
-            <Card raised>
+            <Card style={style.card} raised>
               <Image src="images/nooski-logo.png" />
               <Card.Content>
                 <Card.Header>Nooski</Card.Header>
@@ -74,12 +91,19 @@ function Brands() {
                 </Card.Description>
               </Card.Content>
               <Card.Content extra>
-                <Button primary>Visit</Button>
+                <a
+                  href="https://www.google.com/"
+                  target="_blank"
+                  title="Nooski Trap Systems"
+                  className="ui primary button"
+                >
+                  Visit
+                </a>
               </Card.Content>
             </Card>
           </Grid.Column>
           <Grid.Column computer={4} tablet={8} mobile={16}>
-            <Card raised>
+            <Card style={style.card} raised>
               <Image src="images/biltek-logo.png" />
               <Card.Content>
                 <Card.Header>Biltek</Card.Header>
@@ -93,7 +117,14 @@ function Brands() {
                 </Card.Description>
               </Card.Content>
               <Card.Content extra>
-                <Button primary>Visit</Button>
+                <a
+                  href="https://www.google.com/"
+                  target="_blank"
+                  title="Biltek Industrial"
+                  className="ui primary button"
+                >
+                  Visit
+                </a>
               </Card.Content>
             </Card>
           </Grid.Column>
@@ -105,6 +136,7 @@ function Brands() {
 
 Brands.propTypes = {
   header: PropTypes.string,
+  style: PropTypes.object,
 };
 
 export default Brands;

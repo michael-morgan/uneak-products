@@ -12,26 +12,41 @@ import { title, header } from './index.md';
 
 class HomePage extends React.Component {
 
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
   componentDidMount() {
     document.title = title;
   }
 
   render() {
+    const style = {
+      colors: {
+        background: { color: '#ffffff' },
+        action: { color: '#80cc28' },
+        title: { color: '#656263' },
+        content: { color: '#a7a6a6' },
+      },
+    };
+
     return (
       <Layout>
-        <Summary header={header} />
+        <Summary header={header} style={style} />
         <Divider section />
-        <Brands />
+        <Brands style={style} />
         <Divider section />
-        <Events />
+        <Events style={style} />
         <Divider section />
-        <Partners />
+        <Partners style={style} />
         <Divider section />
-        <Offices />
+        <Offices style={style} />
         <Divider section />
-        <Warranty />
+        <Warranty style={style} />
         <Divider section />
-        <Wholesale />
+        <Wholesale style={style} />
       </Layout>
     );
   }
