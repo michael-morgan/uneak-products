@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Card, Image, Button, Header, Icon } from 'semantic-ui-react';
+import { Grid, Card, Image, Header, Icon } from 'semantic-ui-react';
 
 function Brands(props) {
   const style = {
@@ -14,7 +14,10 @@ function Brands(props) {
   return (
     <Grid container>
       <Grid.Column computer={16} tablet={16} mobile={16}>
-        <Header as="h1" style={{ position: 'relative' }}>
+        <Header
+          as="h1"
+          style={Object.assign({}, { position: 'relative' }, props.style.colors.title)}
+        >
           <span id="brands" style={style.anchorOffset}></span>
           Brands
         </Header>
@@ -28,8 +31,10 @@ function Brands(props) {
             <Card style={style.card} raised>
               <Image src="images/santas-solutions-logo.png" />
               <Card.Content style={style.cardContent}>
-                <Card.Header>Santa's Solution</Card.Header>
-                <Card.Description>
+                <Card.Header style={props.style.colors.title}>
+                  Santa's Solution
+                </Card.Header>
+                <Card.Description style={props.style.colors.title}>
                   {`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer lacus ipsum, euismod suscipit mauris ut, faucibus
                   venenatis nisi. Sed mattis diam nisi, nec porttitor quam
@@ -54,8 +59,10 @@ function Brands(props) {
             <Card style={style.card} raised>
               <Image src="images/uneak-gardens-logo.png" />
               <Card.Content>
-                <Card.Header>Uneak Gardens</Card.Header>
-                <Card.Description>
+                <Card.Header style={props.style.colors.title}>
+                  Uneak Gardens
+                </Card.Header>
+                <Card.Description style={props.style.colors.title}>
                   {`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer lacus ipsum, euismod suscipit mauris ut, faucibus
                   venenatis nisi. Sed mattis diam nisi, nec porttitor quam
@@ -80,8 +87,10 @@ function Brands(props) {
             <Card style={style.card} raised>
               <Image src="images/nooski-logo.png" />
               <Card.Content>
-                <Card.Header>Nooski</Card.Header>
-                <Card.Description>
+                <Card.Header style={props.style.colors.title}>
+                  Nooski
+                </Card.Header>
+                <Card.Description style={props.style.colors.title}>
                   {`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer lacus ipsum, euismod suscipit mauris ut, faucibus
                   venenatis nisi. Sed mattis diam nisi, nec porttitor quam
@@ -106,8 +115,10 @@ function Brands(props) {
             <Card style={style.card} raised>
               <Image src="images/biltek-logo.png" />
               <Card.Content>
-                <Card.Header>Biltek</Card.Header>
-                <Card.Description>
+                <Card.Header style={props.style.colors.title}>
+                  Biltek
+                </Card.Header>
+                <Card.Description style={props.style.colors.title}>
                   {`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer lacus ipsum, euismod suscipit mauris ut, faucibus
                   venenatis nisi. Sed mattis diam nisi, nec porttitor quam

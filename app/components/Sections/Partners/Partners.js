@@ -14,7 +14,10 @@ function Partners(props) {
   return (
     <Grid container>
       <Grid.Column computer={16} tablet={16} mobile={16}>
-        <Header as="h1" style={{ position: 'relative' }}>
+        <Header
+          as="h1"
+          style={Object.assign({}, { position: 'relative' }, props.style.colors.title)}
+        >
           <span id="partners" style={style.anchorOffset}></span>
           Partners
         </Header>

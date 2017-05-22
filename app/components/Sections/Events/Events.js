@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Grid, Header, Icon } from 'semantic-ui-react';
 import DimmedImage from '../../Image/DimmedImage';
 
-function Events() {
+function Events(props) {
   const style = {
     anchorOffset: {
       position: 'absolute',
@@ -13,48 +14,72 @@ function Events() {
   return (
     <Grid container>
       <Grid.Column computer={16} tablet={16} mobile={16}>
-        <Header as="h2" style={{ position: 'relative' }}>
+        <Header
+          as="h1"
+          style={Object.assign({}, { position: 'relative' }, props.style.colors.title)}
+        >
           <span id="events" style={style.anchorOffset}></span>
           Events
         </Header>
-        <p>Visit us during these upcoming shows <Icon name="chevron right" /></p>
+        <Header as="h3" style={props.style.colors.action}>
+          Visit us during these upcoming shows <Icon name="chevron right" />
+        </Header>
       </Grid.Column>
       <Grid.Column computer={16} tablet={16} mobile={16}>
         <Grid>
           <Grid.Column textAlign="center" computer={4} tablet={8} mobile={16}>
-            <DimmedImage
-              description={'Lorem ipsum.'}
-              size="medium"
-              shape="rounded"
-              src="images/igc-event.png"
+            <a
               href="#"
-              alt="Event Placeholder"
-            />
+              target="_blank"
+              title="Event Placeholder"
+            >
+              <DimmedImage
+                description={'Lorem ipsum.'}
+                size="medium"
+                shape="rounded"
+                src="images/igc-event.png"
+                alt="Event Placeholder"
+              />
+            </a>
           </Grid.Column>
           <Grid.Column textAlign="center" computer={4} tablet={8} mobile={16}>
-            <DimmedImage
-              description={'Lorem ipsum.'}
-              size="medium"
-              shape="rounded"
-              src="images/national-hardware-event.png"
+            <a
               href="#"
-              alt="Event Placeholder"
-            />
+              target="_blank"
+              title="Event Placeholder"
+            >
+              <DimmedImage
+                description={'Lorem ipsum.'}
+                size="medium"
+                shape="rounded"
+                src="images/national-hardware-event.png"
+                alt="Event Placeholder"
+              />
+            </a>
           </Grid.Column>
           <Grid.Column textAlign="center" computer={4} tablet={8} mobile={16}>
-            <DimmedImage
-              description={'Lorem ipsum.'}
-              size="medium"
-              shape="rounded"
-              src="images/home-hardware-event.png"
+            <a
               href="#"
-              alt="Event Placeholder"
-            />
+              target="_blank"
+              title="Event Placeholder"
+            >
+              <DimmedImage
+                description={'Lorem ipsum.'}
+                size="medium"
+                shape="rounded"
+                src="images/home-hardware-event.png"
+                alt="Event Placeholder"
+              />
+            </a>
           </Grid.Column>
         </Grid>
       </Grid.Column>
     </Grid>
   );
 }
+
+Events.propTypes = {
+  style: PropTypes.object,
+};
 
 export default Events;

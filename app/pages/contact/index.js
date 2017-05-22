@@ -22,21 +22,35 @@ class ContactPage extends React.Component {
       gotcha: {
         display: 'none',
       },
+      colors: {
+        background: { color: '#ffffff' },
+        action: { color: '#80cc28' },
+        title: { color: '#656263' },
+        content: { color: '#a7a6a6' },
+      },
     };
 
     return (
       <Layout>
         <Grid style={style.grid} stackable container>
           <Grid.Column computer={8} tablet={16} mobile={16}>
-            <Header as="h2">Connect With Our Office Team</Header>
+            <Header as="h1" style={style.colors.action}>
+              Connect With Our Office Team
+            </Header>
 
-            <span>Uneak Products</span><br />
-            <span>20 Columbus Street</span><br />
-            <span>Perth-Andover, NB E7H 1T3</span><br /><br />
-            <span><Icon name="phone" /> 1-506-273-9492</span><br />
-            <span><Icon name="phone" /> 1-800-666-4911</span><br />
-            <span><Icon name="fax" /> 1-506-273-3273</span><br />
-            <span><Icon name="mail outline" /> office@bolstercanada.com</span><br />
+            <div style={style.colors.title}>
+              <span>Uneak Products</span><br />
+              <span>20 Columbus Street</span><br />
+              <span>Perth-Andover, NB E7H 1T3</span><br /><br />
+              <span><Icon name="phone" style={{ color: '#000' }} />1-506-273-9492</span><br />
+              <span><Icon name="phone" style={{ color: '#000' }} />1-800-666-4911</span><br />
+              <span><Icon name="fax" style={{ color: '#000' }} />1-506-273-3273</span><br />
+              <span>
+                <Icon name="mail outline" style={{ color: '#000' }} />
+                office@bolstercanada.com
+              </span>
+              <br />
+            </div>
 
             <Divider />
 
@@ -49,7 +63,9 @@ class ContactPage extends React.Component {
             </iframe>
           </Grid.Column>
           <Grid.Column computer={8} tablet={16} mobile={16}>
-            <Header size="medium">Send Us A Message</Header>
+            <Header size="medium" style={style.colors.title}>
+              Send Us A Message
+            </Header>
 
             <Form action="https://formspree.io/uneakprojects@gmail.com" method="POST">
               <Form.Input
@@ -81,7 +97,9 @@ class ContactPage extends React.Component {
                 value="https://uneak-products-2d42f.firebaseapp.com/"
               />
               <Form.Input type="text" name="_gotcha" style={style.gotcha} />
-              <Form.Button>Submit</Form.Button>
+              <Form.Button style={{ backgroundColor: '#80cc28', color: '#fff' }}>
+                Submit
+              </Form.Button>
             </Form>
           </Grid.Column>
         </Grid>

@@ -7,16 +7,22 @@ import BackToTop from '../Scroll/BackToTop';
 function Layout(props) {
   const style = {
     main: { marginTop: '5em' },
+    colors: {
+      background: { color: '#ffffff' },
+      action: { color: '#80cc28' },
+      title: { color: '#656263' },
+      content: { color: '#a7a6a6' },
+    },
   };
 
   return (
     <main>
-      <BackToTop />
-      <Header />
+      <BackToTop style={style} />
+      <Header style={style} />
       <main style={style.main}>
         {props.children}
       </main>
-      <Footer />
+      <Footer style={style} />
     </main>
   );
 }
