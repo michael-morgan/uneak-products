@@ -1,10 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Button, Icon, Rail } from 'semantic-ui-react';
 
 class BackToTop extends React.Component {
 
   constructor(props) {
     super(props);
+
+    this.style = props.style;
 
     this.state = { active: false };
 
@@ -15,6 +18,7 @@ class BackToTop extends React.Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    this.handleScroll();
   }
 
   componentWillUnmount() {
@@ -40,15 +44,38 @@ class BackToTop extends React.Component {
         {this.state.active &&
           <Button
             className="ui fixed bottom sticky"
-            style={{ margin: '0 2px 2px 0', bottom: '0', right: '0' }}
+            style={{
+              margin: '0 15px 15px 0',
+              bottom: '0',
+              right: '0',
+              backgroundColor: this.style.colors.action.color,
+              boxShadow: '#000 3px 2px 10px -3px',
+              borderRadius: '50%',
+              width: '75px',
+              height: '75px',
+            }}
             onClick={this.resetScroll}
             icon
           >
-            <Icon name="arrow up" size="big" />
+            <Icon
+              name="chevron up"
+              size="large"
+              style={{
+                color: this.style.colors.background.color,
+                fontSize: '3.5em',
+                position: 'absolute',
+                top: '9px',
+                left: '8px',
+              }}
+            />
           </Button>}
       </Rail>
     );
   }
 }
+
+BackToTop.propTypes = {
+  style: PropTypes.object,
+};
 
 export default BackToTop;
