@@ -12,7 +12,7 @@ class ContactPage extends React.Component {
   render() {
     const style = {
       grid: {
-        margin: '1em 0',
+        margin: '7em 0',
       },
       iframe: {
         border: '0',
@@ -24,7 +24,7 @@ class ContactPage extends React.Component {
       },
       colors: {
         background: { color: '#ffffff' },
-        action: { color: '#80cc28' },
+        action: { color: '#f44336' },
         title: { color: '#656263' },
         content: { color: '#a7a6a6' },
       },
@@ -97,7 +97,7 @@ class ContactPage extends React.Component {
                 value="https://uneak-products-2d42f.firebaseapp.com/"
               />
               <Form.Input type="text" name="_gotcha" style={style.gotcha} />
-              <Form.Button style={{ backgroundColor: '#80cc28', color: '#fff' }}>
+              <Form.Button style={{ backgroundColor: '#f44336', color: '#fff' }}>
                 Submit
               </Form.Button>
             </Form>

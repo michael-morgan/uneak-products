@@ -26,7 +26,7 @@ class HomePage extends React.Component {
     const style = {
       colors: {
         background: { color: '#ffffff' },
-        action: { color: '#80cc28' },
+        action: { color: '#f44336' },
         title: { color: '#656263' },
         content: { color: '#a7a6a6' },
       },

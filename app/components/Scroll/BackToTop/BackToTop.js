@@ -51,8 +51,8 @@ class BackToTop extends React.Component {
               backgroundColor: this.style.colors.action.color,
               boxShadow: '#000 3px 2px 10px -3px',
               borderRadius: '50%',
-              width: '75px',
-              height: '75px',
+              width: '60px',
+              height: '60px',
             }}
             onClick={this.resetScroll}
             icon
@@ -62,10 +62,10 @@ class BackToTop extends React.Component {
               size="large"
               style={{
                 color: this.style.colors.background.color,
-                fontSize: '3.5em',
+                fontSize: '3.0em',
                 position: 'absolute',
-                top: '9px',
-                left: '8px',
+                top: '5px',
+                left: '6px',
               }}
             />
           </Button>}

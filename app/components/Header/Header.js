@@ -1,5 +1,6 @@
 import React from 'react';
 import { Menu } from 'semantic-ui-react';
+import s from './styles.css';
 
 class Header extends React.Component {
   constructor(props) {
@@ -21,12 +22,24 @@ class Header extends React.Component {
     return (
       <header>
         <nav>
-          <Menu fixed="top" size="massive" style={style.menu} stackable secondary pointing>
+          <Menu
+            fixed="top"
+            size="massive"
+            id={s.navMenu}
+            style={style.menu}
+            secondary
+            pointing
+          >
             <Menu.Item href="/">
-              <img src="images/uneak-products-logo.png" alt="Uneak Products Logo" />
+              <img
+                src="images/uneak-products-logo.png"
+                alt="Uneak Products Logo"
+                style={{ width: '4.5em' }}
+              />
             </Menu.Item>
 
             <Menu.Item
+              id={s.brandsItem}
               name="brands"
               active={activeItem === 'brands'}
               onClick={this.handleItemClick}
@@ -36,6 +49,7 @@ class Header extends React.Component {
             </Menu.Item>
 
             <Menu.Item
+              id={s.eventsItem}
               name="events"
               active={activeItem === 'events'}
               onClick={this.handleItemClick}
@@ -45,6 +59,7 @@ class Header extends React.Component {
             </Menu.Item>
 
             <Menu.Item
+              id={s.partnersItem}
               name="partners"
               active={activeItem === 'partners'}
               onClick={this.handleItemClick}
@@ -54,6 +69,7 @@ class Header extends React.Component {
             </Menu.Item>
 
             <Menu.Item
+              id={s.officesItem}
               name="offices"
               active={activeItem === 'offices'}
               onClick={this.handleItemClick}
@@ -63,6 +79,7 @@ class Header extends React.Component {
             </Menu.Item>
 
             <Menu.Item
+              id={s.warrantyItem}
               name="warranty"
               active={activeItem === 'warranty'}
               onClick={this.handleItemClick}
@@ -72,6 +89,7 @@ class Header extends React.Component {
             </Menu.Item>
 
             <Menu.Item
+              id={s.wholesaleItem}
               name="wholesale"
               active={activeItem === 'wholesale'}
               onClick={this.handleItemClick}

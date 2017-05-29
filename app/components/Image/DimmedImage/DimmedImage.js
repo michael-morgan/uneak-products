@@ -1,11 +1,13 @@
 import React from 'react';
 import { Dimmer, Image } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
+import cx from 'classnames';
 
 
 class DimmedImage extends React.Component {
 
   static propTypes = {
+    classes: PropTypes.array,
     description: PropTypes.any.isRequired,
     shape: PropTypes.string.isRequired,
     size: PropTypes.string.isRequired,
@@ -51,6 +53,7 @@ class DimmedImage extends React.Component {
         size={this.props.size}
         src={this.props.src}
         alt={this.props.alt}
+        className={cx(this.props.classes)}
         style={style.shadow}
         bordered
       />

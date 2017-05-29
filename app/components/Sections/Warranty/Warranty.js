@@ -34,7 +34,7 @@ function Warranty(props) {
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
                 shape="rounded"
-                src="http://placehold.it/300x300"
+                src="images/ss-warranty.png"
                 href="#"
                 alt="Warranty Placeholder"
               />
@@ -50,7 +50,7 @@ function Warranty(props) {
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
                 shape="rounded"
-                src="http://placehold.it/300x300"
+                src="images/ug-warranty.png"
                 href="#"
                 alt="Warranty Placeholder"
               />
@@ -66,7 +66,7 @@ function Warranty(props) {
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
                 shape="rounded"
-                src="http://placehold.it/300x300"
+                src="images/nooski-warranty.png"
                 href="#"
                 alt="Warranty Placeholder"
               />
@@ -82,7 +82,7 @@ function Warranty(props) {
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
                 shape="rounded"
-                src="http://placehold.it/300x300"
+                src="images/biltek-warranty.png"
                 href="#"
                 alt="Warranty Placeholder"
               />

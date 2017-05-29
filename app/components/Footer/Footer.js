@@ -72,7 +72,7 @@ function Footer(props) {
               <Grid.Column computer={7} tablet={16}>
                 <a href="/" title="Uneak Products">
                   <Image
-                    src="images/uneak-products-logo.png"
+                    src="images/uneak-products-icon.png"
                     size="small"
                     alt="Logo"
                     style={{ width: '100px' }}
@@ -86,12 +86,6 @@ function Footer(props) {
           </Grid>
           <Divider inverted section />
           <List horizontal inverted size="small" divided link>
-            <List.Item as="a" href="#" style={props.style.colors.background}>
-              Terms and Conditions
-            </List.Item>
-            <List.Item as="a" href="#" style={props.style.colors.background}>
-              Privacy Policy
-            </List.Item>
             <List.Item as="a" href="/contact" style={props.style.colors.background}>
               Contact Us
             </List.Item>
