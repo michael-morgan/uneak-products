@@ -6,7 +6,7 @@ function Brands(props) {
   const style = {
     anchorOffset: {
       position: 'absolute',
-      top: '-3.8em',
+      top: '-3.4em',
     },
     card: { margin: '0 auto' },
   };

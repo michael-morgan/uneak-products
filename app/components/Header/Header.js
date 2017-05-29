@@ -40,6 +40,7 @@ class Header extends React.Component {
 
             <Menu.Item
               id={s.brandsItem}
+              className={s.navItem}
               name="brands"
               active={activeItem === 'brands'}
               onClick={this.handleItemClick}

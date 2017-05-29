@@ -7,7 +7,7 @@ function Warranty(props) {
   const style = {
     anchorOffset: {
       position: 'absolute',
-      top: '-3.8em',
+      top: '-3.4em',
     },
   };
 

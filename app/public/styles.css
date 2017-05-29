@@ -1,0 +1,5 @@
+/* GLOBAL STYLES */
+
+.item.active {
+  border-color: #f44336 !important;
+}
