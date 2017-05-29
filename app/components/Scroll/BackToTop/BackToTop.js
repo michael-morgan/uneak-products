@@ -34,8 +34,14 @@ class BackToTop extends React.Component {
   }
 
   resetScroll() {
-    this.setActive(false);
-    window.scroll(0, 0);
+    const animate = setInterval(() => {
+      window.scrollBy(0, -75);
+
+      if (window.scrollY <= 0) {
+        clearInterval(animate);
+        this.setActive(false);
+      }
+    }, 10);
   }
 
   render() {
