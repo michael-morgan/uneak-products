@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Header, Icon } from 'semantic-ui-react';
 import DimmedImage from '../../Image/DimmedImage';
+import sharedStyles from 'shared/styles/shared.css';
 
 function Warranty(props) {
   const style = {
@@ -31,9 +32,10 @@ function Warranty(props) {
               title="Warranty Placeholder"
             >
               <DimmedImage
+                classes={[sharedStyles.imageBorder]}
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
-                shape="rounded"
+                shape="circular"
                 src="images/ss-warranty.png"
                 href="#"
                 alt="Warranty Placeholder"
@@ -47,9 +49,10 @@ function Warranty(props) {
               title="Warranty Placeholder"
             >
               <DimmedImage
+                classes={[sharedStyles.imageBorder]}
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
-                shape="rounded"
+                shape="circular"
                 src="images/ug-warranty.png"
                 href="#"
                 alt="Warranty Placeholder"
@@ -63,9 +66,10 @@ function Warranty(props) {
               title="Warranty Placeholder"
             >
               <DimmedImage
+                classes={[sharedStyles.imageBorder]}
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
-                shape="rounded"
+                shape="circular"
                 src="images/nooski-warranty.png"
                 href="#"
                 alt="Warranty Placeholder"
@@ -79,9 +83,10 @@ function Warranty(props) {
               title="Warranty Placeholder"
             >
               <DimmedImage
+                classes={[sharedStyles.imageBorder]}
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
-                shape="rounded"
+                shape="circular"
                 src="images/biltek-warranty.png"
                 href="#"
                 alt="Warranty Placeholder"

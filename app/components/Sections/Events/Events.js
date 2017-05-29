@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Header, Icon } from 'semantic-ui-react';
 import DimmedImage from '../../Image/DimmedImage';
+import sharedStyles from 'shared/styles/shared.css';
 
 function Events(props) {
   const style = {
@@ -34,9 +35,10 @@ function Events(props) {
               title="Event Placeholder"
             >
               <DimmedImage
+                classes={[sharedStyles.imageBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
-                shape="rounded"
+                shape="circular"
                 src="images/igc-event.png"
                 alt="Event Placeholder"
               />
@@ -49,9 +51,10 @@ function Events(props) {
               title="Event Placeholder"
             >
               <DimmedImage
+                classes={[sharedStyles.imageBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
-                shape="rounded"
+                shape="circular"
                 src="images/national-hardware-event.png"
                 alt="Event Placeholder"
               />
@@ -64,9 +67,10 @@ function Events(props) {
               title="Event Placeholder"
             >
               <DimmedImage
+                classes={[sharedStyles.imageBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
-                shape="rounded"
+                shape="circular"
                 src="images/home-hardware-event.png"
                 alt="Event Placeholder"
               />

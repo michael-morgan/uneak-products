@@ -82,7 +82,7 @@ class ContactPage extends React.Component {
                 placeholder="Last name"
                 required
               />
-              <Form.Input text="text" label="Company" name="company" placeholder="Company" />
+              <Form.Input type="text" label="Company" name="company" placeholder="Company" />
               <Form.Input type="text" label="Email" name="_replyto" placeholder="Email" required />
               <Form.TextArea
                 label="Message"

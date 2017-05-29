@@ -10,6 +10,24 @@ class Header extends React.Component {
     this.handleItemClick = (e, { name }) => this.setState({ activeItem: name });
   }
 
+  componentDidMount() {
+    let location = window.location;
+    let page = location.pathname.replace(/[/#]/g, '') || location.hash.replace('#', '');
+
+    if (page) {
+      this.setState({ activeItem: page });
+
+      if (page !== 'contact') {
+        let waitToScroll = setTimeout(() => {
+          if (document.readyState == 'complete') {
+            clearTimeout(waitToScroll);
+            document.getElementById(page).scrollIntoView(true);
+          }
+        }, 100);
+      }
+    }
+  }
+
   render() {
     const { activeItem } = this.state;
     const style = {
@@ -30,7 +48,7 @@ class Header extends React.Component {
             secondary
             pointing
           >
-            <Menu.Item href="/">
+            <Menu.Item href="/" className={s.navItem}>
               <img
                 src="images/uneak-products-logo.png"
                 alt="Uneak Products Logo"
@@ -51,6 +69,7 @@ class Header extends React.Component {
 
             <Menu.Item
               id={s.eventsItem}
+              className={s.navItem}
               name="events"
               active={activeItem === 'events'}
               onClick={this.handleItemClick}
@@ -61,6 +80,7 @@ class Header extends React.Component {
 
             <Menu.Item
               id={s.partnersItem}
+              className={s.navItem}
               name="partners"
               active={activeItem === 'partners'}
               onClick={this.handleItemClick}
@@ -71,6 +91,7 @@ class Header extends React.Component {
 
             <Menu.Item
               id={s.officesItem}
+              className={s.navItem}
               name="offices"
               active={activeItem === 'offices'}
               onClick={this.handleItemClick}
@@ -81,6 +102,7 @@ class Header extends React.Component {
 
             <Menu.Item
               id={s.warrantyItem}
+              className={s.navItem}
               name="warranty"
               active={activeItem === 'warranty'}
               onClick={this.handleItemClick}
@@ -91,6 +113,7 @@ class Header extends React.Component {
 
             <Menu.Item
               id={s.wholesaleItem}
+              className={s.navItem}
               name="wholesale"
               active={activeItem === 'wholesale'}
               onClick={this.handleItemClick}
@@ -100,6 +123,7 @@ class Header extends React.Component {
             </Menu.Item>
 
             <Menu.Item
+              className={s.navItem}
               name="contact"
               active={activeItem === 'contact'}
               onClick={this.handleItemClick}

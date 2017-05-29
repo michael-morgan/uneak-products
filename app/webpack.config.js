@@ -183,6 +183,12 @@ const config = {
     ];
   },
 
+  resolve: {
+    root: [
+      path.resolve(__dirname + '/'),
+    ]
+  },
+
 };
 
 // Optimize the bundle in release (production) mode

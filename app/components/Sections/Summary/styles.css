@@ -21,9 +21,6 @@
   border-top-width: 500px;
   transform: translatex(-50%);
 }
-.imageBorder {
-  border: 2px solid #f44336;
-}
 .imageScreenShot {
   margin: 1.5em auto 0;
 }
