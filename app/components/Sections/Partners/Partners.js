@@ -39,10 +39,10 @@ function Partners(props) {
               title="Ace Hardware"
             >
               <DimmedImage
-                classes={[sharedStyles.imageBorder]}
+                classes={[sharedStyles.contentBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
-                shape="circular"
+                shape="rounded"
                 src="images/ace-logo.svg"
                 alt="Ace Hardware"
               />
@@ -51,10 +51,10 @@ function Partners(props) {
           <Grid.Column textAlign="center" computer={4} tablet={8} mobile={16}>
             <a href="http://www.canac.ca/en/" target="_blank" title="Canac">
               <DimmedImage
-                classes={[sharedStyles.imageBorder]}
+                classes={[sharedStyles.contentBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
-                shape="circular"
+                shape="rounded"
                 src="images/canac-logo.png"
                 href="#"
                 alt="Canac"
@@ -64,10 +64,10 @@ function Partners(props) {
           <Grid.Column textAlign="center" computer={4} tablet={8} mobile={16}>
             <a href="https://www.canadiantire.ca/" target="_blank" title="Canadian Tire">
               <DimmedImage
-                classes={[sharedStyles.imageBorder]}
+                classes={[sharedStyles.contentBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
-                shape="circular"
+                shape="rounded"
                 src="images/canadian-tire-logo.svg"
                 href="#"
                 alt="Canadian Tire"
@@ -77,10 +77,10 @@ function Partners(props) {
           <Grid.Column textAlign="center" computer={4} tablet={8} mobile={16}>
             <a href="https://www.homedepot.ca/" target="_blank" title="Home Depot">
               <DimmedImage
-                classes={[sharedStyles.imageBorder]}
+                classes={[sharedStyles.contentBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
-                shape="circular"
+                shape="rounded"
                 src="images/home-depot-logo.svg"
                 href="#"
                 alt="Home Depot"
@@ -90,10 +90,10 @@ function Partners(props) {
           <Grid.Column textAlign="center" computer={4} tablet={8} mobile={16}>
             <a href="https://www.homehardware.ca/" target="_blank" title="Home Hardware">
               <DimmedImage
-                classes={[sharedStyles.imageBorder]}
+                classes={[sharedStyles.contentBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
-                shape="circular"
+                shape="rounded"
                 src="images/home-hardware-logo.png"
                 href="#"
                 alt="Home Hardware"
@@ -103,10 +103,10 @@ function Partners(props) {
           <Grid.Column textAlign="center" computer={4} tablet={8} mobile={16}>
             <a href="https://www.kent.ca/" target="_blank" title="Kent">
               <DimmedImage
-                classes={[sharedStyles.imageBorder]}
+                classes={[sharedStyles.contentBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
-                shape="circular"
+                shape="rounded"
                 src="images/kent-logo.png"
                 href="#"
                 alt="Kent"

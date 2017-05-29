@@ -40,10 +40,10 @@ function Events(props) {
               title="Event Placeholder"
             >
               <DimmedImage
-                classes={[sharedStyles.imageBorder]}
+                classes={[sharedStyles.contentBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
-                shape="circular"
+                shape="rounded"
                 src="images/igc-event.png"
                 alt="Event Placeholder"
               />
@@ -56,10 +56,10 @@ function Events(props) {
               title="Event Placeholder"
             >
               <DimmedImage
-                classes={[sharedStyles.imageBorder]}
+                classes={[sharedStyles.contentBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
-                shape="circular"
+                shape="rounded"
                 src="images/national-hardware-event.png"
                 alt="Event Placeholder"
               />
@@ -72,10 +72,10 @@ function Events(props) {
               title="Event Placeholder"
             >
               <DimmedImage
-                classes={[sharedStyles.imageBorder]}
+                classes={[sharedStyles.contentBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
-                shape="circular"
+                shape="rounded"
                 src="images/home-hardware-event.png"
                 alt="Event Placeholder"
               />

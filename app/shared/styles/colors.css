@@ -1,4 +1,4 @@
-.background { color: white; }
-.action { color: #f44336; }
-.title { color: #656263; }
-.content { color: #a7a6a6; }
+.background { color: white !important; }
+.action { color: #f44336 !important; }
+.title { color: #656263 !important; }
+.content { color: #a7a6a6 !important; }

@@ -1,3 +1,6 @@
+.navItem {
+  composes: action from 'shared/styles/colors.css';
+}
 .navItem:hover {
   border-color: #f44336 !important;
 }

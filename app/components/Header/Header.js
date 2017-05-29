@@ -64,7 +64,7 @@ class Header extends React.Component {
               onClick={this.handleItemClick}
               href="/#brands"
             >
-              Brands
+              BRANDS
             </Menu.Item>
 
             <Menu.Item
@@ -75,7 +75,7 @@ class Header extends React.Component {
               onClick={this.handleItemClick}
               href="/#events"
             >
-              Events
+              EVENTS
             </Menu.Item>
 
             <Menu.Item
@@ -86,7 +86,7 @@ class Header extends React.Component {
               onClick={this.handleItemClick}
               href="/#partners"
             >
-              Partners
+              PARTNERS
             </Menu.Item>
 
             <Menu.Item
@@ -97,18 +97,7 @@ class Header extends React.Component {
               onClick={this.handleItemClick}
               href="/#offices"
             >
-              Offices
-            </Menu.Item>
-
-            <Menu.Item
-              id={s.warrantyItem}
-              className={s.navItem}
-              name="warranty"
-              active={activeItem === 'warranty'}
-              onClick={this.handleItemClick}
-              href="/#warranty"
-            >
-              Warranty
+              OFFICES
             </Menu.Item>
 
             <Menu.Item
@@ -119,7 +108,18 @@ class Header extends React.Component {
               onClick={this.handleItemClick}
               href="/#wholesale"
             >
-              Wholesale
+              WHOLESALE
+            </Menu.Item>
+
+            <Menu.Item
+              id={s.warrantyItem}
+              className={s.navItem}
+              name="warranty"
+              active={activeItem === 'warranty'}
+              onClick={this.handleItemClick}
+              href="/#warranty"
+            >
+              WARRANTY
             </Menu.Item>
 
             <Menu.Item
@@ -129,7 +129,7 @@ class Header extends React.Component {
               onClick={this.handleItemClick}
               href="/contact"
             >
-              Contact
+              CONTACT
             </Menu.Item>
           </Menu>
         </nav>

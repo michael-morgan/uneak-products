@@ -32,10 +32,10 @@ function Warranty(props) {
               title="Warranty Placeholder"
             >
               <DimmedImage
-                classes={[sharedStyles.imageBorder]}
+                classes={[sharedStyles.contentBorder]}
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
-                shape="circular"
+                shape="rounded"
                 src="images/ss-warranty.png"
                 href="#"
                 alt="Warranty Placeholder"
@@ -49,10 +49,10 @@ function Warranty(props) {
               title="Warranty Placeholder"
             >
               <DimmedImage
-                classes={[sharedStyles.imageBorder]}
+                classes={[sharedStyles.contentBorder]}
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
-                shape="circular"
+                shape="rounded"
                 src="images/ug-warranty.png"
                 href="#"
                 alt="Warranty Placeholder"
@@ -66,10 +66,10 @@ function Warranty(props) {
               title="Warranty Placeholder"
             >
               <DimmedImage
-                classes={[sharedStyles.imageBorder]}
+                classes={[sharedStyles.contentBorder]}
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
-                shape="circular"
+                shape="rounded"
                 src="images/nooski-warranty.png"
                 href="#"
                 alt="Warranty Placeholder"
@@ -83,10 +83,10 @@ function Warranty(props) {
               title="Warranty Placeholder"
             >
               <DimmedImage
-                classes={[sharedStyles.imageBorder]}
+                classes={[sharedStyles.contentBorder]}
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
-                shape="circular"
+                shape="rounded"
                 src="images/biltek-warranty.png"
                 href="#"
                 alt="Warranty Placeholder"

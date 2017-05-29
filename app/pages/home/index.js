@@ -44,9 +44,9 @@ class HomePage extends React.Component {
         <Divider section />
         <Offices style={style} />
         <Divider section />
-        <Warranty style={style} />
-        <Divider section />
         <Wholesale style={style} />
+        <Divider section />
+        <Warranty style={style} />
       </Layout>
     );
   }
