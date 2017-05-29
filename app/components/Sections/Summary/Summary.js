@@ -99,7 +99,7 @@ function Summary(props) {
                 </a>
                 <Image
                   className={s.imageScreenShot}
-                  src="http://placehold.it/300x300"
+                  src="images/ss-screenshot.png"
                   alt="Brand Website Screenshot"
                 />
               </Grid.Column>
