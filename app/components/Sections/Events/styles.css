@@ -1,0 +1,6 @@
+/* MOBILE */
+@media (max-width: 480px) {
+  #visitText {
+    font-size: 13px !important;
+  }
+}

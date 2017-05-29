@@ -1,0 +1,6 @@
+/* MOBILE */
+@media (max-width: 480px) {
+  #connectText {
+    font-size: 15px !important;
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Header, Icon } from 'semantic-ui-react';
 import DimmedImage from '../../Image/DimmedImage';
+import s from './styles.css';
 import sharedStyles from 'shared/styles/shared.css';
 
 function Events(props) {
@@ -22,7 +23,11 @@ function Events(props) {
           <span id="events" style={style.anchorOffset}></span>
           Events
         </Header>
-        <Header as="h3" style={props.style.colors.action}>
+        <Header
+          as="h3"
+          id={s.visitText}
+          style={props.style.colors.action}
+        >
           Visit us during these upcoming shows <Icon name="chevron right" />
         </Header>
       </Grid.Column>

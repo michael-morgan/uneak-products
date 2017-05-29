@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Header, Icon, Image, Divider } from 'semantic-ui-react';
+import sharedStyles from 'shared/styles/shared.css';
 
 function Offices(props) {
   const style = {
@@ -20,7 +21,11 @@ function Offices(props) {
           <span id="offices" style={style.anchorOffset}></span>
           Global Offices
         </Header>
-        <Header as="h3" style={props.style.colors.action}>
+        <Header
+          as="h3"
+          className={sharedStyles.sectionActionText}
+          style={props.style.colors.action}
+        >
           Connect with our global teams <Icon name="chevron right" />
         </Header>
       </Grid.Column>

@@ -22,7 +22,11 @@ function Partners(props) {
           <span id="partners" style={style.anchorOffset}></span>
           Partners
         </Header>
-        <Header as="h3" style={props.style.colors.action}>
+        <Header
+          as="h3"
+          className={sharedStyles.sectionActionText}
+          style={props.style.colors.action}
+        >
           Find us at these fine retailers <Icon name="chevron right" />
         </Header>
       </Grid.Column>

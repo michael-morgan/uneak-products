@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Card, Image, Header, Icon } from 'semantic-ui-react';
+import sharedStyles from 'shared/styles/shared.css';
 
 function Brands(props) {
   const style = {
@@ -21,7 +22,11 @@ function Brands(props) {
           <span id="brands" style={style.anchorOffset}></span>
           Brands
         </Header>
-        <Header as="h3" style={props.style.colors.action}>
+        <Header
+          as="h3"
+          className={sharedStyles.sectionActionText}
+          style={props.style.colors.action}
+        >
           Learn more about our brands <Icon name="chevron right" />
         </Header>
       </Grid.Column>

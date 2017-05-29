@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Header, Icon, Card } from 'semantic-ui-react';
+import s from './styles.css'
 
 function Wholesale(props) {
   const style = {
@@ -22,7 +23,7 @@ function Wholesale(props) {
           <span id="wholesale" style={style.anchorOffset}></span>
           Wholesale
         </Header>
-        <Header as="h3" style={props.style.colors.action}>
+        <Header as="h3" id={s.connectText} style={props.style.colors.action}>
           Connect with our wholesale team <Icon name="chevron right" />
         </Header>
       </Grid.Column>
