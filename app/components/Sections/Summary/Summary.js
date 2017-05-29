@@ -40,9 +40,17 @@ function Summary(props) {
       <Grid style={style.grid} container>
         <Grid.Row style={{ paddingTop: '0' }}>
           <Grid.Column id={s.summaryImage} textAlign="center" computer={16} tablet={16} mobile={16}>
-            <div className={s.summaryImage}>
+            <div className={s.defaultSummary}>
               <Image
-                src="http://placehold.it/1920x1080"
+                src="images/summary-img.png"
+                alt="Uneak Products Placeholder"
+                fluid
+              />
+            </div>
+
+            {/*<div className={s.summaryImage}>
+              <Image
+                src="images/summary-img.png"
                 alt="Uneak Products Placeholder"
                 fluid
               />
@@ -66,7 +74,7 @@ function Summary(props) {
             >
               {`As a manufacturer & Distributor, Uneak brings you a range of high quality
               products & services built to last and solve problems.`}
-            </p>
+            </p>*/}
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -145,7 +153,7 @@ function Summary(props) {
                 </a>
                 <Image
                   className={s.imageScreenShot}
-                  src="http://placehold.it/300x300"
+                  src="images/nooski-screenshot.png"
                   alt="Brand Website Screenshot"
                 />
               </Grid.Column>
@@ -168,7 +176,7 @@ function Summary(props) {
                 </a>
                 <Image
                   className={s.imageScreenShot}
-                  src="http://placehold.it/300x300"
+                  src="images/biltek-screenshot.png"
                   alt="Brand Website Screenshot"
                 />
               </Grid.Column>

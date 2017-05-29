@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, Icon, Rail } from 'semantic-ui-react';
+import sharedStyles from 'shared/styles/shared.css';
+import cx from 'classnames';
 
 class BackToTop extends React.Component {
 
@@ -49,7 +51,7 @@ class BackToTop extends React.Component {
       <Rail position="right" size="mini" attached internal>
         {this.state.active &&
           <Button
-            className="ui fixed bottom sticky"
+            className={cx('ui fixed bottom sticky', sharedStyles.actionButton)}
             style={{
               margin: '0 15px 15px 0',
               bottom: '0',

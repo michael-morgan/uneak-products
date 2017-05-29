@@ -18,15 +18,15 @@ function Events(props) {
       <Grid.Column computer={16} tablet={16} mobile={16}>
         <Header
           as="h1"
-          style={Object.assign({}, { position: 'relative' }, props.style.colors.title)}
+          style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
         >
           <span id="events" style={style.anchorOffset}></span>
-          Events
+          EVENTS
         </Header>
         <Header
           as="h3"
           id={s.visitText}
-          style={props.style.colors.action}
+          style={props.style.colors.title}
         >
           Visit us during these upcoming shows <Icon name="chevron right" />
         </Header>

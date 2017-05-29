@@ -1,7 +1,8 @@
 import React from 'react';
-import { Grid, Divider, Icon, Header, Form } from 'semantic-ui-react';
+import { Grid, Divider, Icon, Header, Form, Button } from 'semantic-ui-react';
 import Layout from '../../components/Layout';
 import { title } from './index.md';
+import sharedStyles from 'shared/styles/shared.css';
 
 class ContactPage extends React.Component {
 
@@ -97,9 +98,9 @@ class ContactPage extends React.Component {
                 value="https://uneak-products-2d42f.firebaseapp.com/"
               />
               <Form.Input type="text" name="_gotcha" style={style.gotcha} />
-              <Form.Button style={{ backgroundColor: '#f44336', color: '#fff' }}>
+              <Button className={sharedStyles.actionButton} style={{ color: '#fff' }}>
                 Submit
-              </Form.Button>
+              </Button>
             </Form>
           </Grid.Column>
         </Grid>

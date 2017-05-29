@@ -17,10 +17,10 @@ function Layout(props) {
 
   return (
     <main>
+      <BackToTop style={style} />
       <Header style={style} />
       {props.children}
       <Footer style={style} />
-      <BackToTop style={style} />
     </main>
   );
 }

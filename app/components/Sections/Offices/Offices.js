@@ -16,15 +16,15 @@ function Offices(props) {
       <Grid.Column computer={16} tablet={16} mobile={16}>
         <Header
           as="h1"
-          style={Object.assign({}, { position: 'relative' }, props.style.colors.title)}
+          style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
         >
           <span id="offices" style={style.anchorOffset}></span>
-          Global Offices
+          GLOBAL OFFICES
         </Header>
         <Header
           as="h3"
           className={sharedStyles.sectionActionText}
-          style={props.style.colors.action}
+          style={props.style.colors.title}
         >
           Connect with our global teams <Icon name="chevron right" />
         </Header>

@@ -1,5 +1,14 @@
 .imageBorder {
-  border: 2px solid #f44336;
+  border: 2px solid #f44336 !important;
+}
+.contentBorder {
+  border: 1px solid #f44336 !important;
+}
+.actionButton {
+  background-color: #f44336 !important;
+}
+.actionButton:hover {
+  background-color: #e53935 !important;
 }
 
 /* MOBILE */

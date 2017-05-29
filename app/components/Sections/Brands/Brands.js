@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Card, Image, Header, Icon } from 'semantic-ui-react';
 import sharedStyles from 'shared/styles/shared.css';
+import cx from 'classnames';
 
 function Brands(props) {
   const style = {
@@ -17,15 +18,15 @@ function Brands(props) {
       <Grid.Column computer={16} tablet={16} mobile={16}>
         <Header
           as="h1"
-          style={Object.assign({}, { position: 'relative' }, props.style.colors.title)}
+          style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
         >
           <span id="brands" style={style.anchorOffset}></span>
-          Brands
+          BRANDS
         </Header>
         <Header
           as="h3"
           className={sharedStyles.sectionActionText}
-          style={props.style.colors.action}
+          style={props.style.colors.title}
         >
           Learn more about our brands <Icon name="chevron right" />
         </Header>
@@ -33,7 +34,7 @@ function Brands(props) {
       <Grid.Column computer={16} tablet={16} mobile={16}>
         <Grid columns={4} stackable>
           <Grid.Column computer={4} tablet={8} mobile={16}>
-            <Card style={style.card} raised>
+            <Card className={sharedStyles.contentBorder} style={style.card} raised>
               <Image src="images/santas-solutions-logo.png" />
               <Card.Content style={style.cardContent}>
                 <Card.Header style={props.style.colors.title}>
@@ -50,10 +51,10 @@ function Brands(props) {
               </Card.Content>
               <Card.Content extra>
                 <a
+                  className={cx('ui primary button', sharedStyles.actionButton)}
                   href="https://www.santassolution.com/"
                   target="_blank"
                   title="Santas Solutions"
-                  className="ui primary button"
                 >
                   Visit
                 </a>
@@ -61,7 +62,7 @@ function Brands(props) {
             </Card>
           </Grid.Column>
           <Grid.Column computer={4} tablet={8} mobile={16}>
-            <Card style={style.card} raised>
+            <Card className={sharedStyles.contentBorder} style={style.card} raised>
               <Image src="images/uneak-gardens-logo.png" />
               <Card.Content>
                 <Card.Header style={props.style.colors.title}>
@@ -78,10 +79,10 @@ function Brands(props) {
               </Card.Content>
               <Card.Content extra>
                 <a
+                  className={cx('ui primary button', sharedStyles.actionButton)}
                   href="https://www.uneakgardens.com/"
                   target="_blank"
                   title="Uneak Gardens"
-                  className="ui primary button"
                 >
                   Visit
                 </a>
@@ -89,7 +90,7 @@ function Brands(props) {
             </Card>
           </Grid.Column>
           <Grid.Column computer={4} tablet={8} mobile={16}>
-            <Card style={style.card} raised>
+            <Card className={sharedStyles.contentBorder} style={style.card} raised>
               <Image src="images/nooski-logo.png" />
               <Card.Content>
                 <Card.Header style={props.style.colors.title}>
@@ -106,10 +107,10 @@ function Brands(props) {
               </Card.Content>
               <Card.Content extra>
                 <a
+                  className={cx('ui primary button', sharedStyles.actionButton)}
                   href="https://www.google.com/"
                   target="_blank"
                   title="Nooski Trap Systems"
-                  className="ui primary button"
                 >
                   Visit
                 </a>
@@ -117,7 +118,7 @@ function Brands(props) {
             </Card>
           </Grid.Column>
           <Grid.Column computer={4} tablet={8} mobile={16}>
-            <Card style={style.card} raised>
+            <Card className={sharedStyles.contentBorder} style={style.card} raised>
               <Image src="images/biltek-logo.png" />
               <Card.Content>
                 <Card.Header style={props.style.colors.title}>
@@ -134,10 +135,10 @@ function Brands(props) {
               </Card.Content>
               <Card.Content extra>
                 <a
+                  className={cx('ui primary button', sharedStyles.actionButton)}
                   href="https://www.google.com/"
                   target="_blank"
                   title="Biltek Industrial"
-                  className="ui primary button"
                 >
                   Visit
                 </a>

@@ -17,10 +17,10 @@ function Warranty(props) {
       <Grid.Column computer={16} tablet={16} mobile={16}>
         <Header
           as="h1"
-          style={Object.assign({}, { position: 'relative' }, props.style.colors.title)}
+          style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
         >
           <span id="warranty" style={style.anchorOffset}></span>
-          Warranty
+          WARRANTY
         </Header>
       </Grid.Column>
       <Grid.Column computer={16} tablet={16} mobile={16}>

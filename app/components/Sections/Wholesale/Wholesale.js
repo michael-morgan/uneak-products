@@ -18,12 +18,12 @@ function Wholesale(props) {
       <Grid.Column computer={16} tablet={16} mobile={16}>
         <Header
           as="h1"
-          style={Object.assign({}, { position: 'relative' }, props.style.colors.title)}
+          style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
         >
           <span id="wholesale" style={style.anchorOffset}></span>
-          Wholesale
+          WHOLESALE
         </Header>
-        <Header as="h3" id={s.connectText} style={props.style.colors.action}>
+        <Header as="h3" id={s.connectText} style={props.style.colors.title}>
           Connect with our wholesale team <Icon name="chevron right" />
         </Header>
       </Grid.Column>

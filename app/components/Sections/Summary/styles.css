@@ -1,3 +1,7 @@
+.defaultSummary {
+  height: 400px !important;
+  overflow: hidden;
+}
 .summaryImage {
   position: relative;
   overflow: hidden;
