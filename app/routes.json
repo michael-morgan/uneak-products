@@ -19,5 +19,9 @@
   {
     "path": "/contact",
     "page": "./pages/contact"
+  },
+  {
+    "path": "/jobs",
+    "page": "./pages/job"
   }
 ]

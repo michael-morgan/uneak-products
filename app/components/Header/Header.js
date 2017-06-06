@@ -13,11 +13,12 @@ class Header extends React.Component {
   componentDidMount() {
     let location = window.location;
     let page = location.pathname.replace(/[/#]/g, '') || location.hash.replace('#', '');
+    let pages = ['contact', 'about', 'jobs'];
 
     if (page) {
       this.setState({ activeItem: page });
 
-      if (page !== 'contact') {
+      if (!pages.includes(page)) {
         let waitToScroll = setTimeout(() => {
           if (document.readyState == 'complete') {
             clearTimeout(waitToScroll);
@@ -120,6 +121,16 @@ class Header extends React.Component {
               href="/#warranty"
             >
               WARRANTY
+            </Menu.Item>
+
+            <Menu.Item
+              className={s.navItem}
+              name="about"
+              active={activeItem === 'about'}
+              onClick={this.handleItemClick}
+              href="/about"
+            >
+              ABOUT
             </Menu.Item>
 
             <Menu.Item

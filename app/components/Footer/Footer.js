@@ -8,11 +8,18 @@ function Footer(props) {
     p: { margin: '2em 0 0 0' },
     list: { marginTop: '2em' },
     a: { color: 'white' },
+    footerBox: {
+      padding: '1em 0',
+      backgroundColor: '#424242',
+      boxShadow: '0 10px 8px -6px #212121',
+      WebkitBoxShadow: '0 10px 8px -6px #212121',
+      MozBoxShadow: '0 10px 8px -6px #212121',
+    },
   };
 
   return (
     <footer>
-      <Segment style={style.segment} inverted vertical>
+      <Segment style={Object.assign({}, style.segment, {backgroundColor: '#f44336'})} inverted vertical>
         <Container textAlign="center">
           <Grid stackable className={'inverted'}>
             <Grid.Row>
@@ -54,10 +61,6 @@ function Footer(props) {
                   <List.Item as="a" href="/#offices" style={props.style.colors.background}>
                     Global Offices
                   </List.Item>
-                </List>
-              </Grid.Column>
-              <Grid.Column computer={3} tablet={4}>
-                <List style={style.list} inverted link>
                   <List.Item as="a" href="/#warranty" style={props.style.colors.background}>
                     Warranty
                   </List.Item>
@@ -69,13 +72,26 @@ function Footer(props) {
                   </List.Item>
                 </List>
               </Grid.Column>
-              <Grid.Column computer={7} tablet={16}>
+              <Grid.Column computer={3} tablet={4}>
+                <List style={style.list} inverted link>
+                  <List.Item as="a" href="/about" style={props.style.colors.background}>
+                    About
+                  </List.Item>
+                  <List.Item as="a" href="/jobs" style={props.style.colors.background}>
+                    Jobs
+                  </List.Item>
+                  <List.Item as="a" href="/contact" style={props.style.colors.background}>
+                    Contact
+                  </List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column computer={7} tablet={16} style={style.footerBox}>
                 <a href="/" title="Uneak Products">
                   <Image
-                    src="images/uneak-products-icon.png"
+                    src="images/uneak-products-logo.png"
                     size="small"
                     alt="Logo"
-                    style={{ width: '100px' }}
+                    style={{ width: '150px' }}
                     ui
                     centered
                   />
@@ -84,12 +100,6 @@ function Footer(props) {
               </Grid.Column>
             </Grid.Row>
           </Grid>
-          <Divider inverted section />
-          <List horizontal inverted size="small" divided link>
-            <List.Item as="a" href="/contact" style={props.style.colors.background}>
-              Contact Us
-            </List.Item>
-          </List>
         </Container>
       </Segment>
     </footer>
