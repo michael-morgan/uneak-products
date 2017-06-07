@@ -6,79 +6,22 @@ import s from './styles.css';
 import sharedStyles from 'shared/styles/shared.css';
 
 function Summary(props) {
-  const style = {
-    grid: {
-      marginTop: '5em',
-    },
-    brandsLead: {
-      fontSize: '1.5rem',
-      fontWeight: 'bold',
-      marginBottom: 10,
-    },
-    shadow: {
-      WebkitBoxShadow: '0 10px 6px -6px #777',
-      MozBoxShadow: '0 10px 6px -6px #777',
-      boxShadow: '0 10px 6px -6px #777',
-    },
-    imageHeader: {
-      position: 'absolute',
-      top: '100px',
-      left: '0',
-      width: '100%',
-    },
-    imageContent: {
-      position: 'absolute',
-      top: '175px',
-      left: '0',
-      width: '100%',
-      fontWeight: 'bold',
-    },
-  };
-
   return (
     <div>
-      <div style={{width: '100%', height: '600px', margin: '72px 0 50px 0', backgroundImage: 'url(images/cover-image.png)', backgroundSize: 'cover'}}></div>
-      {/*<Grid style={style.grid} container>
+      <Grid className={sharedStyles.gridMargin}>
         <Grid.Row style={{ paddingTop: '0' }}>
-          <Grid.Column id={s.summaryImage} textAlign="center" computer={16} tablet={16} mobile={16}>
-            <div className={s.defaultSummary}>
+          <Grid.Column textAlign="center" computer={16} tablet={16} mobile={16}>
+            <div className={s.summaryImage}>
               <Image
-                src="images/summary-img.png"
+                id={s.coverImage}
+                src="images/cover-image.png"
                 alt="Uneak Products Placeholder"
                 fluid
               />
             </div>
-
-            {/<div className={s.summaryImage}>
-              <Image
-                src="images/summary-img.png"
-                alt="Uneak Products Placeholder"
-                fluid
-              />
-            </div>
-
-            <Header
-              as="h1"
-              id={s.imageHeader}
-              style={Object.assign({}, props.style.colors.title, style.imageHeader)}
-            >
-              {props.header}
-            </Header>
-
-            <p
-              id={s.imageContent}
-              style={Object.assign(
-                {},
-                props.style.colors.background,
-                style.imageContent
-              )}
-            >
-              {`As a manufacturer & Distributor, Uneak brings you a range of high quality
-              products & services built to last and solve problems.`}
-            </p>/}
           </Grid.Column>
         </Grid.Row>
-      </Grid>*/}
+      </Grid>
       <Grid container>
         <Grid.Row>
           <Grid.Column computer={16} tablet={16} mobile={16}>
@@ -131,7 +74,7 @@ function Summary(props) {
                 </a>
                 <Image
                   className={s.imageScreenShot}
-                  src="http://placehold.it/300x300"
+                  src="images/coming-soon.png"
                   alt="Brand Website Screenshot"
                 />
               </Grid.Column>

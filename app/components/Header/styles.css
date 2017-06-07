@@ -7,7 +7,5 @@
 
 /* TABLET */
 @media (max-width: 768px) {
-  #brandsItem, #eventsItem, #partnersItem, #officesItem, #warrantyItem, #wholesaleItem  {
-    display: none;
-  }
+
 }

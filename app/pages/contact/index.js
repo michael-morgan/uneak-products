@@ -12,9 +12,6 @@ class ContactPage extends React.Component {
 
   render() {
     const style = {
-      grid: {
-        margin: '7em 0',
-      },
       iframe: {
         border: '0',
         width: '100%',
@@ -33,7 +30,12 @@ class ContactPage extends React.Component {
 
     return (
       <Layout>
-        <Grid style={style.grid} stackable container>
+        <Grid
+          className={sharedStyles.gridMargin}
+          style={{ marginBottom: '3em' }}
+          stackable
+          container
+        >
           <Grid.Column computer={8} tablet={16} mobile={16}>
             <Header as="h1" style={style.colors.action}>
               Connect With Our Office Team

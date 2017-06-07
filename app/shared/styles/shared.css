@@ -10,6 +10,16 @@
 .actionButton:hover {
   background-color: #e53935 !important;
 }
+.gridMargin { margin-top: 5em !important; }
+.anchorOffset {
+  position: absolute !important;
+  top: -3em !important;
+}
+
+@media (max-width: 767px) {
+  .gridMargin { margin-top: 12em !important; }
+  .anchorOffset { top: -8em !important; }
+}
 
 /* MOBILE */
 @media (max-width: 480px) {

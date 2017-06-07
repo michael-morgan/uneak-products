@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Segment, Container, Grid, Header, List, Divider, Image } from 'semantic-ui-react';
+import { Segment, Container, Grid, Header, List, Image } from 'semantic-ui-react';
 
 function Footer(props) {
   const style = {
@@ -19,7 +19,11 @@ function Footer(props) {
 
   return (
     <footer>
-      <Segment style={Object.assign({}, style.segment, {backgroundColor: '#f44336'})} inverted vertical>
+      <Segment
+        style={Object.assign({}, style.segment, { backgroundColor: '#f44336' })}
+        inverted
+        vertical
+      >
         <Container textAlign="center">
           <Grid stackable className={'inverted'}>
             <Grid.Row>
@@ -67,13 +71,13 @@ function Footer(props) {
                   <List.Item as="a" href="/#brands" style={props.style.colors.background}>
                     Brands
                   </List.Item>
-                  <List.Item as="a" href="/#wholesale" style={props.style.colors.background}>
-                    Wholesale
-                  </List.Item>
                 </List>
               </Grid.Column>
               <Grid.Column computer={3} tablet={4}>
                 <List style={style.list} inverted link>
+                  <List.Item as="a" href="/#wholesale" style={props.style.colors.background}>
+                    Wholesale
+                  </List.Item>
                   <List.Item as="a" href="/about" style={props.style.colors.background}>
                     About
                   </List.Item>

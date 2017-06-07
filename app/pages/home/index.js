@@ -30,22 +30,26 @@ class HomePage extends React.Component {
         title: { color: '#656263' },
         content: { color: '#a7a6a6' },
       },
+      divider: {
+        borderTop: '1px solid rgba(244, 67, 54, .15)',
+        borderBottom: '1px solid rgba(244, 67, 54, .1)',
+      },
     };
 
     return (
       <Layout>
         <Summary header={header} style={style} />
-        <Divider style={style.colors.action} section />
+        <Divider style={style.divider} section />
         <Brands style={style} />
-        <Divider section />
+        <Divider style={style.divider} section />
         <Events style={style} />
-        <Divider section />
+        <Divider style={style.divider} section />
         <Partners style={style} />
-        <Divider section />
+        <Divider style={style.divider} section />
         <Offices style={style} />
-        <Divider section />
+        <Divider style={style.divider} section />
         <Wholesale style={style} />
-        <Divider section />
+        <Divider style={style.divider} section />
         <Warranty style={style} />
       </Layout>
     );

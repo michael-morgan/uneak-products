@@ -6,10 +6,6 @@ import sharedStyles from 'shared/styles/shared.css';
 function Offices(props) {
   const style = {
     column: { marginBottom: '3em' },
-    anchorOffset: {
-      position: 'absolute',
-      top: '-3.4em',
-    },
   };
   return (
     <Grid container>
@@ -18,7 +14,7 @@ function Offices(props) {
           as="h1"
           style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
         >
-          <span id="offices" style={style.anchorOffset}></span>
+          <span id="offices" className={sharedStyles.anchorOffset}></span>
           GLOBAL OFFICES
         </Header>
         <Header

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Dropdown } from 'semantic-ui-react';
 import s from './styles.css';
 
 class Header extends React.Component {
@@ -11,16 +11,21 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-    let location = window.location;
-    let page = location.pathname.replace(/[/#]/g, '') || location.hash.replace('#', '');
-    let pages = ['contact', 'about', 'jobs'];
+    this.setActivePage();
+  }
+
+  setActivePage() {
+    const location = window.location;
+    const page = location.pathname.replace(/[/#]/g, '') || location.hash.replace('#', '');
+    const pages = ['contact', 'about', 'jobs'];
 
     if (page) {
       this.setState({ activeItem: page });
 
       if (!pages.includes(page)) {
-        let waitToScroll = setTimeout(() => {
-          if (document.readyState == 'complete') {
+        // Must be the index view
+        const waitToScroll = setTimeout(() => {
+          if (document.readyState === 'complete') {
             clearTimeout(waitToScroll);
             document.getElementById(page).scrollIntoView(true);
           }
@@ -46,10 +51,12 @@ class Header extends React.Component {
             size="massive"
             id={s.navMenu}
             style={style.menu}
+            stackable
             secondary
             pointing
+            fluid
           >
-            <Menu.Item href="/" className={s.navItem}>
+            <Menu.Item href="/" className={s.navItem} header>
               <img
                 src="images/uneak-products-logo.png"
                 alt="Uneak Products Logo"
@@ -57,71 +64,77 @@ class Header extends React.Component {
               />
             </Menu.Item>
 
-            <Menu.Item
-              id={s.brandsItem}
-              className={s.navItem}
-              name="brands"
-              active={activeItem === 'brands'}
-              onClick={this.handleItemClick}
-              href="/#brands"
-            >
-              BRANDS
-            </Menu.Item>
+            <Menu.Menu>
+              <Dropdown className={s.navItem} text="SECTIONS" item>
+                <Dropdown.Menu>
+                  <Dropdown.Item
+                    id={s.brandsItem}
+                    className={s.navItem}
+                    name="brands"
+                    active={activeItem === 'brands'}
+                    onClick={this.handleItemClick}
+                    href="/#brands"
+                  >
+                    BRANDS
+                  </Dropdown.Item>
 
-            <Menu.Item
-              id={s.eventsItem}
-              className={s.navItem}
-              name="events"
-              active={activeItem === 'events'}
-              onClick={this.handleItemClick}
-              href="/#events"
-            >
-              EVENTS
-            </Menu.Item>
+                  <Dropdown.Item
+                    id={s.eventsItem}
+                    className={s.navItem}
+                    name="events"
+                    active={activeItem === 'events'}
+                    onClick={this.handleItemClick}
+                    href="/#events"
+                  >
+                    EVENTS
+                  </Dropdown.Item>
 
-            <Menu.Item
-              id={s.partnersItem}
-              className={s.navItem}
-              name="partners"
-              active={activeItem === 'partners'}
-              onClick={this.handleItemClick}
-              href="/#partners"
-            >
-              PARTNERS
-            </Menu.Item>
+                  <Dropdown.Item
+                    id={s.partnersItem}
+                    className={s.navItem}
+                    name="partners"
+                    active={activeItem === 'partners'}
+                    onClick={this.handleItemClick}
+                    href="/#partners"
+                  >
+                    PARTNERS
+                  </Dropdown.Item>
 
-            <Menu.Item
-              id={s.officesItem}
-              className={s.navItem}
-              name="offices"
-              active={activeItem === 'offices'}
-              onClick={this.handleItemClick}
-              href="/#offices"
-            >
-              OFFICES
-            </Menu.Item>
+                  <Dropdown.Item
+                    id={s.officesItem}
+                    className={s.navItem}
+                    name="offices"
+                    active={activeItem === 'offices'}
+                    onClick={this.handleItemClick}
+                    href="/#offices"
+                  >
+                    OFFICES
+                  </Dropdown.Item>
 
-            <Menu.Item
-              id={s.wholesaleItem}
-              className={s.navItem}
-              name="wholesale"
-              active={activeItem === 'wholesale'}
-              onClick={this.handleItemClick}
-              href="/#wholesale"
-            >
-              WHOLESALE
-            </Menu.Item>
+                  <Dropdown.Item
+                    id={s.wholesaleItem}
+                    className={s.navItem}
+                    name="wholesale"
+                    active={activeItem === 'wholesale'}
+                    onClick={this.handleItemClick}
+                    href="/#wholesale"
+                  >
+                    WHOLESALE
+                  </Dropdown.Item>
 
-            <Menu.Item
-              id={s.warrantyItem}
-              className={s.navItem}
-              name="warranty"
-              active={activeItem === 'warranty'}
-              onClick={this.handleItemClick}
-              href="/#warranty"
-            >
-              WARRANTY
-            </Menu.Item>
+                  <Dropdown.Item
+                    id={s.warrantyItem}
+                    className={s.navItem}
+                    name="warranty"
+                    active={activeItem === 'warranty'}
+                    onClick={this.handleItemClick}
+                    href="/#warranty"
+                  >
+                    WARRANTY
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </Menu.Menu>
 
             <Menu.Item
               className={s.navItem}

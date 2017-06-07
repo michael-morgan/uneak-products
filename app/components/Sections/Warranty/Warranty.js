@@ -5,13 +5,6 @@ import DimmedImage from '../../Image/DimmedImage';
 import sharedStyles from 'shared/styles/shared.css';
 
 function Warranty(props) {
-  const style = {
-    anchorOffset: {
-      position: 'absolute',
-      top: '-3.4em',
-    },
-  };
-
   return (
     <Grid style={{ marginBottom: '2em' }} container>
       <Grid.Column computer={16} tablet={16} mobile={16}>
@@ -19,7 +12,7 @@ function Warranty(props) {
           as="h1"
           style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
         >
-          <span id="warranty" style={style.anchorOffset}></span>
+          <span id="warranty" className={sharedStyles.anchorOffset}></span>
           WARRANTY
         </Header>
       </Grid.Column>

@@ -6,13 +6,6 @@ import s from './styles.css';
 import sharedStyles from 'shared/styles/shared.css';
 
 function Events(props) {
-  const style = {
-    anchorOffset: {
-      position: 'absolute',
-      top: '-3.4em',
-    },
-  };
-
   return (
     <Grid container>
       <Grid.Column computer={16} tablet={16} mobile={16}>
@@ -20,7 +13,7 @@ function Events(props) {
           as="h1"
           style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
         >
-          <span id="events" style={style.anchorOffset}></span>
+          <span id="events" className={sharedStyles.anchorOffset}></span>
           EVENTS
         </Header>
         <Header

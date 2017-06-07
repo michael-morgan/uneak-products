@@ -1,29 +1,6 @@
-.defaultSummary {
-  height: 400px !important;
-  overflow: hidden;
-}
 .summaryImage {
-  position: relative;
+  max-height: 625px;
   overflow: hidden;
-  height: 400px !important;
-}
-.summaryImage:after {
-  content: '';
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  border-left-style: solid;
-  border-left-color: transparent;
-  border-left-width: 1000px;
-  border-right-style: solid;
-  border-right-color: transparent;
-  border-right-width: 1000px;
-  border-top-style: solid;
-  border-top-color: rgba(244, 67, 54, 0.65);
-  border-top-width: 500px;
-  transform: translatex(-50%);
 }
 .imageScreenShot {
   margin: 1.5em auto 0;
@@ -31,76 +8,45 @@
 
 /* DESKTOP */
 @media (max-width: 2560px) {
-  .summaryImage:after {
-    border-left-width: 570px;
-    border-right-width: 570px;
-    border-top-width: 400px;
-  }
-  #imageHeader {
-    top: -10px !important;
-    left: calc(50% - 500px) !important;
-    font-size: 38px;
-    width: 1000px !important;
-  }
-  #imageContent {
-    top: 80px !important;
-    left: calc(50% - 225px) !important;
-    font-size: 32px;
-    width: 450px !important;
+  #coverImage {
+    top: -430px;
   }
 }
 @media (max-width: 1920px) {
-  .summaryImage:after {
-    border-left-width: 570px;
-    border-right-width: 570px;
-    border-top-width: 400px;
+  #coverImage {
+    top: -340px;
   }
 }
 @media (max-width: 1600px) {
-  .summaryImage:after {
-    border-left-width: 570px;
-    border-right-width: 570px;
-    border-top-width: 400px;
+  #coverImage {
+    top: -240px;
   }
 }
 @media (max-width: 1366px) {
-  .summaryImage:after {
-    border-left-width: 570px;
-    border-right-width: 570px;
-    border-top-width: 400px;
+  #coverImage {
+    top: -240px;
   }
 }
 @media (max-width: 1024px) {
-  .summaryImage:after {
-    border-left-width: 470px;
-    border-right-width: 470px;
-    border-top-width: 400px;
+  .summaryImage {
+    height: 100%;
   }
-  #imageHeader {
-    top: -10px !important;
-    left: calc(50% - 400px) !important;
-    font-size: 30px;
-    width: 800px !important;
-  }
-  #imageContent {
-    top: 80px !important;
-    left: calc(50% - 175px) !important;
-    font-size: 24px;
-    width: 350px !important;
+  #coverImage {
+    top: 0;
   }
 }
 
 /* TABLET */
 @media (max-width: 768px) {
-  #summaryImage {
-    display: none;
-  }
+
 }
 
 /* MOBILE */
-@media (max-width: 480px) { }
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   #visitText {
-    font-size: 18px;
+    font-size: 16px;
   }
+}
+@media (max-width: 320px) {
+
 }
