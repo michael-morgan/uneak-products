@@ -11,7 +11,7 @@ function Wholesale(props) {
     },
   };
   return (
-    <div style={{ backgroundImage: 'url(images/section-bg.svg)' }}>
+    <div className={sharedStyles.sectionBG}>
       <Grid style={style.grid} container>
         <Grid.Column computer={16} tablet={16} mobile={16}>
           <Header

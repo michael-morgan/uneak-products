@@ -15,6 +15,10 @@
   position: absolute !important;
   top: -3em !important;
 }
+.sectionBG {
+  background-image: url(/images/section-bg.svg);
+  background-size: cover;
+}
 
 @media (max-width: 767px) {
   .gridMargin { margin-top: 12em !important; }
