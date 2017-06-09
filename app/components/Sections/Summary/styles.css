@@ -5,6 +5,9 @@
 .imageScreenShot {
   margin: 1.5em auto 0;
 }
+#visitText {
+  font-size: 40px;
+}
 
 /* DESKTOP */
 @media (max-width: 2560px) {
@@ -38,13 +41,15 @@
 
 /* TABLET */
 @media (max-width: 768px) {
-
+  #visitText {
+    font-size: 36px;
+  }
 }
 
 /* MOBILE */
 @media (max-width: 480px) {
   #visitText {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 @media (max-width: 320px) {

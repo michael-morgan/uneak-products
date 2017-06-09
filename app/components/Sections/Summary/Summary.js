@@ -25,8 +25,13 @@ function Summary(props) {
       <Grid container>
         <Grid.Row>
           <Grid.Column computer={16} tablet={16} mobile={16}>
-            <Header as="h2" id={s.visitText} style={props.style.colors.action}>
-              Visit our trusted brands <Icon name="chevron right" />
+            <Header
+              as="h2"
+              id={s.visitText}
+              style={props.style.colors.action}
+              textAlign="center"
+            >
+              Visit our trusted brands
             </Header>
           </Grid.Column>
         </Grid.Row>
