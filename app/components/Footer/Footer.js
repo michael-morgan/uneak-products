@@ -20,7 +20,7 @@ function Footer(props) {
   return (
     <footer>
       <Segment
-        style={Object.assign({}, style.segment, { backgroundColor: '#f44336' })}
+        style={Object.assign({}, style.segment, { backgroundColor: '#616161' })}
         inverted
         vertical
       >

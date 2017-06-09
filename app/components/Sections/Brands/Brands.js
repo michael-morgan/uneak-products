@@ -31,7 +31,7 @@ function Brands(props) {
         <Grid.Column computer={16} tablet={16} mobile={16}>
           <Grid columns={4} stackable>
             <Grid.Column computer={4} tablet={8} mobile={16}>
-              <Card className={sharedStyles.contentBorder} style={style.card} raised>
+              <Card style={style.card} raised>
                 <Image src="images/santas-solutions-logo.png" />
                 <Card.Content style={style.cardContent}>
                   <Card.Header style={props.style.colors.title}>
@@ -59,7 +59,7 @@ function Brands(props) {
               </Card>
             </Grid.Column>
             <Grid.Column computer={4} tablet={8} mobile={16}>
-              <Card className={sharedStyles.contentBorder} style={style.card} raised>
+              <Card style={style.card} raised>
                 <Image src="images/uneak-gardens-logo.png" />
                 <Card.Content>
                   <Card.Header style={props.style.colors.title}>
@@ -87,7 +87,7 @@ function Brands(props) {
               </Card>
             </Grid.Column>
             <Grid.Column computer={4} tablet={8} mobile={16}>
-              <Card className={sharedStyles.contentBorder} style={style.card} raised>
+              <Card style={style.card} raised>
                 <Image src="images/nooski-logo.png" />
                 <Card.Content>
                   <Card.Header style={props.style.colors.title}>
@@ -115,7 +115,7 @@ function Brands(props) {
               </Card>
             </Grid.Column>
             <Grid.Column computer={4} tablet={8} mobile={16}>
-              <Card className={sharedStyles.contentBorder} style={style.card} raised>
+              <Card style={style.card} raised>
                 <Image src="images/biltek-logo.png" />
                 <Card.Content>
                   <Card.Header style={props.style.colors.title}>

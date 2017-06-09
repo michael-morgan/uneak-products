@@ -36,7 +36,6 @@ function Summary(props) {
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
                 <a href="https://www.santassolution.com/" target="_blank" title="Santas Solutions">
                   <DimmedImage
-                    classes={[sharedStyles.contentBorder]}
                     description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Integer lacus ipsum, euismod suscipit mauris ut, faucibus
                     venenatis nisi. Sed mattis diam nisi, nec porttitor quam
@@ -59,7 +58,6 @@ function Summary(props) {
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
                 <a href="https://www.uneakgardens.com/" target="_blank" title="Uneak Gardens">
                   <DimmedImage
-                    classes={[sharedStyles.contentBorder]}
                     description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Integer lacus ipsum, euismod suscipit mauris ut, faucibus
                     venenatis nisi. Sed mattis diam nisi, nec porttitor quam
@@ -81,7 +79,6 @@ function Summary(props) {
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
                 <a href="https://www.google.com/" target="_blank" title="Nooski Trap Systems">
                   <DimmedImage
-                    classes={[sharedStyles.contentBorder]}
                     description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Integer lacus ipsum, euismod suscipit mauris ut, faucibus
                     venenatis nisi. Sed mattis diam nisi, nec porttitor quam
@@ -104,7 +101,6 @@ function Summary(props) {
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
                 <a href="https://www.google.com/" target="_blank" title="Biltek Industrial">
                   <DimmedImage
-                    classes={[sharedStyles.contentBorder]}
                     description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Integer lacus ipsum, euismod suscipit mauris ut, faucibus
                     venenatis nisi. Sed mattis diam nisi, nec porttitor quam

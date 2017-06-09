@@ -31,8 +31,8 @@ class HomePage extends React.Component {
         content: { color: '#a7a6a6' },
       },
       divider: {
-        borderTop: '1px solid rgba(244, 67, 54, .15)',
-        borderBottom: '1px solid rgba(244, 67, 54, .1)',
+        borderTop: '1px solid rgba(244, 67, 54, 0)',
+        borderBottom: '1px solid rgba(244, 67, 54, 0)',
       },
     };
 

@@ -25,7 +25,6 @@ function Warranty(props) {
               title="Warranty Placeholder"
             >
               <DimmedImage
-                classes={[sharedStyles.contentBorder]}
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
                 shape="rounded"
@@ -42,7 +41,6 @@ function Warranty(props) {
               title="Warranty Placeholder"
             >
               <DimmedImage
-                classes={[sharedStyles.contentBorder]}
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
                 shape="rounded"
@@ -59,7 +57,6 @@ function Warranty(props) {
               title="Warranty Placeholder"
             >
               <DimmedImage
-                classes={[sharedStyles.contentBorder]}
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
                 shape="rounded"
@@ -76,7 +73,6 @@ function Warranty(props) {
               title="Warranty Placeholder"
             >
               <DimmedImage
-                classes={[sharedStyles.contentBorder]}
                 description={<Icon name="linkify" size="huge" />}
                 size="medium"
                 shape="rounded"

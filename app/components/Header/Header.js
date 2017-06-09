@@ -75,7 +75,7 @@ class Header extends React.Component {
                     onClick={this.handleItemClick}
                     href="/#brands"
                   >
-                    BRANDS
+                    Brands
                   </Dropdown.Item>
 
                   <Dropdown.Item
@@ -86,7 +86,7 @@ class Header extends React.Component {
                     onClick={this.handleItemClick}
                     href="/#events"
                   >
-                    EVENTS
+                    Events
                   </Dropdown.Item>
 
                   <Dropdown.Item
@@ -97,7 +97,7 @@ class Header extends React.Component {
                     onClick={this.handleItemClick}
                     href="/#partners"
                   >
-                    PARTNERS
+                    Partners
                   </Dropdown.Item>
 
                   <Dropdown.Item
@@ -108,7 +108,7 @@ class Header extends React.Component {
                     onClick={this.handleItemClick}
                     href="/#offices"
                   >
-                    OFFICES
+                    Offices
                   </Dropdown.Item>
 
                   <Dropdown.Item
@@ -119,7 +119,7 @@ class Header extends React.Component {
                     onClick={this.handleItemClick}
                     href="/#wholesale"
                   >
-                    WHOLESALE
+                    Wholesale
                   </Dropdown.Item>
 
                   <Dropdown.Item
@@ -130,7 +130,7 @@ class Header extends React.Component {
                     onClick={this.handleItemClick}
                     href="/#warranty"
                   >
-                    WARRANTY
+                    Warranty
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
@@ -143,7 +143,7 @@ class Header extends React.Component {
               onClick={this.handleItemClick}
               href="/about"
             >
-              ABOUT
+              About
             </Menu.Item>
 
             <Menu.Item
@@ -153,7 +153,7 @@ class Header extends React.Component {
               onClick={this.handleItemClick}
               href="/contact"
             >
-              CONTACT
+              Contact
             </Menu.Item>
           </Menu>
         </nav>

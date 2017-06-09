@@ -33,7 +33,6 @@ function Events(props) {
               title="Event Placeholder"
             >
               <DimmedImage
-                classes={[sharedStyles.contentBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
                 shape="rounded"
@@ -49,7 +48,6 @@ function Events(props) {
               title="Event Placeholder"
             >
               <DimmedImage
-                classes={[sharedStyles.contentBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
                 shape="rounded"
@@ -65,7 +63,6 @@ function Events(props) {
               title="Event Placeholder"
             >
               <DimmedImage
-                classes={[sharedStyles.contentBorder]}
                 description={'Lorem ipsum.'}
                 size="medium"
                 shape="rounded"
