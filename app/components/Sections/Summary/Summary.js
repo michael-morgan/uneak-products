@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Image, Header, Icon } from 'semantic-ui-react';
+import { Grid, Image, Header, Segment } from 'semantic-ui-react';
 import DimmedImage from '../../Image/DimmedImage';
 import s from './styles.css';
 import sharedStyles from 'shared/styles/shared.css';
 
 function Summary(props) {
   return (
-    <div>
-      <Grid className={sharedStyles.gridMargin}>
+    <Segment vertical>
+      <Grid className={sharedStyles.gridMargin} container>
         <Grid.Row style={{ paddingTop: '0' }}>
           <Grid.Column textAlign="center" computer={16} tablet={16} mobile={16}>
             <div className={s.summaryImage}>
@@ -129,7 +129,7 @@ function Summary(props) {
           </Grid.Column>
         </Grid.Row>
       </Grid>
-    </div>
+    </Segment>
   );
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Segment } from 'semantic-ui-react';
 import Footer from '../Footer';
 import Header from '../Header';
 import BackToTop from '../Scroll/BackToTop';
@@ -16,12 +17,12 @@ function Layout(props) {
   };
 
   return (
-    <main>
+    <Segment vertical>
       <BackToTop style={style} />
       <Header style={style} />
       {props.children}
       <Footer style={style} />
-    </main>
+    </Segment>
   );
 }
 

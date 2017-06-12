@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, Icon, Rail } from 'semantic-ui-react';
+import { Button, Icon, Rail, Segment } from 'semantic-ui-react';
 import sharedStyles from 'shared/styles/shared.css';
 import cx from 'classnames';
 

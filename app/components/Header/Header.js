@@ -1,13 +1,15 @@
 import React from 'react';
-import { Menu, Dropdown } from 'semantic-ui-react';
+import { Menu, Grid, Sidebar, Icon, Segment } from 'semantic-ui-react';
 import s from './styles.css';
+import cx from 'classnames';
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = { visible: false };
     this.handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+    this.toggleVisibility = () => this.setState({ visible: !this.state.visible });
   }
 
   componentDidMount() {
@@ -35,7 +37,7 @@ class Header extends React.Component {
   }
 
   render() {
-    const { activeItem } = this.state;
+    const { activeItem, visible } = this.state;
     const style = {
       menu: {
         background: 'white',
@@ -44,120 +46,245 @@ class Header extends React.Component {
     };
 
     return (
-      <header>
-        <nav>
-          <Menu
-            fixed="top"
-            size="massive"
-            id={s.navMenu}
-            style={style.menu}
-            stackable
-            secondary
-            pointing
-            fluid
-          >
-            <Menu.Item href="/" className={s.navItem} header>
-              <img
-                src="images/uneak-products-logo.png"
-                alt="Uneak Products Logo"
-                style={{ width: '4.5em' }}
-              />
-            </Menu.Item>
+      <Segment vertical>
+        <Grid container>
+          <Grid.Row only="computer">
+            <Grid.Column>
+              <Menu
+                fixed="top"
+                size="massive"
+                id={s.navMenu}
+                style={style.menu}
+                secondary
+                pointing
+                fluid
+              >
+                <Menu.Item href="/" className={s.navItem} header>
+                  <img
+                    src="images/uneak-products-logo.png"
+                    alt="Uneak Products Logo"
+                    style={{ width: '4.5em' }}
+                  />
+                </Menu.Item>
 
-            <Menu.Menu>
-              <Dropdown className={s.navItem} text="SECTIONS" item>
-                <Dropdown.Menu>
-                  <Dropdown.Item
-                    id={s.brandsItem}
-                    className={s.navItem}
-                    name="brands"
-                    active={activeItem === 'brands'}
-                    onClick={this.handleItemClick}
-                    href="/#brands"
+                <Menu.Item
+                  id={s.brandsItem}
+                  className={s.navItem}
+                  name="brands"
+                  active={activeItem === 'brands'}
+                  onClick={this.handleItemClick}
+                  href="/#brands"
+                >
+                  Brands
+                </Menu.Item>
+
+                <Menu.Item
+                  id={s.eventsItem}
+                  className={s.navItem}
+                  name="events"
+                  active={activeItem === 'events'}
+                  onClick={this.handleItemClick}
+                  href="/#events"
+                >
+                  Events
+                </Menu.Item>
+
+                <Menu.Item
+                  id={s.partnersItem}
+                  className={s.navItem}
+                  name="partners"
+                  active={activeItem === 'partners'}
+                  onClick={this.handleItemClick}
+                  href="/#partners"
+                >
+                  Partners
+                </Menu.Item>
+
+                <Menu.Item
+                  id={s.officesItem}
+                  className={s.navItem}
+                  name="offices"
+                  active={activeItem === 'offices'}
+                  onClick={this.handleItemClick}
+                  href="/#offices"
+                >
+                  Offices
+                </Menu.Item>
+
+                <Menu.Item
+                  id={s.wholesaleItem}
+                  className={s.navItem}
+                  name="wholesale"
+                  active={activeItem === 'wholesale'}
+                  onClick={this.handleItemClick}
+                  href="/#wholesale"
+                >
+                  Wholesale
+                </Menu.Item>
+
+                <Menu.Item
+                  id={s.warrantyItem}
+                  className={s.navItem}
+                  name="warranty"
+                  active={activeItem === 'warranty'}
+                  onClick={this.handleItemClick}
+                  href="/#warranty"
+                >
+                  Warranty
+                </Menu.Item>
+
+                <Menu.Item
+                  className={s.navItem}
+                  name="about"
+                  active={activeItem === 'about'}
+                  onClick={this.handleItemClick}
+                  href="/about"
+                >
+                  About
+                </Menu.Item>
+
+                <Menu.Item
+                  className={s.navItem}
+                  name="contact"
+                  active={activeItem === 'contact'}
+                  onClick={this.handleItemClick}
+                  href="/contact"
+                >
+                  Contact
+                </Menu.Item>
+              </Menu>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row only="tablet mobile">
+            <Grid.Column>
+              <Sidebar
+                as={Menu}
+                animation="overlay"
+                width="thin"
+                direction="right"
+                visible={visible}
+                icon="labeled"
+                style={{ top: '72px' }}
+                vertical
+              >
+                <Menu.Item
+                  id={s.brandsItem}
+                  className={cx(s.navItem, s.mobileNavItem)}
+                  name="brands"
+                  active={activeItem === 'brands'}
+                  onClick={this.handleItemClick}
+                  href="/#brands"
+                >
+                  Brands
+                </Menu.Item>
+
+                <Menu.Item
+                  id={s.eventsItem}
+                  className={cx(s.navItem, s.mobileNavItem)}
+                  name="events"
+                  active={activeItem === 'events'}
+                  onClick={this.handleItemClick}
+                  href="/#events"
+                >
+                  Events
+                </Menu.Item>
+
+                <Menu.Item
+                  id={s.partnersItem}
+                  className={cx(s.navItem, s.mobileNavItem)}
+                  name="partners"
+                  active={activeItem === 'partners'}
+                  onClick={this.handleItemClick}
+                  href="/#partners"
+                >
+                  Partners
+                </Menu.Item>
+
+                <Menu.Item
+                  id={s.officesItem}
+                  className={cx(s.navItem, s.mobileNavItem)}
+                  name="offices"
+                  active={activeItem === 'offices'}
+                  onClick={this.handleItemClick}
+                  href="/#offices"
+                >
+                  Offices
+                </Menu.Item>
+
+                <Menu.Item
+                  id={s.wholesaleItem}
+                  className={cx(s.navItem, s.mobileNavItem)}
+                  name="wholesale"
+                  active={activeItem === 'wholesale'}
+                  onClick={this.handleItemClick}
+                  href="/#wholesale"
+                >
+                  Wholesale
+                </Menu.Item>
+
+                <Menu.Item
+                  id={s.warrantyItem}
+                  className={cx(s.navItem, s.mobileNavItem)}
+                  name="warranty"
+                  active={activeItem === 'warranty'}
+                  onClick={this.handleItemClick}
+                  href="/#warranty"
+                >
+                  Warranty
+                </Menu.Item>
+
+                <Menu.Item
+                  className={cx(s.navItem, s.mobileNavItem)}
+                  name="about"
+                  active={activeItem === 'about'}
+                  onClick={this.handleItemClick}
+                  href="/about"
+                >
+                  About
+                </Menu.Item>
+
+                <Menu.Item
+                  className={cx(s.navItem, s.mobileNavItem)}
+                  name="contact"
+                  active={activeItem === 'contact'}
+                  onClick={this.handleItemClick}
+                  href="/contact"
+                >
+                  Contact
+                </Menu.Item>
+              </Sidebar>
+              <Sidebar.Pusher dimmed>
+                <Menu
+                  fixed="top"
+                  size="massive"
+                  id={s.navMenu}
+                  style={style.menu}
+                  secondary
+                  pointing
+                  fluid
+                >
+                  <Menu.Item href="/" header>
+                    <img
+                      src="images/uneak-products-logo.png"
+                      alt="Uneak Products Logo"
+                      style={{ width: '4.5em' }}
+                    />
+                  </Menu.Item>
+
+                  <Menu.Item
+                    onClick={this.toggleVisibility}
+                    position="right"
+                    style={{ paddingRight: '35px', color: '#f44336' }}
+                    icon
                   >
-                    Brands
-                  </Dropdown.Item>
-
-                  <Dropdown.Item
-                    id={s.eventsItem}
-                    className={s.navItem}
-                    name="events"
-                    active={activeItem === 'events'}
-                    onClick={this.handleItemClick}
-                    href="/#events"
-                  >
-                    Events
-                  </Dropdown.Item>
-
-                  <Dropdown.Item
-                    id={s.partnersItem}
-                    className={s.navItem}
-                    name="partners"
-                    active={activeItem === 'partners'}
-                    onClick={this.handleItemClick}
-                    href="/#partners"
-                  >
-                    Partners
-                  </Dropdown.Item>
-
-                  <Dropdown.Item
-                    id={s.officesItem}
-                    className={s.navItem}
-                    name="offices"
-                    active={activeItem === 'offices'}
-                    onClick={this.handleItemClick}
-                    href="/#offices"
-                  >
-                    Offices
-                  </Dropdown.Item>
-
-                  <Dropdown.Item
-                    id={s.wholesaleItem}
-                    className={s.navItem}
-                    name="wholesale"
-                    active={activeItem === 'wholesale'}
-                    onClick={this.handleItemClick}
-                    href="/#wholesale"
-                  >
-                    Wholesale
-                  </Dropdown.Item>
-
-                  <Dropdown.Item
-                    id={s.warrantyItem}
-                    className={s.navItem}
-                    name="warranty"
-                    active={activeItem === 'warranty'}
-                    onClick={this.handleItemClick}
-                    href="/#warranty"
-                  >
-                    Warranty
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </Menu.Menu>
-
-            <Menu.Item
-              className={s.navItem}
-              name="about"
-              active={activeItem === 'about'}
-              onClick={this.handleItemClick}
-              href="/about"
-            >
-              About
-            </Menu.Item>
-
-            <Menu.Item
-              className={s.navItem}
-              name="contact"
-              active={activeItem === 'contact'}
-              onClick={this.handleItemClick}
-              href="/contact"
-            >
-              Contact
-            </Menu.Item>
-          </Menu>
-        </nav>
-      </header>
+                    <Icon name="sidebar" size="large" />
+                  </Menu.Item>
+                </Menu>
+              </Sidebar.Pusher>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Segment>
     );
   }
 }

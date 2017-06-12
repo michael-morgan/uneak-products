@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Header, Icon, Card } from 'semantic-ui-react';
+import { Grid, Header, Icon, Card, Segment } from 'semantic-ui-react';
 import s from './styles.css';
 import sharedStyles from 'shared/styles/shared.css';
 
@@ -11,7 +11,7 @@ function Wholesale(props) {
     },
   };
   return (
-    <div className={sharedStyles.sectionBG}>
+    <Segment className={sharedStyles.sectionBG} vertical>
       <Grid style={style.grid} container>
         <Grid.Column computer={16} tablet={16} mobile={16}>
           <Header
@@ -58,7 +58,7 @@ function Wholesale(props) {
           </Card>
         </Grid.Column>
       </Grid>
-    </div>
+    </Segment>
   );
 }
 

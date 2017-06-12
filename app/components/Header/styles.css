@@ -4,6 +4,10 @@
 .navItem:hover {
   border-color: #f44336 !important;
 }
+.mobileNavItem {
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
 
 /* TABLET */
 @media (max-width: 768px) {
