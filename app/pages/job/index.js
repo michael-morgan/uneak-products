@@ -3,6 +3,7 @@ import { Grid, Header } from 'semantic-ui-react';
 import Layout from '../../components/Layout';
 import { title } from './index.md';
 import sharedStyles from 'shared/styles/shared.css';
+import sharedColors from 'shared/styles/colors.css';
 
 class JobPage extends React.Component {
 
@@ -23,7 +24,7 @@ class JobPage extends React.Component {
       <Layout>
         <Grid className={sharedStyles.gridMargin} stackable container>
           <Grid.Column computer={16} tablet={16} mobile={16} textAlign="center">
-            <Header as="h1" style={style.colors.action} style={{ marginTop: '1em' }}>
+            <Header as="h1" className={sharedColors.action} style={{ marginTop: '1em' }}>
               Jobs
             </Header>
 
