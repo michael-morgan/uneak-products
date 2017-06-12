@@ -19,7 +19,7 @@ function Brands(props) {
               style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
             >
               <span id="brands" className={sharedStyles.anchorOffset}></span>
-              BRANDS
+              Brands
             </Header>
             <Header
               as="h3"

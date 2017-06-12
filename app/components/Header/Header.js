@@ -9,7 +9,14 @@ class Header extends React.Component {
 
     this.state = { visible: false };
     this.handleItemClick = (e, { name }) => this.setState({ activeItem: name });
-    this.toggleVisibility = () => this.setState({ visible: !this.state.visible });
+    this.toggleVisibility = () => {
+      this.setState({ visible: !this.state.visible });
+      setTimeout(() => {
+        document.getElementById('sideBarOverlay').style.display = this.state.visible
+        ? 'block'
+        : 'none';
+      }, 300);
+    };
   }
 
   componentDidMount() {
@@ -42,6 +49,18 @@ class Header extends React.Component {
       menu: {
         background: 'white',
         zIndex: '9999',
+      },
+      sideBarOverlay: {
+        display: 'none',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        zIndex: 9998,
+        backgroundColor: 'rgba(0, 0, 0, 0.4)',
+        transition: 'opacity .5s',
+        willChange: 'opacity',
       },
     };
 
@@ -157,19 +176,25 @@ class Header extends React.Component {
           </Grid.Row>
           <Grid.Row only="tablet mobile">
             <Grid.Column>
+              <div
+                id="sideBarOverlay"
+                style={style.sideBarOverlay}
+                onClick={this.toggleVisibility}
+              >
+              </div>
               <Sidebar
                 as={Menu}
                 animation="overlay"
-                width="thin"
+                width="wide"
                 direction="right"
                 visible={visible}
                 icon="labeled"
-                style={{ top: '72px' }}
+                style={{ top: '72px', zIndex: 9999 }}
                 vertical
               >
                 <Menu.Item
                   id={s.brandsItem}
-                  className={cx(s.navItem, s.mobileNavItem)}
+                  className={cx(s.navItem, s.mobileNavItem, 'sideMenuItem')}
                   name="brands"
                   active={activeItem === 'brands'}
                   onClick={this.handleItemClick}
@@ -180,7 +205,7 @@ class Header extends React.Component {
 
                 <Menu.Item
                   id={s.eventsItem}
-                  className={cx(s.navItem, s.mobileNavItem)}
+                  className={cx(s.navItem, s.mobileNavItem, 'sideMenuItem')}
                   name="events"
                   active={activeItem === 'events'}
                   onClick={this.handleItemClick}
@@ -191,7 +216,7 @@ class Header extends React.Component {
 
                 <Menu.Item
                   id={s.partnersItem}
-                  className={cx(s.navItem, s.mobileNavItem)}
+                  className={cx(s.navItem, s.mobileNavItem, 'sideMenuItem')}
                   name="partners"
                   active={activeItem === 'partners'}
                   onClick={this.handleItemClick}
@@ -202,7 +227,7 @@ class Header extends React.Component {
 
                 <Menu.Item
                   id={s.officesItem}
-                  className={cx(s.navItem, s.mobileNavItem)}
+                  className={cx(s.navItem, s.mobileNavItem, 'sideMenuItem')}
                   name="offices"
                   active={activeItem === 'offices'}
                   onClick={this.handleItemClick}
@@ -213,7 +238,7 @@ class Header extends React.Component {
 
                 <Menu.Item
                   id={s.wholesaleItem}
-                  className={cx(s.navItem, s.mobileNavItem)}
+                  className={cx(s.navItem, s.mobileNavItem, 'sideMenuItem')}
                   name="wholesale"
                   active={activeItem === 'wholesale'}
                   onClick={this.handleItemClick}
@@ -224,7 +249,7 @@ class Header extends React.Component {
 
                 <Menu.Item
                   id={s.warrantyItem}
-                  className={cx(s.navItem, s.mobileNavItem)}
+                  className={cx(s.navItem, s.mobileNavItem, 'sideMenuItem')}
                   name="warranty"
                   active={activeItem === 'warranty'}
                   onClick={this.handleItemClick}
@@ -234,7 +259,7 @@ class Header extends React.Component {
                 </Menu.Item>
 
                 <Menu.Item
-                  className={cx(s.navItem, s.mobileNavItem)}
+                  className={cx(s.navItem, s.mobileNavItem, 'sideMenuItem')}
                   name="about"
                   active={activeItem === 'about'}
                   onClick={this.handleItemClick}
@@ -244,7 +269,7 @@ class Header extends React.Component {
                 </Menu.Item>
 
                 <Menu.Item
-                  className={cx(s.navItem, s.mobileNavItem)}
+                  className={cx(s.navItem, s.mobileNavItem, 'sideMenuItem')}
                   name="contact"
                   active={activeItem === 'contact'}
                   onClick={this.handleItemClick}

@@ -14,7 +14,7 @@ function Warranty(props) {
             style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
           >
             <span id="warranty" className={sharedStyles.anchorOffset}></span>
-            WARRANTY
+            Warranty
           </Header>
         </Grid.Column>
         <Grid.Column computer={16} tablet={16} mobile={16}>

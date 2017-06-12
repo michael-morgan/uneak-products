@@ -3,3 +3,11 @@
 .item.active {
   border-color: #f44336 !important;
 }
+
+.sideMenuItem.active {
+  border-left: 2px solid #f44336 !important;
+}
+
+.vertical.segment {
+  border-style: none !important;
+}

@@ -37,7 +37,7 @@ class ContactPage extends React.Component {
           container
         >
           <Grid.Column computer={8} tablet={16} mobile={16}>
-            <Header as="h1" style={style.colors.action}>
+            <Header as="h1" style={style.colors.action} style={{ marginTop: '1em' }}>
               Connect With Our Office Team
             </Header>
 

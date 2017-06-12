@@ -21,7 +21,11 @@ class AboutPage extends React.Component {
           container
         >
           <Grid.Column computer={16} tablet={16} mobile={16} textAlign="center">
-            <Header as="h1" className={sharedColors.action}>
+            <Header
+              as="h1"
+              className={sharedColors.action}
+              style={{ marginTop: '1em' }}
+            >
               Who We Are
             </Header>
 

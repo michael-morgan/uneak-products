@@ -16,7 +16,7 @@ function Offices(props) {
             style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
           >
             <span id="offices" className={sharedStyles.anchorOffset}></span>
-            GLOBAL OFFICES
+            Global Offices
           </Header>
           <Header
             as="h3"

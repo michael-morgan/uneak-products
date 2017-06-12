@@ -19,7 +19,7 @@ function Wholesale(props) {
             style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
           >
             <span id="wholesale" className={sharedStyles.anchorOffset}></span>
-            WHOLESALE
+            Wholesale
           </Header>
           <Header as="h3" id={s.connectText} style={props.style.colors.title}>
             Connect with our wholesale team <Icon name="chevron right" />

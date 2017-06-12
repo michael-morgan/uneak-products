@@ -1,7 +1,3 @@
-.summaryImage {
-  max-height: 625px;
-  overflow: hidden;
-}
 .imageScreenShot {
   margin: 1.5em auto 0;
 }
@@ -11,38 +7,29 @@
 
 /* DESKTOP */
 @media (max-width: 2560px) {
-  #coverImage {
-    top: -430px;
-  }
+
 }
 @media (max-width: 1920px) {
-  #coverImage {
-    top: -340px;
-  }
+
 }
 @media (max-width: 1600px) {
-  #coverImage {
-    top: -240px;
-  }
+
 }
 @media (max-width: 1366px) {
-  #coverImage {
-    top: -240px;
-  }
+
 }
 @media (max-width: 1024px) {
-  .summaryImage {
-    height: 100%;
-  }
-  #coverImage {
-    top: 0;
-  }
+
 }
 
 /* TABLET */
 @media (max-width: 768px) {
   #visitText {
     font-size: 36px;
+  }
+  .summaryImage {
+    max-height: 625px;
+    overflow: hidden;
   }
 }
 

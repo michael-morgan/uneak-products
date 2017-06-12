@@ -16,7 +16,7 @@ function Events(props) {
               style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
             >
               <span id="events" className={sharedStyles.anchorOffset}></span>
-              EVENTS
+              Events
             </Header>
             <Header
               as="h3"

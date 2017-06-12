@@ -23,7 +23,7 @@ class JobPage extends React.Component {
       <Layout>
         <Grid className={sharedStyles.gridMargin} stackable container>
           <Grid.Column computer={16} tablet={16} mobile={16} textAlign="center">
-            <Header as="h1" style={style.colors.action}>
+            <Header as="h1" style={style.colors.action} style={{ marginTop: '1em' }}>
               Jobs
             </Header>
 
