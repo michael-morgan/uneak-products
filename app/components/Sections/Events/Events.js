@@ -7,7 +7,7 @@ import sharedStyles from 'shared/styles/shared.css';
 
 function Events(props) {
   return (
-    <Segment vertical>
+    <Segment className={sharedStyles.sectionMargin} vertical>
       <Grid container>
         <Grid.Row>
           <Grid.Column computer={16} tablet={16} mobile={16}>

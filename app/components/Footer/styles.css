@@ -1,0 +1,7 @@
+.footerBox {
+  padding: 1em 0 !important;
+  background-color: #424242 !important;
+  box-shadow: 0 10px 8px -6px #212121 !important;
+  -webkit-box-shadow: 0 10px 8px -6px #212121 !important;
+  -moz-box-shadow: 0 10px 8px -6px #212121 !important;
+}

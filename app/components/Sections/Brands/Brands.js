@@ -10,7 +10,7 @@ function Brands(props) {
   };
 
   return (
-    <Segment className={sharedStyles.sectionBG} vertical>
+    <Segment className={cx(sharedStyles.sectionBG, sharedStyles.sectionMargin)} vertical>
       <Grid container>
         <Grid.Row>
           <Grid.Column computer={16} tablet={16} mobile={16}>

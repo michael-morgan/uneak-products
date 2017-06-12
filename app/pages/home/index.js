@@ -9,6 +9,7 @@ import Offices from '../../components/Sections/Offices';
 import Warranty from '../../components/Sections/Warranty';
 import Wholesale from '../../components/Sections/Wholesale';
 import { title, header } from './index.md';
+import sharedStyles from 'shared/styles/shared.css';
 
 class HomePage extends React.Component {
 

@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import { Grid, Header, Icon, Segment } from 'semantic-ui-react';
 import DimmedImage from '../../Image/DimmedImage';
 import sharedStyles from 'shared/styles/shared.css';
+import cx from 'classnames';
 
 function Partners(props) {
   return (
-    <Segment className={sharedStyles.sectionBG} vertical>
+    <Segment className={cx(sharedStyles.sectionBG, sharedStyles.sectionMargin)} vertical>
       <Grid container>
         <Grid.Column computer={16} tablet={16} mobile={16}>
           <Header

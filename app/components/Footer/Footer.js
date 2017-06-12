@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Segment, Container, Grid, Header, List, Image } from 'semantic-ui-react';
+import { Segment, Grid, Header, List, Image } from 'semantic-ui-react';
+import s from './styles.css';
 
 function Footer(props) {
   const style = {
@@ -8,13 +9,6 @@ function Footer(props) {
     p: { margin: '2em 0 0 0' },
     list: { marginTop: '2em' },
     a: { color: 'white' },
-    footerBox: {
-      padding: '1em 0',
-      backgroundColor: '#424242',
-      boxShadow: '0 10px 8px -6px #212121',
-      WebkitBoxShadow: '0 10px 8px -6px #212121',
-      MozBoxShadow: '0 10px 8px -6px #212121',
-    },
   };
 
   return (
@@ -29,7 +23,7 @@ function Footer(props) {
             <Header as="h4" inverted>
               <a href="/contact" style={style.a}>Contact</a>
             </Header>
-            <List inverted link>
+            <List id="contactList" inverted link>
               <List.Item>
                 <List.Icon name="marker" />
                 <List.Content style={props.style.colors.background}>
@@ -87,7 +81,7 @@ function Footer(props) {
               </List.Item>
             </List>
           </Grid.Column>
-          <Grid.Column computer={7} tablet={16} style={style.footerBox}>
+          <Grid.Column computer={7} tablet={16} className={s.footerBox}>
             <a href="/" title="Uneak Products">
               <Image
                 src="images/uneak-products-logo.png"

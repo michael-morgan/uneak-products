@@ -11,3 +11,10 @@
 .vertical.segment {
   border-style: none !important;
 }
+
+@media (max-width: 767px) {
+  #contactList>.item {
+    width: 50% !important;
+    margin: 0 auto !important;
+  }
+}

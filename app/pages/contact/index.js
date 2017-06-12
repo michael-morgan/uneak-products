@@ -3,6 +3,7 @@ import { Grid, Divider, Icon, Header, Form, Button } from 'semantic-ui-react';
 import Layout from '../../components/Layout';
 import { title } from './index.md';
 import sharedStyles from 'shared/styles/shared.css';
+import sharedColors from 'shared/styles/colors.css';
 
 class ContactPage extends React.Component {
 
@@ -37,7 +38,7 @@ class ContactPage extends React.Component {
           container
         >
           <Grid.Column computer={8} tablet={16} mobile={16}>
-            <Header as="h1" style={style.colors.action} style={{ marginTop: '1em' }}>
+            <Header as="h1" className={sharedColors.action} style={{ marginTop: '1em' }}>
               Connect With Our Office Team
             </Header>
 

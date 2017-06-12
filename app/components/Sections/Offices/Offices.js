@@ -8,7 +8,7 @@ function Offices(props) {
     column: { marginBottom: '3em' },
   };
   return (
-    <Segment vertical>
+    <Segment className={sharedStyles.sectionMargin} vertical>
       <Grid container>
         <Grid.Column computer={16} tablet={16} mobile={16}>
           <Header

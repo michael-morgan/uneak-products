@@ -6,7 +6,7 @@ import sharedStyles from 'shared/styles/shared.css';
 
 function Warranty(props) {
   return (
-    <Segment vertical>
+    <Segment className={sharedStyles.sectionMargin} vertical>
       <Grid style={{ marginBottom: '2em' }} container>
         <Grid.Column computer={16} tablet={16} mobile={16}>
           <Header
