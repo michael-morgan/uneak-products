@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Menu, Grid, Sidebar, Icon, Segment } from 'semantic-ui-react';
 import s from './styles.css';
 import cx from 'classnames';
@@ -290,9 +291,9 @@ class Header extends React.Component {
                   size="massive"
                   id={s.navMenu}
                   style={
-                    scrolled
-                    ? { backgroundColor: 'white' }
-                    : { backgroundColor: 'transparent' }
+                    this.props.showCover && !scrolled
+                    ? { backgroundColor: 'transparent' }
+                    : {}
                   }
                   secondary
                   pointing
@@ -316,9 +317,9 @@ class Header extends React.Component {
                       name="sidebar"
                       size="large"
                       style={
-                        scrolled
-                        ? { color: '#f44336' }
-                        : { color: 'white' }
+                        this.props.showCover && !scrolled
+                        ? { color: 'white' }
+                        : {}
                       }
                     />
                   </Menu.Item>
@@ -331,5 +332,9 @@ class Header extends React.Component {
     );
   }
 }
+
+Header.propTypes = {
+  showCover: PropTypes.bool.isRequired,
+};
 
 export default Header;

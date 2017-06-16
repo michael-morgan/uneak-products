@@ -29,7 +29,7 @@ function Summary(props) {
         </Grid.Row>
       </Grid>
       <Grid container>
-        <Grid.Row>
+        <Grid.Row only="tablet computer">
           <Grid.Column computer={16} tablet={16} mobile={16}>
             <Header
               as="h2"
@@ -41,7 +41,7 @@ function Summary(props) {
             </Header>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row>
+        <Grid.Row only="tablet computer">
           <Grid.Column computer={16} tablet={16} mobile={16}>
             <Grid columns={4} stackable>
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>

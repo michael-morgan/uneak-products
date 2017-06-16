@@ -3,6 +3,7 @@
   z-index: 9999;
 }
 #navMenuIcon {
+  color: #f44336;
   padding-right: 35px;
 }
 .navItem {
@@ -17,11 +18,11 @@
 }
 
 /* TABLET */
-@media (max-width: 768px) {
-
-}
-
-/* PHONE */
-@media (max-width: 767px) {
-
+@media (min-width: 768px) {
+  #navMenu {
+    background-color: white !important;
+  }
+  #navMenuIcon {
+    color: #f44336 !important;
+  }
 }
