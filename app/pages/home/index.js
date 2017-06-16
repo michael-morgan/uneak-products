@@ -40,17 +40,11 @@ class HomePage extends React.Component {
     return (
       <Layout>
         <Summary header={header} style={style} />
-        <Divider style={style.divider} section />
         <Brands style={style} />
-        <Divider style={style.divider} section />
         <Events style={style} />
-        <Divider style={style.divider} section />
         <Partners style={style} />
-        <Divider style={style.divider} section />
         <Offices style={style} />
-        <Divider style={style.divider} section />
         <Wholesale style={style} />
-        <Divider style={style.divider} section />
         <Warranty style={style} />
       </Layout>
     );

@@ -1,3 +1,10 @@
+#navMenu {
+  background-color: white;
+  z-index: 9999;
+}
+#navMenuIcon {
+  padding-right: 35px;
+}
 .navItem {
   composes: action from 'shared/styles/colors.css';
 }
@@ -11,5 +18,10 @@
 
 /* TABLET */
 @media (max-width: 768px) {
+
+}
+
+/* PHONE */
+@media (max-width: 767px) {
 
 }

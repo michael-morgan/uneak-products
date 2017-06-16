@@ -4,6 +4,8 @@ import Layout from '../../components/Layout';
 import { title } from './index.md';
 import sharedStyles from 'shared/styles/shared.css';
 import sharedColors from 'shared/styles/colors.css';
+import s from './styles.css';
+import cx from 'classnames';
 
 class ContactPage extends React.Component {
 
@@ -32,13 +34,13 @@ class ContactPage extends React.Component {
     return (
       <Layout>
         <Grid
-          className={sharedStyles.gridMargin}
+          className={cx(sharedStyles.gridMargin, s.topMargin)}
           style={{ marginBottom: '3em' }}
           stackable
           container
         >
           <Grid.Column computer={8} tablet={16} mobile={16}>
-            <Header as="h1" className={sharedColors.action} style={{ marginTop: '1em' }}>
+            <Header as="h1" className={sharedColors.action}>
               Connect With Our Office Team
             </Header>
 

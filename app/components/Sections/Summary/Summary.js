@@ -7,10 +7,16 @@ import sharedStyles from 'shared/styles/shared.css';
 
 function Summary(props) {
   return (
-    <Segment vertical>
+    <Segment style={{ paddingBottom: '5em' }} vertical>
       <Grid className={sharedStyles.gridMargin} container>
         <Grid.Row style={{ paddingTop: '0' }}>
-          <Grid.Column textAlign="center" computer={16} tablet={16} mobile={16}>
+          <Grid.Column mobile={16} only="mobile" style={{ height: '500px' }}></Grid.Column>
+          <Grid.Column
+            textAlign="center"
+            computer={16}
+            tablet={16}
+            only="tablet computer"
+          >
             <div className={s.summaryImage}>
               <Image
                 id={s.coverImage}

@@ -19,7 +19,7 @@ function Warranty(props) {
         </Grid.Column>
         <Grid.Column computer={16} tablet={16} mobile={16}>
           <Grid>
-            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={16}>
+            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
               <a
                 href="#"
                 target="_blank"
@@ -35,7 +35,7 @@ function Warranty(props) {
                 />
               </a>
             </Grid.Column>
-            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={16}>
+            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
               <a
                 href="#"
                 target="_blank"
@@ -51,7 +51,7 @@ function Warranty(props) {
                 />
               </a>
             </Grid.Column>
-            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={16}>
+            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
               <a
                 href="#"
                 target="_blank"
@@ -67,7 +67,7 @@ function Warranty(props) {
                 />
               </a>
             </Grid.Column>
-            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={16}>
+            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
               <a
                 href="#"
                 target="_blank"

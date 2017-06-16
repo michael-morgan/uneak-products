@@ -16,14 +16,19 @@
   top: -3em !important;
 }
 .sectionBG {
-  background-image: url(/images/section-bg.svg) !important;
-  background-size: cover !important;
+  /* background-image: url(/images/section-bg.svg) !important;
+  background-size: cover !important; */
+  background-color: #D8D8D8 !important;
+}
+.sectionBGOther {
+  /* background-image: url(/images/section-bg-2.svg) !important;
+  background-size: cover !important; */
 }
 .dimmedImageBG {
   background-color: white !important;
 }
 .sectionMargin {
-  margin: 4em 0 4em 0 !important;
+  padding: 6em 0 !important;
 }
 
 @media (max-width: 767px) {

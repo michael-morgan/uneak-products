@@ -7,7 +7,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { visible: false };
+    this.state = { visible: false, scrolled: false };
     this.handleItemClick = (e, { name }) => this.setState({ activeItem: name });
     this.toggleVisibility = () => {
       this.setState({ visible: !this.state.visible });
@@ -17,10 +17,17 @@ class Header extends React.Component {
         : 'none';
       }, 300);
     };
+
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   componentDidMount() {
+    document.addEventListener('scroll', this.handleScroll);
     this.setActivePage();
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('scroll', this.handleScroll);
   }
 
   setActivePage() {
@@ -43,13 +50,13 @@ class Header extends React.Component {
     }
   }
 
+  handleScroll() {
+    this.setState({ scrolled: (window.scrollY > 0) });
+  }
+
   render() {
-    const { activeItem, visible } = this.state;
+    const { activeItem, visible, scrolled } = this.state;
     const style = {
-      menu: {
-        background: 'white',
-        zIndex: '9999',
-      },
       sideBarOverlay: {
         display: 'none',
         position: 'fixed',
@@ -73,7 +80,6 @@ class Header extends React.Component {
                 fixed="top"
                 size="massive"
                 id={s.navMenu}
-                style={style.menu}
                 secondary
                 pointing
                 fluid
@@ -283,7 +289,11 @@ class Header extends React.Component {
                   fixed="top"
                   size="massive"
                   id={s.navMenu}
-                  style={style.menu}
+                  style={
+                    scrolled
+                    ? { backgroundColor: 'white' }
+                    : { backgroundColor: 'transparent' }
+                  }
                   secondary
                   pointing
                   fluid
@@ -297,12 +307,20 @@ class Header extends React.Component {
                   </Menu.Item>
 
                   <Menu.Item
+                    id={s.navMenuIcon}
                     onClick={this.toggleVisibility}
                     position="right"
-                    style={{ paddingRight: '35px', color: '#f44336' }}
                     icon
                   >
-                    <Icon name="sidebar" size="large" />
+                    <Icon
+                      name="sidebar"
+                      size="large"
+                      style={
+                        scrolled
+                        ? { color: '#f44336' }
+                        : { color: 'white' }
+                      }
+                    />
                   </Menu.Item>
                 </Menu>
               </Sidebar.Pusher>

@@ -48,7 +48,7 @@ class BackToTop extends React.Component {
 
   render() {
     return (
-      <Rail position="right" size="mini" style={{ zIndex: 9997 }} attached internal>
+      <Rail position="right" size="mini" attached internal>
         {this.state.active &&
           <Button
             className={cx('ui fixed bottom sticky', sharedStyles.actionButton)}
