@@ -295,8 +295,12 @@ class Header extends React.Component {
                     ? { backgroundColor: 'transparent' }
                     : {}
                   }
+                  pointing={
+                    this.props.showCover && !scrolled
+                    ? false
+                    : true
+                  }
                   secondary
-                  pointing
                   fluid
                 >
                   <Menu.Item href="/" header>

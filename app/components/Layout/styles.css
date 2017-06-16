@@ -12,6 +12,10 @@
   background-image: url(/images/cover-image-blank.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50.00% 100.00%;
+  padding: 0;
+  vertical-align: middle;
+  background-color: transparent;
   padding: 0;
 }
 .summaryHeading {

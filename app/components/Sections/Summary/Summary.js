@@ -17,18 +17,11 @@ function Summary(props) {
             tablet={16}
             only="tablet computer"
           >
-            <div className={s.summaryImage}>
-              <Image
-                id={s.coverImage}
-                src="images/cover-image.png"
-                alt="Uneak Products Placeholder"
-                fluid
-              />
-            </div>
+            <div className={s.summaryImage}></div>
           </Grid.Column>
         </Grid.Row>
       </Grid>
-      <Grid container>
+      <Grid style={{ marginTop: '3rem' }} container>
         <Grid.Row only="tablet computer">
           <Grid.Column computer={16} tablet={16} mobile={16}>
             <Header
