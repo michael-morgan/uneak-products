@@ -9,7 +9,14 @@ class Header extends React.Component {
     super(props);
 
     this.state = { visible: false, scrolled: false };
-    this.handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+    this.handleItemClick = (e, { name }) => {
+      this.setState({ activeItem: name });
+      if (this.state.visible) {
+        this.toggleVisibility();
+        this.hideSidebarMenu();
+      }
+    };
+
     this.toggleVisibility = () => {
       this.setState({ visible: !this.state.visible });
       setTimeout(() => {
@@ -53,6 +60,13 @@ class Header extends React.Component {
 
   handleScroll() {
     this.setState({ scrolled: (window.scrollY > 0) });
+  }
+
+  hideSidebarMenu() {
+    const sideBarMenu = document.getElementById('sidebarMenu');
+    sideBarMenu.classList.remove('visible');
+    sideBarMenu.classList.add('animating');
+    setTimeout(() => sideBarMenu.classList.remove('animating'), 500);
   }
 
   render() {
@@ -190,6 +204,7 @@ class Header extends React.Component {
               >
               </div>
               <Sidebar
+                id="sidebarMenu"
                 as={Menu}
                 animation="overlay"
                 width="wide"
@@ -296,9 +311,7 @@ class Header extends React.Component {
                     : {}
                   }
                   pointing={
-                    this.props.showCover && !scrolled
-                    ? false
-                    : true
+                    !(this.props.showCover && !scrolled)
                   }
                   secondary
                   fluid

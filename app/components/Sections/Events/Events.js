@@ -27,53 +27,51 @@ function Events(props) {
         </Grid.Column>
         <Grid.Column computer={16} tablet={16} mobile={16}>
           <Grid>
-            <Grid.Row>
-              <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
-                <a
-                  href="#"
-                  target="_blank"
-                  title="Event Placeholder"
-                >
-                  <DimmedImage
-                    description={'Lorem ipsum.'}
-                    size="medium"
-                    shape="rounded"
-                    src="images/igc-event.png"
-                    alt="Event Placeholder"
-                  />
-                </a>
-              </Grid.Column>
-              <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
-                <a
-                  href="#"
-                  target="_blank"
-                  title="Event Placeholder"
-                >
-                  <DimmedImage
-                    description={'Lorem ipsum.'}
-                    size="medium"
-                    shape="rounded"
-                    src="images/national-hardware-event.png"
-                    alt="Event Placeholder"
-                  />
-                </a>
-              </Grid.Column>
-              <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
-                <a
-                  href="#"
-                  target="_blank"
-                  title="Event Placeholder"
-                >
-                  <DimmedImage
-                    description={'Lorem ipsum.'}
-                    size="medium"
-                    shape="rounded"
-                    src="images/home-hardware-event.png"
-                    alt="Event Placeholder"
-                  />
-                </a>
-              </Grid.Column>
-            </Grid.Row>
+            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
+              <a
+                href="#"
+                target="_blank"
+                title="Event Placeholder"
+              >
+                <DimmedImage
+                  description={'Lorem ipsum.'}
+                  size="medium"
+                  shape="rounded"
+                  src="images/igc-event.png"
+                  alt="Event Placeholder"
+                />
+              </a>
+            </Grid.Column>
+            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
+              <a
+                href="#"
+                target="_blank"
+                title="Event Placeholder"
+              >
+                <DimmedImage
+                  description={'Lorem ipsum.'}
+                  size="medium"
+                  shape="rounded"
+                  src="images/national-hardware-event.png"
+                  alt="Event Placeholder"
+                />
+              </a>
+            </Grid.Column>
+            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
+              <a
+                href="#"
+                target="_blank"
+                title="Event Placeholder"
+              >
+                <DimmedImage
+                  description={'Lorem ipsum.'}
+                  size="medium"
+                  shape="rounded"
+                  src="images/home-hardware-event.png"
+                  alt="Event Placeholder"
+                />
+              </a>
+            </Grid.Column>
           </Grid>
         </Grid.Column>
       </Grid>

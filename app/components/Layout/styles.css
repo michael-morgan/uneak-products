@@ -29,8 +29,12 @@
 #headingTwo {
   top: 140px;
 }
-#headingThree {
+#headingButton {
+  background-color: black;
+  color: white;
+  position: absolute;
   top: 185px;
+  z-index: 9996;
 }
 
 /* PHONE */
@@ -41,63 +45,48 @@
 }
 @media (max-width: 767px) {
   .summaryHeading {
-    font-size: 72px;
-  }
-  #headingOne {
-    top: 115px;
+    font-size: 54px;
   }
   #headingTwo {
-    top: 280px;
+    top: 235px;
   }
-  #headingThree {
-    top: 500px;
-    font-size: 36px;
+  #headingButton {
+    top: 425px;
   }
 }
 @media (max-width: 600px) {
-  #mobileCover {
-    background-position-x: -150px !important;
-  }
   .summaryHeading {
-    font-size: 60px;
-  }
-  #headingOne {
-    top: 115px;
+    font-size: 48px;
   }
   #headingTwo {
-    top: 250px;
+    top: 225px;
   }
-  #headingThree {
-    top: 500px;
-    font-size: 36px;
+  #headingButton {
+    top: 400px;
   }
 }
 @media (max-width: 480px) {
-  #mobileCover {
-    background-position-x: -305px !important;
-  }
-}
-@media (max-width: 415px) {
   .summaryHeading {
-    font-size: 56px;
+    font-size: 42px;
+  }
+  #headingTwo {
+    top: 215px;
+  }
+  #headingButton {
+    top: 375px;
   }
 }
 @media (max-width: 380px) {
-  #mobileCover {
-    background-position-x: -370px !important;
+  .summaryHeading {
+    font-size: 36px;
   }
   #headingTwo {
-    top: 310px;
+    top: 195px;
   }
-  #headingThree {
-    display: none;
+  #headingButton {
+    top: 350px;
   }
 }
 @media (max-width: 320px) {
-  .summaryHeading {
-    font-size: 52px;
-  }
-  #headingTwo {
-    top: 295px;
-  }
+
 }

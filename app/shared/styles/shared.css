@@ -30,6 +30,9 @@
 .sectionMargin {
   padding: 6em 0 !important;
 }
+.p-t-0 {
+  padding-top: 0 !important;
+}
 
 @media (max-width: 767px) {
 

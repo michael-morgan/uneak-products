@@ -53,11 +53,6 @@ function Summary(props) {
                     alt="Brand Placeholder"
                   />
                 </a>
-                <Image
-                  className={s.imageScreenShot}
-                  src="images/ss-screenshot.png"
-                  alt="Brand Website Screenshot"
-                />
               </Grid.Column>
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
                 <a href="https://www.uneakgardens.com/" target="_blank" title="Uneak Gardens">
@@ -74,11 +69,6 @@ function Summary(props) {
                     alt="Brand Placeholder"
                   />
                 </a>
-                <Image
-                  className={s.imageScreenShot}
-                  src="images/coming-soon.png"
-                  alt="Brand Website Screenshot"
-                />
               </Grid.Column>
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
                 <a href="https://www.google.com/" target="_blank" title="Nooski Trap Systems">
@@ -96,11 +86,6 @@ function Summary(props) {
                     alt="Brand Placeholder"
                   />
                 </a>
-                <Image
-                  className={s.imageScreenShot}
-                  src="images/nooski-screenshot.png"
-                  alt="Brand Website Screenshot"
-                />
               </Grid.Column>
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
                 <a href="https://www.google.com/" target="_blank" title="Biltek Industrial">
@@ -118,11 +103,6 @@ function Summary(props) {
                     alt="Brand Placeholder"
                   />
                 </a>
-                <Image
-                  className={s.imageScreenShot}
-                  src="images/biltek-screenshot.png"
-                  alt="Brand Website Screenshot"
-                />
               </Grid.Column>
             </Grid>
           </Grid.Column>
