@@ -16,13 +16,3 @@
   font-size: 16px !important;
   font-weight: bold !important;
 }
-
-/* TABLET */
-@media (min-width: 768px) {
-  #navMenu {
-    background-color: white !important;
-  }
-  #navMenuIcon {
-    color: #f44336 !important;
-  }
-}

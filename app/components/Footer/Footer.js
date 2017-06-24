@@ -56,9 +56,6 @@ function Footer(props) {
             <List.Item as="a" href="/#offices" style={props.style.colors.background}>
               Global Offices
             </List.Item>
-            <List.Item as="a" href="/#warranty" style={props.style.colors.background}>
-              Warranty
-            </List.Item>
             <List.Item as="a" href="/#brands" style={props.style.colors.background}>
               Brands
             </List.Item>

@@ -1,107 +1,115 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Image, Header, Segment } from 'semantic-ui-react';
-import DimmedImage from '../../Image/DimmedImage';
+import { Grid, Header, Segment, Image } from 'semantic-ui-react';
 import s from './styles.css';
 import sharedStyles from 'shared/styles/shared.css';
+import cx from 'classnames';
 
 function Summary(props) {
   return (
     <Segment style={{ paddingBottom: '5em' }} vertical>
       <Grid className={sharedStyles.gridMargin} container>
-        <Grid.Row style={{ paddingTop: '0' }}>
-          <Grid.Column mobile={16} only="mobile" style={{ height: '500px' }}></Grid.Column>
+        <Grid.Row>
           <Grid.Column
-            textAlign="center"
             computer={16}
             tablet={16}
-            only="tablet computer"
+            mobile={16}
           >
-            <div className={s.summaryImage}></div>
+            <Image
+              src="images/uneak-products-banner.png"
+              size="huge"
+              centered
+            />
           </Grid.Column>
-        </Grid.Row>
-      </Grid>
-      <Grid style={{ marginTop: '3rem' }} container>
-        <Grid.Row only="tablet computer">
-          <Grid.Column computer={16} tablet={16} mobile={16}>
+          <Grid.Column
+            computer={16}
+            tablet={16}
+            mobile={16}
+          >
             <Header
-              as="h2"
               id={s.visitText}
               style={props.style.colors.action}
               textAlign="center"
             >
-              Visit our trusted brands
+              Uneak Is Who We Are Unique Is What We Aim For
             </Header>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row only="tablet computer">
+      </Grid>
+      <Grid container>
+        <Grid.Row>
           <Grid.Column computer={16} tablet={16} mobile={16}>
-            <Grid columns={4} stackable>
+            <Grid columns={4}>
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
-                <a href="https://www.santassolution.com/" target="_blank" title="Santas Solutions">
-                  <DimmedImage
-                    description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer lacus ipsum, euismod suscipit mauris ut, faucibus
-                    venenatis nisi. Sed mattis diam nisi, nec porttitor quam
-                    ultricies vel. Fusce tincidunt pellentesque magna, ut
-                    faucibus quam finibus vitae. Aenean sed ante non eros
-                    pharetra feugiat.`}
-                    size="medium"
-                    shape="circular"
-                    src="images/santas-solutions-logo.png"
-                    href="https://www.santassolution.com/"
-                    alt="Brand Placeholder"
-                  />
+                <Image
+                  size="medium"
+                  src="images/santas-solutions-logo.png"
+                  bordered
+                />
+                <p className={s.shortText}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a
+                  href="https://www.santassolution.com/"
+                  target="_blank"
+                  title="Santas Solutions"
+                  className={cx('ui primary button', sharedStyles.actionButton)}
+                >
+                  Visit
                 </a>
               </Grid.Column>
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
-                <a href="https://www.uneakgardens.com/" target="_blank" title="Uneak Gardens">
-                  <DimmedImage
-                    description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer lacus ipsum, euismod suscipit mauris ut, faucibus
-                    venenatis nisi. Sed mattis diam nisi, nec porttitor quam
-                    ultricies vel. Fusce tincidunt pellentesque magna, ut
-                    faucibus quam finibus vitae. Aenean sed ante non eros
-                    pharetra feugiat.`}
-                    size="medium"
-                    shape="circular"
-                    src="images/uneak-gardens-logo.png"
-                    alt="Brand Placeholder"
-                  />
+                <Image
+                  size="medium"
+                  src="images/uneak-gardens-logo.png"
+                  bordered
+                />
+                <p className={s.shortText}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a
+                  href="#"
+                  target="_blank"
+                  title="Uneak Gardens"
+                  className={cx('ui primary button', sharedStyles.actionButton)}
+                >
+                  Visit
                 </a>
               </Grid.Column>
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
-                <a href="https://www.google.com/" target="_blank" title="Nooski Trap Systems">
-                  <DimmedImage
-                    description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer lacus ipsum, euismod suscipit mauris ut, faucibus
-                    venenatis nisi. Sed mattis diam nisi, nec porttitor quam
-                    ultricies vel. Fusce tincidunt pellentesque magna, ut
-                    faucibus quam finibus vitae. Aenean sed ante non eros
-                    pharetra feugiat.`}
-                    size="medium"
-                    shape="circular"
-                    src="images/nooski-logo.png"
-                    href="#"
-                    alt="Brand Placeholder"
-                  />
+                <Image
+                  size="medium"
+                  src="images/nooski-logo.png"
+                  bordered
+                />
+                <p className={s.shortText}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a
+                  href="#"
+                  target="_blank"
+                  title="Nooski Trap Systems"
+                  className={cx('ui primary button', sharedStyles.actionButton)}
+                >
+                  Visit
                 </a>
               </Grid.Column>
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
-                <a href="https://www.google.com/" target="_blank" title="Biltek Industrial">
-                  <DimmedImage
-                    description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer lacus ipsum, euismod suscipit mauris ut, faucibus
-                    venenatis nisi. Sed mattis diam nisi, nec porttitor quam
-                    ultricies vel. Fusce tincidunt pellentesque magna, ut
-                    faucibus quam finibus vitae. Aenean sed ante non eros
-                    pharetra feugiat.`}
-                    size="medium"
-                    shape="circular"
-                    src="images/biltek-logo.png"
-                    href="#"
-                    alt="Brand Placeholder"
-                  />
+                <Image
+                  size="medium"
+                  src="images/biltek-logo.png"
+                  bordered
+                />
+                <p className={s.shortText}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a
+                  href="#"
+                  target="_blank"
+                  title="Biltek Industrial"
+                  className={cx('ui primary button', sharedStyles.actionButton)}
+                >
+                  Visit
                 </a>
               </Grid.Column>
             </Grid>

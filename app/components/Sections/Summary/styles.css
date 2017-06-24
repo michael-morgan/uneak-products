@@ -1,36 +1,9 @@
-.summaryImage {
-  height: 550px;
-  overflow: hidden;
-  vertical-align: middle;
-  background-image: url(/images/cover-image.png);
-  background-repeat: no-repeat;
-  background-position: 0 75%;
-  background-size: 100%;
-  background-color: transparent;
-  background-size: cover;
-}
-.imageScreenShot {
-  margin: 1.5em auto 0;
-}
 #visitText {
-  font-size: 40px;
+  font-size: 48px;
 }
 
-/* DESKTOP */
-@media (max-width: 2560px) {
-
-}
-@media (max-width: 1920px) {
-
-}
-@media (max-width: 1600px) {
-
-}
-@media (max-width: 1366px) {
-
-}
-@media (max-width: 1024px) {
-
+.shortText {
+  margin: 1em 0;
 }
 
 /* TABLET */

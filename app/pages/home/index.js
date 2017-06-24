@@ -1,12 +1,10 @@
 import React from 'react';
-import { Divider } from 'semantic-ui-react';
 import Layout from '../../components/Layout';
 import Summary from '../../components/Sections/Summary';
 import Brands from '../../components/Sections/Brands';
 import Events from '../../components/Sections/Events';
 import Partners from '../../components/Sections/Partners';
 import Offices from '../../components/Sections/Offices';
-import Warranty from '../../components/Sections/Warranty';
 import Wholesale from '../../components/Sections/Wholesale';
 import { title, header } from './index.md';
 import sharedStyles from 'shared/styles/shared.css';
@@ -45,7 +43,6 @@ class HomePage extends React.Component {
         <Partners style={style} />
         <Offices style={style} />
         <Wholesale style={style} />
-        <Warranty style={style} />
       </Layout>
     );
   }

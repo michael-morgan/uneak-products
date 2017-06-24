@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Menu, Grid, Sidebar, Icon, Segment } from 'semantic-ui-react';
 import s from './styles.css';
 import cx from 'classnames';
@@ -8,7 +7,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { visible: false, scrolled: false };
+    this.state = { visible: false };
     this.handleItemClick = (e, { name }) => {
       this.setState({ activeItem: name });
       if (this.state.visible) {
@@ -25,17 +24,10 @@ class Header extends React.Component {
         : 'none';
       }, 300);
     };
-
-    this.handleScroll = this.handleScroll.bind(this);
   }
 
   componentDidMount() {
-    document.addEventListener('scroll', this.handleScroll);
     this.setActivePage();
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('scroll', this.handleScroll);
   }
 
   setActivePage() {
@@ -58,10 +50,6 @@ class Header extends React.Component {
     }
   }
 
-  handleScroll() {
-    this.setState({ scrolled: (window.scrollY > 0) });
-  }
-
   hideSidebarMenu() {
     const sideBarMenu = document.getElementById('sidebarMenu');
     sideBarMenu.classList.remove('visible');
@@ -70,7 +58,7 @@ class Header extends React.Component {
   }
 
   render() {
-    const { activeItem, visible, scrolled } = this.state;
+    const { activeItem, visible } = this.state;
     const style = {
       sideBarOverlay: {
         display: 'none',
@@ -160,17 +148,6 @@ class Header extends React.Component {
                   href="/#wholesale"
                 >
                   Wholesale
-                </Menu.Item>
-
-                <Menu.Item
-                  id={s.warrantyItem}
-                  className={s.navItem}
-                  name="warranty"
-                  active={activeItem === 'warranty'}
-                  onClick={this.handleItemClick}
-                  href="/#warranty"
-                >
-                  Warranty
                 </Menu.Item>
 
                 <Menu.Item
@@ -270,17 +247,6 @@ class Header extends React.Component {
                 </Menu.Item>
 
                 <Menu.Item
-                  id={s.warrantyItem}
-                  className={cx(s.navItem, s.mobileNavItem, 'sideMenuItem')}
-                  name="warranty"
-                  active={activeItem === 'warranty'}
-                  onClick={this.handleItemClick}
-                  href="/#warranty"
-                >
-                  Warranty
-                </Menu.Item>
-
-                <Menu.Item
                   className={cx(s.navItem, s.mobileNavItem, 'sideMenuItem')}
                   name="about"
                   active={activeItem === 'about'}
@@ -305,14 +271,7 @@ class Header extends React.Component {
                   fixed="top"
                   size="massive"
                   id={s.navMenu}
-                  style={
-                    this.props.showCover && !scrolled
-                    ? { backgroundColor: 'transparent' }
-                    : {}
-                  }
-                  pointing={
-                    !(this.props.showCover && !scrolled)
-                  }
+                  pointing
                   secondary
                   fluid
                 >
@@ -333,11 +292,6 @@ class Header extends React.Component {
                     <Icon
                       name="sidebar"
                       size="large"
-                      style={
-                        this.props.showCover && !scrolled
-                        ? { color: 'white' }
-                        : {}
-                      }
                     />
                   </Menu.Item>
                 </Menu>
@@ -349,9 +303,5 @@ class Header extends React.Component {
     );
   }
 }
-
-Header.propTypes = {
-  showCover: PropTypes.bool.isRequired,
-};
 
 export default Header;

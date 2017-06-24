@@ -32,7 +32,7 @@ function Brands(props) {
           <Grid columns={4} stackable>
             <Grid.Column computer={4} tablet={8} mobile={16}>
               <Card style={style.card} raised>
-                <Image src="images/santas-solutions-logo.png" />
+                <Image src="images/ss-warranty.png" />
                 <Card.Content style={style.cardContent}>
                   <Card.Header style={props.style.colors.title}>
                     Santa's Solution
@@ -55,12 +55,20 @@ function Brands(props) {
                   >
                     Visit
                   </a>
+                  <a
+                    className="ui button"
+                    href="#"
+                    title="Santas Solutions Warranty"
+                    onClick={() => false}
+                  >
+                    Warranty
+                  </a>
                 </Card.Content>
               </Card>
             </Grid.Column>
             <Grid.Column computer={4} tablet={8} mobile={16}>
               <Card style={style.card} raised>
-                <Image src="images/uneak-gardens-logo.png" />
+                <Image src="images/ug-warranty.png" />
                 <Card.Content>
                   <Card.Header style={props.style.colors.title}>
                     Uneak Gardens
@@ -83,12 +91,20 @@ function Brands(props) {
                   >
                     Visit
                   </a>
+                  <a
+                    className="ui button"
+                    href="#"
+                    title="Uneak Gardens Warranty"
+                    onClick={() => false}
+                  >
+                    Warranty
+                  </a>
                 </Card.Content>
               </Card>
             </Grid.Column>
             <Grid.Column computer={4} tablet={8} mobile={16}>
               <Card style={style.card} raised>
-                <Image src="images/nooski-logo.png" />
+                <Image src="images/nooski-warranty.png" />
                 <Card.Content>
                   <Card.Header style={props.style.colors.title}>
                     Nooski
@@ -111,12 +127,20 @@ function Brands(props) {
                   >
                     Visit
                   </a>
+                  <a
+                    className="ui button"
+                    href="#"
+                    title="Nooski Warranty"
+                    onClick={() => false}
+                  >
+                    Warranty
+                  </a>
                 </Card.Content>
               </Card>
             </Grid.Column>
             <Grid.Column computer={4} tablet={8} mobile={16}>
               <Card style={style.card} raised>
-                <Image src="images/biltek-logo.png" />
+                <Image src="images/biltek-warranty.png" />
                 <Card.Content>
                   <Card.Header style={props.style.colors.title}>
                     Biltek
@@ -138,6 +162,14 @@ function Brands(props) {
                     title="Biltek Industrial"
                   >
                     Visit
+                  </a>
+                  <a
+                    className="ui button"
+                    href="#"
+                    title="Biltek Warranty"
+                    onClick={() => false}
+                  >
+                    Warranty
                   </a>
                 </Card.Content>
               </Card>
