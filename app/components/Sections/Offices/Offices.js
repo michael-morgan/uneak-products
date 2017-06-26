@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Header, Icon, Image, Divider, Segment } from 'semantic-ui-react';
+import cx from 'classnames';
 import sharedStyles from 'shared/styles/shared.css';
 
 function Offices(props) {
@@ -8,7 +9,7 @@ function Offices(props) {
     column: { marginBottom: '3em' },
   };
   return (
-    <Segment className={sharedStyles.sectionMargin} vertical>
+    <Segment className={cx(sharedStyles.sectionMargin)} vertical>
       <Grid container>
         <Grid.Column computer={16} tablet={16} mobile={16}>
           <Header

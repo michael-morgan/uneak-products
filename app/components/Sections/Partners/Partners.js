@@ -7,7 +7,7 @@ import cx from 'classnames';
 
 function Partners(props) {
   return (
-    <Segment className={cx(sharedStyles.sectionBG, sharedStyles.sectionMargin)} vertical>
+    <Segment className={cx(sharedStyles.sectionBGOther, sharedStyles.sectionMargin)} vertical>
       <Grid container>
         <Grid.Column computer={16} tablet={16} mobile={16}>
           <Header
@@ -92,6 +92,18 @@ function Partners(props) {
               </a>
             </Grid.Column>
             <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
+              <a href="https://www.rona.ca/en" target="_blank" title="Rona">
+                <DimmedImage
+                  description={'Lorem ipsum.'}
+                  size="medium"
+                  shape="rounded"
+                  src="images/rona-logo.png"
+                  href="#"
+                  alt="Rona"
+                />
+              </a>
+            </Grid.Column>
+            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
               <a href="https://www.kent.ca/" target="_blank" title="Kent">
                 <DimmedImage
                   description={'Lorem ipsum.'}
@@ -100,6 +112,18 @@ function Partners(props) {
                   src="images/kent-logo.png"
                   href="#"
                   alt="Kent"
+                />
+              </a>
+            </Grid.Column>
+            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
+              <a href="https://www.patrickmorin.com/" target="_blank" title="Patrick Morin">
+                <DimmedImage
+                  description={'Lorem ipsum.'}
+                  size="medium"
+                  shape="rounded"
+                  src="images/patrick-morin-logo.png"
+                  href="#"
+                  alt="Patrick Morin"
                 />
               </a>
             </Grid.Column>

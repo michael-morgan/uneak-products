@@ -21,19 +21,6 @@ function Summary(props) {
               centered
             />
           </Grid.Column>
-          <Grid.Column
-            computer={16}
-            tablet={16}
-            mobile={16}
-          >
-            <Header
-              id={s.visitText}
-              style={props.style.colors.action}
-              textAlign="center"
-            >
-              Uneak Is Who We Are Unique Is What We Aim For
-            </Header>
-          </Grid.Column>
         </Grid.Row>
       </Grid>
       <Grid container>
@@ -43,11 +30,11 @@ function Summary(props) {
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
                 <Image
                   size="medium"
-                  src="images/santas-solutions-logo.png"
+                  src="images/ss-warranty.png"
                   bordered
                 />
                 <p className={s.shortText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  America{"'"}s Top Selling Christmas Tree Stands & Accessories serving over 1 million happy customers & climbing
                 </p>
                 <a
                   href="https://www.santassolution.com/"
@@ -61,11 +48,11 @@ function Summary(props) {
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
                 <Image
                   size="medium"
-                  src="images/uneak-gardens-logo.png"
+                  src="images/ug-warranty.png"
                   bordered
                 />
                 <p className={s.shortText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Creating the ultimate Uneak Experience in lawn & garden structures like you{"'"}ve never seen but have always thought about
                 </p>
                 <a
                   href="#"
@@ -79,11 +66,11 @@ function Summary(props) {
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
                 <Image
                   size="medium"
-                  src="images/nooski-logo.png"
+                  src="images/nooski-warranty.png"
                   bordered
                 />
                 <p className={s.shortText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Shop the worlds Revolutionary Ring Trap for rodent control! A global solution to a very Pesky Problem
                 </p>
                 <a
                   href="#"
@@ -97,11 +84,11 @@ function Summary(props) {
               <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
                 <Image
                   size="medium"
-                  src="images/biltek-logo.png"
+                  src="images/biltek-warranty.png"
                   bordered
                 />
                 <p className={s.shortText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Bringing quality workmanship & industry experience local to you. A thriving machine shop with results tough as steel
                 </p>
                 <a
                   href="#"
