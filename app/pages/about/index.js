@@ -31,7 +31,7 @@ class AboutPage extends React.Component {
 
             <Image src="images/about-us-img.jpg" fluid />
 
-            <div style={{ marginTop: '2em', textAlign: 'left' }}>
+            <div style={{ marginTop: '2em', fontSize: '16px' }}>
               <p>
                 {`Uneak Products a division of BCI designs, manufactures and
                 markets high quality Christmas tree stands and accessories

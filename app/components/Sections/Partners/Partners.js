@@ -7,7 +7,7 @@ import cx from 'classnames';
 
 function Partners(props) {
   return (
-    <Segment className={cx(sharedStyles.sectionBGOther, sharedStyles.sectionMargin)} vertical>
+    <Segment className={cx(sharedStyles.sectionBG, sharedStyles.sectionMargin)} vertical>
       <Grid container>
         <Grid.Column computer={16} tablet={16} mobile={16}>
           <Header
@@ -34,7 +34,7 @@ function Partners(props) {
                 title="Ace Hardware"
               >
                 <DimmedImage
-                  description={'Lorem ipsum.'}
+                  description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
                   src="images/ace-logo.svg"
@@ -46,7 +46,7 @@ function Partners(props) {
             <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
               <a href="http://www.canac.ca/en/" target="_blank" title="Canac">
                 <DimmedImage
-                  description={'Lorem ipsum.'}
+                  description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
                   src="images/canac-logo.png"
@@ -58,7 +58,7 @@ function Partners(props) {
             <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
               <a href="https://www.canadiantire.ca/" target="_blank" title="Canadian Tire">
                 <DimmedImage
-                  description={'Lorem ipsum.'}
+                  description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
                   src="images/canadian-tire-logo.svg"
@@ -70,7 +70,7 @@ function Partners(props) {
             <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
               <a href="https://www.homedepot.ca/" target="_blank" title="Home Depot">
                 <DimmedImage
-                  description={'Lorem ipsum.'}
+                  description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
                   src="images/home-depot-logo.svg"
@@ -82,7 +82,7 @@ function Partners(props) {
             <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
               <a href="https://www.homehardware.ca/" target="_blank" title="Home Hardware">
                 <DimmedImage
-                  description={'Lorem ipsum.'}
+                  description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
                   src="images/home-hardware-logo.png"
@@ -94,7 +94,7 @@ function Partners(props) {
             <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
               <a href="https://www.rona.ca/en" target="_blank" title="Rona">
                 <DimmedImage
-                  description={'Lorem ipsum.'}
+                  description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
                   src="images/rona-logo.png"
@@ -106,7 +106,7 @@ function Partners(props) {
             <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
               <a href="https://www.kent.ca/" target="_blank" title="Kent">
                 <DimmedImage
-                  description={'Lorem ipsum.'}
+                  description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
                   src="images/kent-logo.png"
@@ -118,7 +118,7 @@ function Partners(props) {
             <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
               <a href="https://www.patrickmorin.com/" target="_blank" title="Patrick Morin">
                 <DimmedImage
-                  description={'Lorem ipsum.'}
+                  description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
                   src="images/patrick-morin-logo.png"

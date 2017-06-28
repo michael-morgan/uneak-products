@@ -1,4 +1,7 @@
 /* GLOBAL STYLES */
+body * {
+  font-size: 16px;
+}
 
 .item.active {
   border-color: #f44336 !important;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Header, Icon, Segment } from 'semantic-ui-react';
+import { Grid, Header, Icon, Segment, Image } from 'semantic-ui-react';
 import DimmedImage from '../../Image/DimmedImage';
 import cx from 'classnames';
 import s from './styles.css';
@@ -28,49 +28,100 @@ function Events(props) {
         </Grid.Column>
         <Grid.Column computer={16} tablet={16} mobile={16}>
           <Grid>
-            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
+            <Grid.Column textAlign="center" computer={4} only="computer">
               <a
                 href="#"
                 target="_blank"
-                title="Event Placeholder"
+                title="Visit IGC"
               >
                 <DimmedImage
-                  description={'Lorem ipsum.'}
+                  description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
                   src="images/igc-event.png"
-                  alt="Event Placeholder"
+                  alt="Independent Garden Center Show"
                 />
               </a>
             </Grid.Column>
-            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
+            <Grid.Column textAlign="center" tablet={8} mobile={8} only="tablet mobile">
+              <Image
+                size="medium"
+                src="images/igc-event.png"
+                alt="Independent Garden Center Show"
+                centered
+                bordered
+              />
               <a
                 href="#"
                 target="_blank"
-                title="Event Placeholder"
+                title="Visit IGC"
+                className={cx('ui primary button', sharedStyles.actionButton, s.visitButton)}
+              >
+                Visit
+              </a>
+            </Grid.Column>
+            <Grid.Column textAlign="center" computer={4} only="computer">
+              <a
+                href="#"
+                target="_blank"
+                title="Visit National Hardware"
               >
                 <DimmedImage
-                  description={'Lorem ipsum.'}
+                  description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
                   src="images/national-hardware-event.png"
-                  alt="Event Placeholder"
+                  alt="National Hardware Event"
                 />
               </a>
             </Grid.Column>
-            <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
+            <Grid.Column textAlign="center" tablet={8} mobile={8} only="tablet mobile">
+              <Image
+                size="medium"
+                src="images/national-hardware-event.png"
+                alt="National Hardware Event"
+                centered
+                bordered
+              />
               <a
                 href="#"
                 target="_blank"
-                title="Event Placeholder"
+                title="Visit National Hardware"
+                className={cx('ui primary button', sharedStyles.actionButton, s.visitButton)}
+              >
+                Visit
+              </a>
+            </Grid.Column>
+            <Grid.Column textAlign="center" computer={4} only="computer">
+              <a
+                href="#"
+                target="_blank"
+                title="Visit Home Hardware"
               >
                 <DimmedImage
-                  description={'Lorem ipsum.'}
+                  description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
                   src="images/home-hardware-event.png"
-                  alt="Event Placeholder"
+                  alt="Home Hardware Event"
                 />
+              </a>
+            </Grid.Column>
+            <Grid.Column textAlign="center" tablet={8} mobile={8} only="tablet mobile">
+              <Image
+                size="medium"
+                src="images/home-hardware-event.png"
+                alt="Home Hardware Event"
+                centered
+                bordered
+              />
+              <a
+                href="#"
+                target="_blank"
+                title="Visit Home Hardware"
+                className={cx('ui primary button', sharedStyles.actionButton, s.visitButton)}
+              >
+                Visit
               </a>
             </Grid.Column>
           </Grid>

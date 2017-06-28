@@ -71,12 +71,11 @@ function Offices(props) {
                   style={props.style.colors.title}
                 >
                   <span>Uneak Products</span><br />
-                  <span>20 Columbus Street</span><br />
-                  <span>Perth-Andover, NB E7H 1T3</span>
+                  <span>#2 McShea Siding</span><br />
+                  <span>Unit 114</span><br />
+                  <span>Fort Fairfield, ME 04742</span>
                   <Divider hidden />
-                  <span><Icon name="phone" /> 1-506-273-9492</span><br />
                   <span><Icon name="phone" /> 1-800-666-4911</span><br />
-                  <span><Icon name="fax" /> 1-506-273-3273</span><br />
                   <span><Icon name="mail outline" /> office@bolstercanada.com</span><br />
                 </Grid.Column>
               </Grid>

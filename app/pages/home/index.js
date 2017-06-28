@@ -1,4 +1,5 @@
 import React from 'react';
+import { Divider } from 'semantic-ui-react';
 import Layout from '../../components/Layout';
 import Summary from '../../components/Sections/Summary';
 import Brands from '../../components/Sections/Brands';

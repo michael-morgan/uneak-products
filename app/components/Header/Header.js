@@ -188,7 +188,7 @@ class Header extends React.Component {
                 direction="right"
                 visible={visible}
                 icon="labeled"
-                style={{ top: '72px', zIndex: 9999 }}
+                style={{ top: '64px', zIndex: 9999 }}
                 vertical
               >
                 <Menu.Item

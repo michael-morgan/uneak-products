@@ -44,38 +44,42 @@ function Footer(props) {
             </List.Item>
           </List>
         </Grid.Column>
-        <Grid.Column computer={3} tablet={4}>
+        <Grid.Column computer={6} tablet={8}>
           <Header as="h4" inverted>Company</Header>
-          <List inverted link>
-            <List.Item as="a" href="/#events" style={props.style.colors.background}>
-              Events
-            </List.Item>
-            <List.Item as="a" href="/#partners" style={props.style.colors.background}>
-              Partners
-            </List.Item>
-            <List.Item as="a" href="/#offices" style={props.style.colors.background}>
-              Global Offices
-            </List.Item>
-            <List.Item as="a" href="/#brands" style={props.style.colors.background}>
-              Brands
-            </List.Item>
-          </List>
-        </Grid.Column>
-        <Grid.Column computer={3} tablet={4}>
-          <List style={style.list} inverted link>
-            <List.Item as="a" href="/#wholesale" style={props.style.colors.background}>
-              Wholesale
-            </List.Item>
-            <List.Item as="a" href="/about" style={props.style.colors.background}>
-              About
-            </List.Item>
-            <List.Item as="a" href="/jobs" style={props.style.colors.background}>
-              Jobs
-            </List.Item>
-            <List.Item as="a" href="/contact" style={props.style.colors.background}>
-              Contact
-            </List.Item>
-          </List>
+          <Grid>
+            <Grid.Column computer={8} tablet={8} mobile={16}>
+              <List inverted link>
+                <List.Item as="a" href="/#events" style={props.style.colors.background}>
+                  Events
+                </List.Item>
+                <List.Item as="a" href="/#partners" style={props.style.colors.background}>
+                  Partners
+                </List.Item>
+                <List.Item as="a" href="/#offices" style={props.style.colors.background}>
+                  Global Offices
+                </List.Item>
+                <List.Item as="a" href="/#brands" style={props.style.colors.background}>
+                  Brands
+                </List.Item>
+              </List>
+            </Grid.Column>
+            <Grid.Column computer={8} tablet={8} mobile={16}>
+              <List inverted link>
+                <List.Item as="a" href="/#wholesale" style={props.style.colors.background}>
+                  Wholesale
+                </List.Item>
+                <List.Item as="a" href="/about" style={props.style.colors.background}>
+                  About
+                </List.Item>
+                <List.Item as="a" href="/jobs" style={props.style.colors.background}>
+                  Jobs
+                </List.Item>
+                <List.Item as="a" href="/contact" style={props.style.colors.background}>
+                  Contact
+                </List.Item>
+              </List>
+            </Grid.Column>
+          </Grid>
         </Grid.Column>
         <Grid.Column computer={7} tablet={16} className={s.footerBox}>
           <a href="/" title="Uneak Products">

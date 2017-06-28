@@ -11,9 +11,10 @@
   background-color: #e53935 !important;
 }
 .gridMargin { margin-top: 2em !important; }
+
 .anchorOffset {
   position: absolute !important;
-  top: -3em !important;
+  top: -8em !important;
 }
 .sectionBG {
   background-image: url(/images/section-bg.svg) !important;
