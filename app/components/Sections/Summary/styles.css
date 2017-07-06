@@ -8,6 +8,33 @@
   font-style: italic;
 }
 
+.buttonContainer {
+  padding: 0 25px 10px 25px !important;
+}
+
+.brandNestedTitle {
+  padding: 25px 25px 0 25px !important;
+}
+
+.brandNestedDescription {
+  padding: 0 25px !important;
+  text-align: center !important;
+}
+
+.brandNestedButton {
+  margin: 10px !important;
+}
+
+.mt5 { margin-top: 5px !important; }
+.mt10 { margin-top: 10px !important; }
+
+@media (max-width: 991px) {
+  .brandNestedButton {
+    display: block !important;
+    margin: 10px 0 !important;
+  }
+}
+
 /* TABLET */
 @media (max-width: 768px) {
   #visitText {

@@ -1,110 +1,161 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Header, Segment, Image } from 'semantic-ui-react';
+import { Grid, Segment, Image, Header, Icon } from 'semantic-ui-react';
 import s from './styles.css';
 import sharedStyles from 'shared/styles/shared.css';
+import sharedColors from 'shared/styles/colors.css';
 import cx from 'classnames';
+import data from './data.json';
 
-function Summary(props) {
-  return (
-    <Segment style={{ paddingBottom: '5em' }} vertical>
-      <Grid className={sharedStyles.gridMargin} container>
-        <Grid.Row>
-          <Grid.Column
-            computer={16}
-            tablet={16}
-            mobile={16}
+class Summary extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = { brandIndex: 0 };
+  }
+
+  getBrand(brand, index) {
+    return (
+      <Grid.Column key={index} computer={4} tablet={8} mobile={8}>
+        <Image
+          size="medium"
+          src={brand.images.main}
+          bordered
+        />
+        <div className={s.mt5}>
+          <a
+            href="#"
+            target="_blank"
+            title={brand.name}
+            className={cx('ui button', s.brandNestedButton)}
           >
-            <Image
-              src="images/uneak-products-banner.png"
-              size="huge"
-              centered
+            <Icon
+              id={'viewIcon' + index}
+              name={index === 0 ? 'chevron down' : 'chevron right'}
             />
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-      <Grid container>
-        <Grid.Row>
-          <Grid.Column computer={16} tablet={16} mobile={16}>
-            <Grid columns={4}>
-              <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
+            {` View`}
+          </a>
+          <a
+            href={brand.links.home}
+            target="_blank"
+            title={brand.name}
+            className={cx(
+              'ui primary button',
+              sharedStyles.actionButton,
+              s.brandNestedButton
+            )}
+          >
+            Visit
+          </a>
+        </div>
+      </Grid.Column>
+    );
+  }
+
+  getBrandNested(brand) {
+    return (
+      <Segment raised>
+        <Grid.Row columns={1}>
+          <Grid.Column>
+            <Grid>
+              <Grid.Column computer={6} tablet={8} mobile={16}>
                 <Image
+                  src={brand.images.nested}
                   size="medium"
-                  src="images/ss-warranty.png"
-                  bordered
+                  centered
                 />
-                <p className={s.shortText}>
-                  America{"'"}s Top Selling Christmas Tree Stands & Accessories serving over 1 million happy customers & climbing
-                </p>
-                <a
-                  href="https://www.santassolution.com/"
-                  target="_blank"
-                  title="Santas Solutions"
-                  className={cx('ui primary button', sharedStyles.actionButton)}
-                >
-                  Visit
-                </a>
               </Grid.Column>
-              <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
-                <Image
-                  size="medium"
-                  src="images/ug-warranty.png"
-                  bordered
-                />
-                <p className={s.shortText}>
-                  Creating the ultimate Uneak Experience in lawn & garden structures like you{"'"}ve never seen but have always thought about
-                </p>
-                <a
-                  href="#"
-                  target="_blank"
-                  title="Uneak Gardens"
-                  className={cx('ui primary button', sharedStyles.actionButton)}
+              <Grid.Column computer={10} tablet={8} mobile={16}>
+                <Header
+                  as="h3"
+                  textAlign="center"
+                  className={cx(sharedColors.action, s.brandNestedTitle)}
                 >
-                  Visit
-                </a>
-              </Grid.Column>
-              <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
-                <Image
-                  size="medium"
-                  src="images/nooski-warranty.png"
-                  bordered
-                />
-                <p className={s.shortText}>
-                  Shop the worlds Revolutionary Ring Trap for rodent control! A global solution to a very Pesky Problem
+                  {brand.title}
+                </Header>
+                <p className={s.brandNestedDescription}>
+                  {brand.description}
                 </p>
-                <a
-                  href="#"
-                  target="_blank"
-                  title="Nooski Trap Systems"
-                  className={cx('ui primary button', sharedStyles.actionButton)}
-                >
-                  Visit
-                </a>
-              </Grid.Column>
-              <Grid.Column textAlign="center" computer={4} tablet={8} mobile={8}>
-                <Image
-                  size="medium"
-                  src="images/biltek-warranty.png"
-                  bordered
-                />
-                <p className={s.shortText}>
-                  Bringing quality workmanship & industry experience local to you. A thriving machine shop with results tough as steel
-                </p>
-                <a
-                  href="#"
-                  target="_blank"
-                  title="Biltek Industrial"
-                  className={cx('ui primary button', sharedStyles.actionButton)}
-                >
-                  Visit
-                </a>
+                <div className={s.buttonContainer}>
+                  <a
+                    href={brand.links.shop}
+                    target="_blank"
+                    title={brand.name}
+                    className={cx(
+                      'ui primary button',
+                      sharedStyles.actionButton,
+                      s.brandNestedButton
+                    )}
+                  >
+                    Shop
+                  </a>
+                  <a
+                    href={brand.links.retailer}
+                    target="_blank"
+                    title={brand.name}
+                    className={cx(
+                      'ui primary button',
+                      sharedStyles.actionButton,
+                      s.brandNestedButton
+                    )}
+                  >
+                    Retailers
+                  </a>
+                  <a
+                    href={brand.links.wholesale}
+                    target="_blank"
+                    title={brand.name}
+                    className={cx(
+                      'ui primary button',
+                      sharedStyles.actionButton,
+                      s.brandNestedButton
+                    )}
+                  >
+                    Wholesale
+                  </a>
+                </div>
               </Grid.Column>
             </Grid>
           </Grid.Column>
         </Grid.Row>
-      </Grid>
-    </Segment>
-  );
+      </Segment>
+    );
+  }
+
+  render() {
+    const { brandIndex } = this.state;
+
+    return (
+      <Segment style={{ paddingBottom: '5em' }} vertical>
+        <Grid className={sharedStyles.gridMargin} container>
+          <Grid.Row>
+            <Grid.Column
+              computer={16}
+              tablet={16}
+              mobile={16}
+            >
+              <Image
+                src="images/uneak-products-banner.png"
+                size="huge"
+                centered
+              />
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+        <Grid container>
+          <Grid.Row>
+            <Grid.Column computer={16} tablet={16} mobile={16}>
+              <Grid columns={4}>
+                {data.map(this.getBrand)}
+              </Grid>
+            </Grid.Column>
+          </Grid.Row>
+          {this.getBrandNested(data[brandIndex])}
+        </Grid>
+      </Segment>
+    );
+  }
 }
 
 Summary.propTypes = {
