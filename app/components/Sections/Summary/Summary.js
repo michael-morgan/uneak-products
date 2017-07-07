@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Segment, Image, Header, Icon } from 'semantic-ui-react';
+import { Grid, Segment, Image, Header, Icon, Button } from 'semantic-ui-react';
 import s from './styles.css';
 import sharedStyles from 'shared/styles/shared.css';
 import sharedColors from 'shared/styles/colors.css';
@@ -13,29 +13,30 @@ class Summary extends React.Component {
     super(props);
 
     this.state = { brandIndex: 0 };
+    this.getBrand = this.getBrand.bind(this);
+    this.getBrandNested = this.getBrandNested.bind(this);
   }
 
   getBrand(brand, index) {
     return (
       <Grid.Column key={index} computer={4} tablet={8} mobile={8}>
         <Image
-          size="medium"
           src={brand.images.main}
           bordered
+          centered
+          fluid
         />
         <div className={s.mt5}>
-          <a
-            href="#"
-            target="_blank"
-            title={brand.name}
-            className={cx('ui button', s.brandNestedButton)}
+          <Button
+            className={s.brandNestedButton}
+            onClick={() => this.switchView(index)}
           >
             <Icon
               id={'viewIcon' + index}
-              name={index === 0 ? 'chevron down' : 'chevron right'}
+              name={index === this.state.brandIndex ? 'chevron down' : 'chevron right'}
             />
             {` View`}
-          </a>
+          </Button>
           <a
             href={brand.links.home}
             target="_blank"
@@ -55,7 +56,7 @@ class Summary extends React.Component {
 
   getBrandNested(brand) {
     return (
-      <Segment raised>
+      <Segment id="brandInfo" raised>
         <Grid.Row columns={1}>
           <Grid.Column>
             <Grid>
@@ -123,12 +124,18 @@ class Summary extends React.Component {
     );
   }
 
+  switchView(index) {
+    this.setState({ brandIndex: index });
+    const brandInfo = document.getElementById('brandInfo');
+    window.scrollTo(brandInfo.offsetLeft, (brandInfo.offsetTop - 40));
+  }
+
   render() {
     const { brandIndex } = this.state;
 
     return (
-      <Segment style={{ paddingBottom: '5em' }} vertical>
-        <Grid className={sharedStyles.gridMargin} container>
+      <Segment vertical>
+        <Grid>
           <Grid.Row>
             <Grid.Column
               computer={16}
@@ -137,13 +144,13 @@ class Summary extends React.Component {
             >
               <Image
                 src="images/uneak-products-banner.png"
-                size="huge"
                 centered
+                fluid
               />
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        <Grid container>
+        <Grid className={sharedStyles.sectionBG} container>
           <Grid.Row>
             <Grid.Column computer={16} tablet={16} mobile={16}>
               <Grid columns={4}>

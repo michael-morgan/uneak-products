@@ -31,6 +31,7 @@
 @media (max-width: 991px) {
   .brandNestedButton {
     display: block !important;
+    width: 100% !important;
     margin: 10px 0 !important;
   }
 }

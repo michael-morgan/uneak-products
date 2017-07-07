@@ -2,7 +2,6 @@ import React from 'react';
 import { Divider } from 'semantic-ui-react';
 import Layout from '../../components/Layout';
 import Summary from '../../components/Sections/Summary';
-import Brands from '../../components/Sections/Brands';
 import Events from '../../components/Sections/Events';
 import Partners from '../../components/Sections/Partners';
 import Offices from '../../components/Sections/Offices';
@@ -39,7 +38,6 @@ class HomePage extends React.Component {
     return (
       <Layout>
         <Summary header={header} style={style} />
-        <Brands style={style} />
         <Events style={style} />
         <Partners style={style} />
         <Offices style={style} />
