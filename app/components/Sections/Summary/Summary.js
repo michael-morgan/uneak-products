@@ -135,21 +135,12 @@ class Summary extends React.Component {
 
     return (
       <Segment vertical>
-        <Grid>
-          <Grid.Row>
-            <Grid.Column
-              computer={16}
-              tablet={16}
-              mobile={16}
-            >
-              <Image
-                src="images/uneak-products-banner.png"
-                centered
-                fluid
-              />
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
+        <Image
+          src="images/uneak-products-banner.png"
+          style={{ marginBottom: '10px' }}
+          centered
+          fluid
+        />
         <Grid className={sharedStyles.sectionBG} container>
           <Grid.Row>
             <Grid.Column computer={16} tablet={16} mobile={16}>
