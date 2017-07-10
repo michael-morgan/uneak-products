@@ -8,8 +8,38 @@
   font-style: italic;
 }
 
+.brandContainer {
+  position: relative;
+}
+
 .buttonContainer {
   padding: 0 25px 10px 25px !important;
+}
+
+.brandViewButton {
+  position: absolute;
+  bottom: 12%;
+  left: 10%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.brandViewButton:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.brandViewButton:hover>i {
+  text-decoration: none;
+}
+
+.brandVisitButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .brandNestedTitle {

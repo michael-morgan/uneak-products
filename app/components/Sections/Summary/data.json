@@ -7,12 +7,21 @@
       "main": "images/ss-warranty.png",
       "nested": "images/santas-solutions-logo.png"
     },
-    "links": {
-      "home": "https://www.santassolution.com/",
-      "shop": "https://www.santassolution.com/",
-      "retailer": "https://www.santassolution.com/",
-      "wholesale": "https://www.santassolution.com/"
-    }
+    "location": "https://www.santassolution.com/",
+    "links": [
+      {
+        "title": "Shop",
+        "location": "https://www.santassolution.com/"
+      },
+      {
+        "title": "Retailer",
+        "location": "https://www.santassolution.com/"
+      },
+      {
+        "title": "Wholesale",
+        "location": "https://www.santassolution.com/"
+      }
+    ]
   },
   {
     "name": "Uneak Gardens",
@@ -22,12 +31,21 @@
       "main": "images/ug-warranty.png",
       "nested": "images/uneak-gardens-logo.png"
     },
-    "links": {
-      "home": "https://www.uneakgardens.com/",
-      "shop": "https://www.uneakgardens.com/",
-      "retailer": "https://www.uneakgardens.com/",
-      "wholesale": "https://www.uneakgardens.com/"
-    }
+    "location": "#",
+    "links": [
+      {
+        "title": "Shop",
+        "location": "#"
+      },
+      {
+        "title": "Retailer",
+        "location": "#"
+      },
+      {
+        "title": "Wholesale",
+        "location": "#"
+      }
+    ]
   },
   {
     "name": "Nooski Trap Systems",
@@ -37,12 +55,21 @@
       "main": "images/nooski-warranty.png",
       "nested": "images/nooski-logo.png"
     },
-    "links": {
-      "home": "#",
-      "shop": "#",
-      "retailer": "#",
-      "wholesale": "#"
-    }
+    "location": "#",
+    "links": [
+      {
+        "title": "Shop",
+        "location": "#"
+      },
+      {
+        "title": "Retailer",
+        "location": "#"
+      },
+      {
+        "title": "Wholesale",
+        "location": "#"
+      }
+    ]
   },
   {
     "name": "Biltek Industrial",
@@ -52,11 +79,20 @@
       "main": "images/biltek-warranty.png",
       "nested": "images/biltek-logo.png"
     },
-    "links": {
-      "home": "#",
-      "shop": "#",
-      "retailer": "#",
-      "wholesale": "#"
-    }
+    "location": "#",
+    "links": [
+      {
+        "title": "Visit Site",
+        "location": "#"
+      },
+      {
+        "title": "Services",
+        "location": "#"
+      },
+      {
+        "title": "Projects",
+        "location": "#"
+      }
+    ]
   }
 ]

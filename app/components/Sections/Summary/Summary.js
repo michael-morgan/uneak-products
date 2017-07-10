@@ -19,37 +19,35 @@ class Summary extends React.Component {
 
   getBrand(brand, index) {
     return (
-      <Grid.Column key={index} computer={4} tablet={8} mobile={8}>
+      <Grid.Column key={index} computer={4} tablet={8} mobile={16}>
         <Image
           src={brand.images.main}
           bordered
           centered
           fluid
         />
-        <div className={s.mt5}>
-          <Button
-            className={s.brandNestedButton}
-            onClick={() => this.switchView(index)}
-          >
-            <Icon
-              id={'viewIcon' + index}
-              name={index === this.state.brandIndex ? 'chevron down' : 'chevron right'}
-            />
-            {` View`}
-          </Button>
-          <a
-            href={brand.links.home}
-            target="_blank"
-            title={brand.name}
-            className={cx(
-              'ui primary button',
-              sharedStyles.actionButton,
-              s.brandNestedButton
-            )}
-          >
-            Visit
-          </a>
-        </div>
+        <a
+          className={s.brandViewButton}
+          onClick={() => this.switchView(index)}
+        >
+          <Icon
+            id={'viewIcon' + index}
+            name={index === this.state.brandIndex ? 'chevron down' : 'chevron right'}
+          />
+          {`View`}
+        </a>
+        <a
+          href={brand.location}
+          target="_blank"
+          title={brand.name}
+          className={cx(
+            'ui primary button',
+            s.brandVisitButton,
+            sharedStyles.actionButton
+          )}
+        >
+          Visit
+        </a>
       </Grid.Column>
     );
   }
@@ -79,42 +77,24 @@ class Summary extends React.Component {
                   {brand.description}
                 </p>
                 <div className={s.buttonContainer}>
-                  <a
-                    href={brand.links.shop}
-                    target="_blank"
-                    title={brand.name}
-                    className={cx(
-                      'ui primary button',
-                      sharedStyles.actionButton,
-                      s.brandNestedButton
-                    )}
-                  >
-                    Shop
-                  </a>
-                  <a
-                    href={brand.links.retailer}
-                    target="_blank"
-                    title={brand.name}
-                    className={cx(
-                      'ui primary button',
-                      sharedStyles.actionButton,
-                      s.brandNestedButton
-                    )}
-                  >
-                    Retailers
-                  </a>
-                  <a
-                    href={brand.links.wholesale}
-                    target="_blank"
-                    title={brand.name}
-                    className={cx(
-                      'ui primary button',
-                      sharedStyles.actionButton,
-                      s.brandNestedButton
-                    )}
-                  >
-                    Wholesale
-                  </a>
+                  {brand.links.map(
+                    (link, index) =>
+                    (
+                      <a
+                        key={index}
+                        href={link.location}
+                        target="_blank"
+                        title={brand.name}
+                        className={cx(
+                          'ui primary button',
+                          sharedStyles.actionButton,
+                          s.brandNestedButton
+                        )}
+                      >
+                        {link.title}
+                      </a>
+                    )
+                  )}
                 </div>
               </Grid.Column>
             </Grid>
