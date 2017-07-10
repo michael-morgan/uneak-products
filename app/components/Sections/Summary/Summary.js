@@ -54,7 +54,7 @@ class Summary extends React.Component {
 
   getBrandNested(brand) {
     return (
-      <Segment id="brandInfo" raised>
+      <Segment raised>
         <Grid.Row columns={1}>
           <Grid.Column>
             <Grid>
@@ -124,12 +124,24 @@ class Summary extends React.Component {
         <Grid className={sharedStyles.sectionBG} container>
           <Grid.Row>
             <Grid.Column computer={16} tablet={16} mobile={16}>
+              <span
+                id="brands"
+                style={{
+                  position: 'absolute',
+                  top: '-4.5em'
+                }}
+              >
+              </span>
               <Grid columns={4}>
                 {data.map(this.getBrand)}
               </Grid>
             </Grid.Column>
           </Grid.Row>
-          {this.getBrandNested(data[brandIndex])}
+          <Grid.Row id="brandInfo">
+            <Grid.Column computer={16} tablet={16} mobile={16}>
+              {this.getBrandNested(data[brandIndex])}
+            </Grid.Column>
+          </Grid.Row>
         </Grid>
       </Segment>
     );

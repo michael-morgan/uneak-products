@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Header, Image } from 'semantic-ui-react';
+import { Grid, Header, Image, Divider } from 'semantic-ui-react';
 import Layout from '../../components/Layout';
 import { title } from './index.md';
 import sharedColors from 'shared/styles/colors.css';
@@ -29,8 +29,6 @@ class AboutPage extends React.Component {
               Who We Are
             </Header>
 
-            <Image src="images/about-us-img.jpg" fluid />
-
             <div style={{ marginTop: '2em', fontSize: '16px' }}>
               <p>
                 {`Uneak Products a division of BCI designs, manufactures and
@@ -42,6 +40,10 @@ class AboutPage extends React.Component {
                 dedicated staff at BCI continually strive for excellence in
                 customer service and support.`}
               </p>
+              <Image src="images/about-us-img.jpg" fluid />
+
+              <Divider section />
+
               <p>
                 {`BCI is a privately owned family run corporation with
                 Headquarters in Perth-Andover New Brunswick Canada. The company
@@ -55,6 +57,10 @@ class AboutPage extends React.Component {
                 Waterer, Fresh Cut Tree Preservative, Degradable Tree Disposal
                 Bag & a Floor Protection Tray.`}
               </p>
+              <Image src="images/ss-products.png" fluid />
+
+              <Divider section />
+
               <p>
                 {`Looking to the future, Uneak Products saw a need for
                 multi-use Lawn & Garden products and with that came the napkin
@@ -64,6 +70,7 @@ class AboutPage extends React.Component {
                 continuing to proudly serve our customers bringing them unique
                 solutions.`}
               </p>
+              <Image src="images/ug-products.png" fluid />
             </div>
           </Grid.Column>
         </Grid>
