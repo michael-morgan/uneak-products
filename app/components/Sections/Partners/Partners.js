@@ -37,7 +37,7 @@ function Partners(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/ace-logo.svg"
+                  src="images/build/ace-logo.svg"
                   alt="Ace Hardware"
                   classes={[sharedStyles.dimmedImageBG]}
                 />
@@ -49,7 +49,7 @@ function Partners(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/canac-logo.png"
+                  src="images/build/canac-logo.png"
                   href="#"
                   alt="Canac"
                 />
@@ -61,7 +61,7 @@ function Partners(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/canadian-tire-logo.svg"
+                  src="images/build/canadian-tire-logo.svg"
                   href="#"
                   alt="Canadian Tire"
                 />
@@ -73,7 +73,7 @@ function Partners(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/home-depot-logo.svg"
+                  src="images/build/home-depot-logo.svg"
                   href="#"
                   alt="Home Depot"
                 />
@@ -85,7 +85,7 @@ function Partners(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/home-hardware-logo.png"
+                  src="images/build/home-hardware-logo.png"
                   href="#"
                   alt="Home Hardware"
                 />
@@ -97,7 +97,7 @@ function Partners(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/rona-logo.png"
+                  src="images/build/rona-logo.png"
                   href="#"
                   alt="Rona"
                 />
@@ -109,7 +109,7 @@ function Partners(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/kent-logo.png"
+                  src="images/build/kent-logo.png"
                   href="#"
                   alt="Kent"
                 />
@@ -121,7 +121,7 @@ function Partners(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/patrick-morin-logo.png"
+                  src="images/build/patrick-morin-logo.png"
                   href="#"
                   alt="Patrick Morin"
                 />

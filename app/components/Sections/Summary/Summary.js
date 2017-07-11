@@ -116,7 +116,7 @@ class Summary extends React.Component {
     return (
       <Segment vertical>
         <Image
-          src="images/uneak-products-banner.png"
+          src="images/build/uneak-products-banner.png"
           style={{ marginBottom: '10px' }}
           centered
           fluid

@@ -38,7 +38,7 @@ function Brands(props) {
           <Grid columns={4} stackable>
             <Grid.Column computer={4} tablet={8} mobile={16}>
               <Card style={style.card} raised>
-                <Image src="images/santas-solutions-logo.png" />
+                <Image src="images/build/santas-solutions-logo.png" />
                 <Card.Content style={style.cardContent}>
                   <Card.Header style={props.style.colors.title}>
                     Santa{"'"}s Solution
@@ -74,7 +74,7 @@ function Brands(props) {
             </Grid.Column>
             <Grid.Column computer={4} tablet={8} mobile={16}>
               <Card style={style.card} raised>
-                <Image src="images/uneak-gardens-logo.png" />
+                <Image src="images/build/uneak-gardens-logo.png" />
                 <Card.Content>
                   <Card.Header style={props.style.colors.title}>
                     Uneak Gardens
@@ -109,7 +109,7 @@ function Brands(props) {
             </Grid.Column>
             <Grid.Column computer={4} tablet={8} mobile={16}>
               <Card style={style.card} raised>
-                <Image src="images/nooski-logo.png" />
+                <Image src="images/build/nooski-logo.png" />
                 <Card.Content>
                   <Card.Header style={props.style.colors.title}>
                     Nooski
@@ -144,7 +144,7 @@ function Brands(props) {
             </Grid.Column>
             <Grid.Column computer={4} tablet={8} mobile={16}>
               <Card style={style.card} raised>
-                <Image src="images/biltek-logo.png" />
+                <Image src="images/build/biltek-logo.png" />
                 <Card.Content>
                   <Card.Header style={props.style.colors.title}>
                     Biltek

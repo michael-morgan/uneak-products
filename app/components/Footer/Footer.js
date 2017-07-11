@@ -84,7 +84,7 @@ function Footer(props) {
         <Grid.Column computer={7} tablet={16} className={s.footerBox}>
           <a href="/" title="Uneak Products">
             <Image
-              src="images/uneak-products-logo.png"
+              src="images/build/uneak-products-logo.png"
               size="small"
               alt="Logo"
               style={{ width: '150px' }}

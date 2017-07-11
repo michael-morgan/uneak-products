@@ -89,7 +89,7 @@ class Header extends React.Component {
               >
                 <Menu.Item href="/" className={s.navItem} header>
                   <img
-                    src="images/uneak-products-logo.png"
+                    src="images/build/uneak-products-logo.png"
                     alt="Uneak Products Logo"
                     style={{ width: '4.5em' }}
                   />
@@ -277,7 +277,7 @@ class Header extends React.Component {
                 >
                   <Menu.Item href="/" header>
                     <img
-                      src="images/uneak-products-logo.png"
+                      src="images/build/uneak-products-logo.png"
                       alt="Uneak Products Logo"
                       style={{ width: '4.5em' }}
                     />

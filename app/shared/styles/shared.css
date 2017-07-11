@@ -17,12 +17,7 @@
   top: -8em !important;
 }
 .sectionBG {
-  background-image: url(/images/section-bg.svg) !important;
-  background-size: cover !important;
-  /*background-color: #f3f3f3 !important;*/
-}
-.sectionBGOther {
-  background-image: url(/images/section-bg-2.svg) !important;
+  background-image: url(/images/build/section-bg.svg) !important;
   background-size: cover !important;
 }
 .dimmedImageBG {

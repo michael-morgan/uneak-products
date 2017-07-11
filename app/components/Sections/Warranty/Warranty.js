@@ -29,7 +29,7 @@ function Warranty(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/ss-warranty.png"
+                  src="images/build/ss-warranty.png"
                   href="#"
                   alt="Warranty Placeholder"
                 />
@@ -45,7 +45,7 @@ function Warranty(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/ug-warranty.png"
+                  src="images/build/ug-warranty.png"
                   href="#"
                   alt="Warranty Placeholder"
                 />
@@ -61,7 +61,7 @@ function Warranty(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/nooski-warranty.png"
+                  src="images/build/nooski-warranty.png"
                   href="#"
                   alt="Warranty Placeholder"
                 />
@@ -77,7 +77,7 @@ function Warranty(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/biltek-warranty.png"
+                  src="images/build/biltek-warranty.png"
                   href="#"
                   alt="Warranty Placeholder"
                 />

@@ -44,7 +44,7 @@ function Events(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/igc-event.png"
+                  src="images/build/igc-event.png"
                   alt="Independent Garden Center Show"
                 />
               </a>
@@ -52,7 +52,7 @@ function Events(props) {
             <Grid.Column textAlign="center" tablet={8} mobile={8} only="tablet mobile">
               <Image
                 size="medium"
-                src="images/igc-event.png"
+                src="images/build/igc-event.png"
                 alt="Independent Garden Center Show"
                 centered
                 bordered
@@ -76,7 +76,7 @@ function Events(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/national-hardware-event.png"
+                  src="images/build/national-hardware-event.png"
                   alt="National Hardware Event"
                 />
               </a>
@@ -84,7 +84,7 @@ function Events(props) {
             <Grid.Column textAlign="center" tablet={8} mobile={8} only="tablet mobile">
               <Image
                 size="medium"
-                src="images/national-hardware-event.png"
+                src="images/build/national-hardware-event.png"
                 alt="National Hardware Event"
                 centered
                 bordered
@@ -108,7 +108,7 @@ function Events(props) {
                   description={<Icon name="linkify" size="huge" />}
                   size="medium"
                   shape="rounded"
-                  src="images/home-hardware-event.png"
+                  src="images/build/home-hardware-event.png"
                   alt="Home Hardware Event"
                 />
               </a>
@@ -116,7 +116,7 @@ function Events(props) {
             <Grid.Column textAlign="center" tablet={8} mobile={8} only="tablet mobile">
               <Image
                 size="medium"
-                src="images/home-hardware-event.png"
+                src="images/build/home-hardware-event.png"
                 alt="Home Hardware Event"
                 centered
                 bordered

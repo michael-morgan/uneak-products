@@ -18,17 +18,17 @@
 
 .brandViewButton {
   position: absolute;
-  bottom: 12%;
-  left: 10%;
+  bottom: 8%;
+  left: 6%;
   padding: 10px;
-  color: white;
+  color: #424242;
   font-weight: bold;
   cursor: pointer;
 }
 
 .brandViewButton:hover {
   text-decoration: underline;
-  color: white;
+  color: #424242;
 }
 
 .brandViewButton:hover>i {

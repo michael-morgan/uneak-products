@@ -1,11 +1,11 @@
 [
   {
     "name": "Santas Solutions",
-    "title": "America's Top Selling Christmas Tree Stands & Accessories serving over 1 million happy customers & climbing",
-    "description": "Holiday's done right call for attention to detail, right down to the stand. Santa’s Solution brand products have a reputation as the best Christmas tree stands & accessories on the market. To us, best means design, quality. Durability & value. A lifetime manufacturer's warranty backs our claim.",
+    "title": "North America’s Top Selling Christmas Tree Stands & Accessories Serving Over 1 Million Happy Customers & Climbing",
+    "description": "Christmas done right calls for attention to detail, right down to using the best tree stand. Santa’s Solution brand products have a reputation as the best Christmas tree stands & accessories on the market.  To us, best means design, quality, durability & value. A lifetime manufacturer’s warranty backs our claim.",
     "images": {
-      "main": "images/ss-warranty.png",
-      "nested": "images/santas-solutions-logo.png"
+      "main": "images/build/ss-warranty.png",
+      "nested": "images/build/santas-solutions-logo.png"
     },
     "location": "https://www.santassolution.com/",
     "links": [
@@ -25,11 +25,11 @@
   },
   {
     "name": "Uneak Gardens",
-    "title": "Creating the ultimate Uneak Experience in lawn & garden structures like you've never seen but have always thought about",
-    "description": "Make any space a place to grow, build, Play & design with Uneak Gardens brand of lawn & garden hardware! With Uneak you're the creator and we give you the tools to make your greenest dreams a reality – from gardens to sandboxes, edging and more; come build & play with Uneak.",
+    "title": "Creating the Ultimate Uneak Experience in Lawn & Garden Structures like You’ve Never Seen but Have Always Thought About",
+    "description": "Make any space a place to grow, build, play & design with Uneak Gardens brand of lawn & garden hardware! With Uneak you’re the creator and we give you the tools to make your greenest dreams a reality – from gardens to sandboxes, edging and more; come build & play with Uneak.",
     "images": {
-      "main": "images/ug-warranty.png",
-      "nested": "images/uneak-gardens-logo.png"
+      "main": "images/build/ug-warranty.png",
+      "nested": "images/build/uneak-gardens-logo.png"
     },
     "location": "#",
     "links": [
@@ -49,11 +49,11 @@
   },
   {
     "name": "Nooski Trap Systems",
-    "title": "Shop the worlds Revolutionary Ring Trap for rodent control! A global solution to a very Pesky Problem",
+    "title": "Shop the Worlds Revolutionary Ring Trap for Rodent Control! A Global Solution to a Very Pesky Problem",
     "description": "Re-inventing the mouse trap is something the NOOSKI team are very proud of and truly believe their patented concept will one day be the globally preferred choice in rodent control. No more poison, no more glue boards, no more snap traps.",
     "images": {
-      "main": "images/nooski-warranty.png",
-      "nested": "images/nooski-logo.png"
+      "main": "images/build/nooski-warranty.png",
+      "nested": "images/build/nooski-logo.png"
     },
     "location": "#",
     "links": [
@@ -73,11 +73,11 @@
   },
   {
     "name": "Biltek Industrial",
-    "title": "Bringing quality workmanship & industry experience local to you. A thriving machine shop with results tough as steel",
-    "description": "Biltek Industrial's powerhouse team have been associated with a high level of quality and professionalism; they bring a keen eye for problem solving & years of industry experience. We want our clients to believe in the quality of our work & the Real Deal customer experience.",
+    "title": "Bringing Quality Workmanship & Industry Experience Local to You. A Thriving Machine Shop with Results Tough as Steel",
+    "description": "Biltek Industrial's powerhouse team are committed to a high level of quality and professionalism. Whether you need a new custom fab, industrial repair or rebuild, hydraulics or machining we bring years of experience with a solid reputation. It’s our mission to provide the Real Deal customer experience.",
     "images": {
-      "main": "images/biltek-warranty.png",
-      "nested": "images/biltek-logo.png"
+      "main": "images/build/biltek-warranty.png",
+      "nested": "images/build/biltek-logo.png"
     },
     "location": "#",
     "links": [
