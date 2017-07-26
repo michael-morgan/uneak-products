@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Segment, Image, Header, Icon, Button } from 'semantic-ui-react';
+import { Grid, Segment, Image, Header, Icon } from 'semantic-ui-react';
 import s from './styles.css';
 import sharedStyles from 'shared/styles/shared.css';
 import sharedColors from 'shared/styles/colors.css';
@@ -31,10 +31,10 @@ class Summary extends React.Component {
           onClick={() => this.switchView(index)}
         >
           <Icon
-            id={'viewIcon' + index}
+            id={`viewIcon${index}`}
             name={index === this.state.brandIndex ? 'chevron down' : 'chevron right'}
           />
-          {`View`}
+          {'View'}
         </a>
         <a
           href={brand.location}
@@ -128,7 +128,7 @@ class Summary extends React.Component {
                 id="brands"
                 style={{
                   position: 'absolute',
-                  top: '-4.5em'
+                  top: '-4.5em',
                 }}
               >
               </span>

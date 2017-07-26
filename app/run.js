@@ -10,7 +10,7 @@ const config = {
   title: 'Uneak Products',        // Your website title
   url: 'https://uneakproducts.com',          // Your website URL
   project: 'uneak-products-2d42f',      // Firebase project. See README.md -> How to Deploy
-  trackingID: 'UA-XXXXX-Y',                 // Google Analytics Site's ID
+  trackingID: 'UA-103216887-1',                 // Google Analytics Site's ID
 };
 
 const tasks = new Map(); // The collection of automation tasks ('clean', 'build', 'publish', etc.)
