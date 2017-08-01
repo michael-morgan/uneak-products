@@ -1,10 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Grid, Header, Icon, Image, Divider, Segment } from 'semantic-ui-react';
 import cx from 'classnames';
 import sharedStyles from 'shared/styles/shared.css';
+import sharedColors from 'shared/styles/colors.css';
 
-function Offices(props) {
+function Offices() {
   const style = {
     column: { marginBottom: '3em' },
   };
@@ -19,16 +19,16 @@ function Offices(props) {
       <Grid container>
         <Grid.Column computer={16} tablet={16} mobile={16}>
           <Header
-            as="h1"
-            style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
+            as="h2"
+            style={{ position: 'relative', fontSize: '2rem' }}
+            className={sharedColors.action}
           >
             <span id="offices" className={sharedStyles.anchorOffset}></span>
             Global Offices
           </Header>
           <Header
             as="h3"
-            className={sharedStyles.sectionActionText}
-            style={props.style.colors.title}
+            className={cx(sharedStyles.sectionActionText, sharedColors.title)}
           >
             Connect with our global teams <Icon name="chevron right" />
           </Header>
@@ -48,7 +48,7 @@ function Offices(props) {
                   computer={8}
                   tablet={8}
                   mobile={16}
-                  style={props.style.colors.title}
+                  className={sharedColors.title}
                 >
                   <span>Uneak Products</span><br />
                   <span>20 Columbus Street</span><br />
@@ -74,7 +74,7 @@ function Offices(props) {
                   computer={8}
                   tablet={8}
                   mobile={16}
-                  style={props.style.colors.title}
+                  className={sharedColors.title}
                 >
                   <span>Uneak Products</span><br />
                   <span>#2 McShea Siding</span><br />
@@ -92,9 +92,5 @@ function Offices(props) {
     </Segment>
   );
 }
-
-Offices.propTypes = {
-  style: PropTypes.object,
-};
 
 export default Offices;

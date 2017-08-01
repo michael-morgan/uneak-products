@@ -1,47 +1,26 @@
 import React from 'react';
-import { Divider } from 'semantic-ui-react';
 import Layout from '../../components/Layout';
 import Summary from '../../components/Sections/Summary';
 import Events from '../../components/Sections/Events';
 import Partners from '../../components/Sections/Partners';
 import Offices from '../../components/Sections/Offices';
 import Wholesale from '../../components/Sections/Wholesale';
-import { title, header } from './index.md';
-import sharedStyles from 'shared/styles/shared.css';
+import { title } from './index.md';
 
 class HomePage extends React.Component {
-
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
 
   componentDidMount() {
     document.title = title;
   }
 
   render() {
-    const style = {
-      colors: {
-        background: { color: '#ffffff' },
-        action: { color: '#f44336' },
-        title: { color: '#656263' },
-        content: { color: '#a7a6a6' },
-      },
-      divider: {
-        borderTop: '1px solid rgba(244, 67, 54, 0)',
-        borderBottom: '1px solid rgba(244, 67, 54, 0)',
-      },
-    };
-
     return (
       <Layout>
-        <Summary header={header} style={style} />
-        <Events style={style} />
-        <Partners style={style} />
-        <Offices style={style} />
-        <Wholesale style={style} />
+        <Summary />
+        <Events />
+        <Partners />
+        <Offices />
+        <Wholesale />
       </Layout>
     );
   }

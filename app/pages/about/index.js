@@ -1,9 +1,9 @@
 import React from 'react';
 import { Grid, Header, Image, Divider } from 'semantic-ui-react';
-import Layout from '../../components/Layout';
-import { title } from './index.md';
 import sharedColors from 'shared/styles/colors.css';
 import sharedStyles from 'shared/styles/shared.css';
+import Layout from '../../components/Layout';
+import { title } from './index.md';
 
 class AboutPage extends React.Component {
 
@@ -40,7 +40,11 @@ class AboutPage extends React.Component {
                   dedicated staff at BCI continually strive for excellence in
                   customer service and support.`}
               </p>
-              <Image src="images/build/about-us-img.jpg" fluid />
+              <Image
+                src="images/build/about-us-img.jpg"
+                alt="Picture of BCI headquarters in Perth-Andover, NB"
+                fluid
+              />
 
               <Divider section />
 
@@ -57,7 +61,12 @@ class AboutPage extends React.Component {
                   Hanger, Auto-stop Tree Waterer, Fresh Cut Tree Preservative,
                   Degradable Tree Disposal Bag & a Floor Protection Tray.`}
               </p>
-              <Image src="images/build/ss-products.png" centered />
+              <Image
+                src="images/build/ss-products.png"
+                alt={`Showcasing Santa's Solutions Christmas tree stands,
+                      wreath hanger, Christmas tree tray, and other products.`}
+                centered
+              />
 
               <Divider section />
 
@@ -69,7 +78,11 @@ class AboutPage extends React.Component {
                   function, strength, versatility and sparked big advancements
                   for Uneak as the best on the market.`}
               </p>
-              <Image src="images/build/ug-products.png" centered />
+              <Image
+                src="images/build/ug-products.png"
+                alt="Showcasing 45 degree, 90 degree, and 180 degree angle brackets."
+                centered
+              />
             </div>
           </Grid.Column>
         </Grid>

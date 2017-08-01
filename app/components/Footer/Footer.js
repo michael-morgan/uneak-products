@@ -1,9 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Segment, Grid, Header, List, Image } from 'semantic-ui-react';
+import sharedColors from 'shared/styles/colors.css';
 import s from './styles.css';
 
-function Footer(props) {
+function Footer() {
   const style = {
     segment: { padding: '5em 0' },
     p: { margin: '2em 0 0 0' },
@@ -25,20 +25,20 @@ function Footer(props) {
           <List id="contactList" inverted link>
             <List.Item>
               <List.Icon name="marker" />
-              <List.Content style={props.style.colors.background}>
+              <List.Content className={sharedColors.background}>
                 20 Columbus Street
                 Perth-Andover, NB E7H 1T3
               </List.Content>
             </List.Item>
             <List.Item>
               <List.Icon name="call" />
-              <List.Content style={props.style.colors.background}>
+              <List.Content className={sharedColors.background}>
                 1-800-666-4911
               </List.Content>
             </List.Item>
             <List.Item as="a" href="mailto:office@bolstercanada.com">
               <List.Icon name="mail" />
-              <List.Content style={props.style.colors.background}>
+              <List.Content className={sharedColors.background}>
                 office@bolstercanada.com
               </List.Content>
             </List.Item>
@@ -49,32 +49,32 @@ function Footer(props) {
           <Grid>
             <Grid.Column computer={8} tablet={8} mobile={16}>
               <List inverted link>
-                <List.Item as="a" href="/#events" style={props.style.colors.background}>
+                <List.Item as="a" href="/#events" className={sharedColors.background}>
                   Events
                 </List.Item>
-                <List.Item as="a" href="/#partners" style={props.style.colors.background}>
+                <List.Item as="a" href="/#partners" className={sharedColors.background}>
                   Partners
                 </List.Item>
-                <List.Item as="a" href="/#offices" style={props.style.colors.background}>
+                <List.Item as="a" href="/#offices" className={sharedColors.background}>
                   Global Offices
                 </List.Item>
-                <List.Item as="a" href="/#brands" style={props.style.colors.background}>
+                <List.Item as="a" href="/#brands" className={sharedColors.background}>
                   Brands
                 </List.Item>
               </List>
             </Grid.Column>
             <Grid.Column computer={8} tablet={8} mobile={16}>
               <List inverted link>
-                <List.Item as="a" href="/#wholesale" style={props.style.colors.background}>
+                <List.Item as="a" href="/#wholesale" className={sharedColors.background}>
                   Wholesale
                 </List.Item>
-                <List.Item as="a" href="/about" style={props.style.colors.background}>
+                <List.Item as="a" href="/about" className={sharedColors.background}>
                   About
                 </List.Item>
-                <List.Item as="a" href="/jobs" style={props.style.colors.background}>
+                <List.Item as="a" href="/jobs" className={sharedColors.background}>
                   Jobs
                 </List.Item>
-                <List.Item as="a" href="/contact" style={props.style.colors.background}>
+                <List.Item as="a" href="/contact" className={sharedColors.background}>
                   Contact
                 </List.Item>
               </List>
@@ -86,7 +86,7 @@ function Footer(props) {
             <Image
               src="images/build/uneak-products-logo.png"
               size="small"
-              alt="Logo"
+              alt="Uneak Products Logo Image"
               style={{ width: '150px' }}
               ui
               centered
@@ -98,9 +98,5 @@ function Footer(props) {
     </Segment>
   );
 }
-
-Footer.propTypes = {
-  style: PropTypes.object,
-};
 
 export default Footer;

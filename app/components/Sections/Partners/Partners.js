@@ -1,26 +1,26 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Grid, Header, Icon, Segment } from 'semantic-ui-react';
 import DimmedImage from '../../Image/DimmedImage';
 import sharedStyles from 'shared/styles/shared.css';
+import sharedColors from 'shared/styles/colors.css';
 import cx from 'classnames';
 
-function Partners(props) {
+function Partners() {
   return (
     <Segment className={cx(sharedStyles.sectionBG, sharedStyles.sectionMargin)} vertical>
       <Grid container>
         <Grid.Column computer={16} tablet={16} mobile={16}>
           <Header
-            as="h1"
-            style={Object.assign({}, { position: 'relative' }, props.style.colors.action)}
+            as="h2"
+            style={{ position: 'relative', fontSize: '2rem' }}
+            className={sharedColors.action}
           >
             <span id="partners" className={sharedStyles.anchorOffset}></span>
             Partners
           </Header>
           <Header
             as="h3"
-            className={sharedStyles.sectionActionText}
-            style={props.style.colors.title}
+            className={cx(sharedStyles.sectionActionText, sharedColors.title)}
           >
             Find us at these fine retailers <Icon name="chevron right" />
           </Header>
@@ -38,7 +38,7 @@ function Partners(props) {
                   size="medium"
                   shape="rounded"
                   src="images/build/ace-logo.svg"
-                  alt="Ace Hardware"
+                  alt="Ace Hardware logo image"
                   classes={[sharedStyles.dimmedImageBG]}
                 />
               </a>
@@ -51,7 +51,7 @@ function Partners(props) {
                   shape="rounded"
                   src="images/build/canac-logo.png"
                   href="#"
-                  alt="Canac"
+                  alt="Canac logo image"
                 />
               </a>
             </Grid.Column>
@@ -63,7 +63,7 @@ function Partners(props) {
                   shape="rounded"
                   src="images/build/canadian-tire-logo.svg"
                   href="#"
-                  alt="Canadian Tire"
+                  alt="Canadian Tire logo image"
                 />
               </a>
             </Grid.Column>
@@ -75,7 +75,7 @@ function Partners(props) {
                   shape="rounded"
                   src="images/build/home-depot-logo.svg"
                   href="#"
-                  alt="Home Depot"
+                  alt="Home Depot logo image"
                 />
               </a>
             </Grid.Column>
@@ -87,7 +87,7 @@ function Partners(props) {
                   shape="rounded"
                   src="images/build/home-hardware-logo.png"
                   href="#"
-                  alt="Home Hardware"
+                  alt="Home Hardware logo image"
                 />
               </a>
             </Grid.Column>
@@ -99,7 +99,7 @@ function Partners(props) {
                   shape="rounded"
                   src="images/build/rona-logo.png"
                   href="#"
-                  alt="Rona"
+                  alt="Rona logo image"
                 />
               </a>
             </Grid.Column>
@@ -111,7 +111,7 @@ function Partners(props) {
                   shape="rounded"
                   src="images/build/kent-logo.png"
                   href="#"
-                  alt="Kent"
+                  alt="Kent logo image"
                 />
               </a>
             </Grid.Column>
@@ -123,7 +123,7 @@ function Partners(props) {
                   shape="rounded"
                   src="images/build/patrick-morin-logo.png"
                   href="#"
-                  alt="Patrick Morin"
+                  alt="Patrick Morin logo image"
                 />
               </a>
             </Grid.Column>
@@ -133,9 +133,5 @@ function Partners(props) {
     </Segment>
   );
 }
-
-Partners.propTypes = {
-  style: PropTypes.object,
-};
 
 export default Partners;

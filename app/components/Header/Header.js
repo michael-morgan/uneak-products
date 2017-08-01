@@ -1,12 +1,11 @@
 import React from 'react';
-import { Menu, Grid, Sidebar, Icon, Segment } from 'semantic-ui-react';
+import { Menu, Grid, Sidebar, Icon, Segment, Image } from 'semantic-ui-react';
 import s from './styles.css';
 import cx from 'classnames';
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = { visible: false };
     this.handleItemClick = (e, { name }) => {
       this.setState({ activeItem: name });
@@ -59,20 +58,6 @@ class Header extends React.Component {
 
   render() {
     const { activeItem, visible } = this.state;
-    const style = {
-      sideBarOverlay: {
-        display: 'none',
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        zIndex: 9998,
-        backgroundColor: 'rgba(0, 0, 0, 0.4)',
-        transition: 'opacity .5s',
-        willChange: 'opacity',
-      },
-    };
 
     return (
       <Segment vertical>
@@ -88,7 +73,7 @@ class Header extends React.Component {
                 fluid
               >
                 <Menu.Item href="/" className={s.navItem} header>
-                  <img
+                  <Image
                     src="images/build/uneak-products-logo.png"
                     alt="Uneak Products Logo"
                     style={{ width: '4.5em' }}
@@ -176,7 +161,7 @@ class Header extends React.Component {
             <Grid.Column>
               <div
                 id="sideBarOverlay"
-                style={style.sideBarOverlay}
+                className={s.sideBarOverlay}
                 onClick={this.toggleVisibility}
               >
               </div>
@@ -276,7 +261,7 @@ class Header extends React.Component {
                   fluid
                 >
                   <Menu.Item href="/" header>
-                    <img
+                    <Image
                       src="images/build/uneak-products-logo.png"
                       alt="Uneak Products Logo"
                       style={{ width: '4.5em' }}

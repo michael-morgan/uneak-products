@@ -58,6 +58,10 @@
 .mt5 { margin-top: 5px !important; }
 .mt10 { margin-top: 10px !important; }
 
+.mainHeader {
+  display: none;
+}
+
 @media (max-width: 991px) {
   .brandNestedButton {
     display: block !important;

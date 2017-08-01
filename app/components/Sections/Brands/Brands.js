@@ -38,7 +38,10 @@ function Brands(props) {
           <Grid columns={4} stackable>
             <Grid.Column computer={4} tablet={8} mobile={16}>
               <Card style={style.card} raised>
-                <Image src="images/build/santas-solutions-logo.png" />
+                <Image
+                  src="images/build/santas-solutions-logo.png"
+                  alt=""
+                />
                 <Card.Content style={style.cardContent}>
                   <Card.Header style={props.style.colors.title}>
                     Santa{"'"}s Solution

@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Button, Icon, Rail } from 'semantic-ui-react';
 import sharedStyles from 'shared/styles/shared.css';
+import sharedColors from 'shared/styles/colors.css';
 import cx from 'classnames';
 
 class BackToTop extends React.Component {
@@ -9,13 +9,15 @@ class BackToTop extends React.Component {
   constructor(props) {
     super(props);
 
-    this.style = props.style;
-
     this.state = { active: false };
 
     this.setActive = this.setActive.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
     this.resetScroll = this.resetScroll.bind(this);
+
+    this.style = {
+      action: { color: '#f44336' },
+    };
   }
 
   componentDidMount() {
@@ -56,7 +58,7 @@ class BackToTop extends React.Component {
               margin: '0 15px 15px 0',
               bottom: '0',
               right: '0',
-              backgroundColor: this.style.colors.action.color,
+              backgroundColor: this.style.action.color,
               boxShadow: '#000 3px 2px 10px -3px',
               borderRadius: '50%',
               width: '60px',
@@ -68,8 +70,8 @@ class BackToTop extends React.Component {
             <Icon
               name="chevron up"
               size="large"
+              className={sharedColors.background}
               style={{
-                color: this.style.colors.background.color,
                 fontSize: '3.0em',
                 position: 'absolute',
                 top: '5px',
@@ -81,9 +83,5 @@ class BackToTop extends React.Component {
     );
   }
 }
-
-BackToTop.propTypes = {
-  style: PropTypes.object,
-};
 
 export default BackToTop;

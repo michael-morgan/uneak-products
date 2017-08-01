@@ -1,10 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Grid, Segment, Image, Header, Icon } from 'semantic-ui-react';
-import s from './styles.css';
 import sharedStyles from 'shared/styles/shared.css';
 import sharedColors from 'shared/styles/colors.css';
 import cx from 'classnames';
+import s from './styles.css';
 import data from './data.json';
 
 class Summary extends React.Component {
@@ -22,6 +21,7 @@ class Summary extends React.Component {
       <Grid.Column key={index} computer={4} tablet={8} mobile={16}>
         <Image
           src={brand.images.main}
+          alt={`${brand.name} brand image`}
           bordered
           centered
           fluid
@@ -61,6 +61,7 @@ class Summary extends React.Component {
               <Grid.Column computer={6} tablet={8} mobile={16}>
                 <Image
                   src={brand.images.nested}
+                  alt={`${brand.name} logo image`}
                   size="medium"
                   centered
                 />
@@ -115,8 +116,10 @@ class Summary extends React.Component {
 
     return (
       <Segment vertical>
+        <Header as="h1" className={s.mainHeader}>Uneak Products - A Division of BCI</Header>
         <Image
           src="images/build/uneak-products-banner.png"
+          alt="Uneak Products banner image"
           style={{ marginBottom: '10px' }}
           centered
           fluid
@@ -147,10 +150,5 @@ class Summary extends React.Component {
     );
   }
 }
-
-Summary.propTypes = {
-  header: PropTypes.string,
-  style: PropTypes.object,
-};
 
 export default Summary;

@@ -23,7 +23,7 @@ function Warranty(props) {
               <a
                 href="#"
                 target="_blank"
-                title="Warranty Placeholder"
+                title="Santa's Solutions Warranty"
               >
                 <DimmedImage
                   description={<Icon name="linkify" size="huge" />}
@@ -31,7 +31,7 @@ function Warranty(props) {
                   shape="rounded"
                   src="images/build/ss-warranty.png"
                   href="#"
-                  alt="Warranty Placeholder"
+                  alt="Santa's Solutions logo image"
                 />
               </a>
             </Grid.Column>

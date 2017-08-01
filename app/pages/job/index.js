@@ -12,14 +12,6 @@ class JobPage extends React.Component {
   }
 
   render() {
-    const style = {
-      colors: {
-        action: {
-          color: '#f44336',
-        },
-      },
-    };
-
     return (
       <Layout>
         <Grid className={sharedStyles.gridMargin} stackable container>
