@@ -15,11 +15,11 @@
       },
       {
         "title": "Retailer",
-        "location": "https://www.santassolution.com/"
+        "location": "#"
       },
       {
         "title": "Wholesale",
-        "location": "https://www.santassolution.com/"
+        "location": "#"
       }
     ]
   },
@@ -55,11 +55,11 @@
       "main": "images/build/nooski-warranty.png",
       "nested": "images/build/nooski-logo.png"
     },
-    "location": "#",
+    "location": "http://nooski.com/",
     "links": [
       {
         "title": "Shop",
-        "location": "#"
+        "location": "http://nooski.com/"
       },
       {
         "title": "Retailer",
@@ -79,19 +79,19 @@
       "main": "images/build/biltek-warranty.png",
       "nested": "images/build/biltek-logo.png"
     },
-    "location": "#",
+    "location": "https://www.biltekind.com/",
     "links": [
       {
         "title": "Visit Site",
-        "location": "#"
+        "location": "https://www.biltekind.com/"
       },
       {
         "title": "Services",
-        "location": "#"
+        "location": "https://www.biltekind.com/services"
       },
       {
         "title": "Projects",
-        "location": "#"
+        "location": "https://www.biltekind.com/projects"
       }
     ]
   }
