@@ -31,11 +31,11 @@
       "main": "images/build/ug-warranty.png",
       "nested": "images/build/uneak-gardens-logo.png"
     },
-    "location": "#",
+    "location": "https://www.uneakgardens.com/",
     "links": [
       {
         "title": "Shop",
-        "location": "#"
+        "location": "https://uneakgardens.com/products"
       },
       {
         "title": "Retailer",
