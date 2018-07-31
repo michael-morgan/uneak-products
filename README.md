@@ -1,2 +1,2 @@
 # uneak-products
-Uneak Products MBC project.
+Uneak Products BCI project.
